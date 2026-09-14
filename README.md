@@ -1,5 +1,19 @@
 
 
+### Summary
+
+In recent years the progress Londons ULEZ has made in reducing
+NO<sub>2</sub> has been well publicised. The mechanisms behind this fall
+are the result of legislative work that began in 2001. These
+NO<sub>2</sub> policies have done little to address other collectively
+more serious urban issues. But is it possible to address NO<sub>2</sub>
+potentially faster whilst also addressing the Urban Emergency? By
+reducing road width to free up urban space for walking, wheeling,
+cycling, playing and plants/trees/crops the source receptor distance is
+increased and road space is reduced. This study proposes modelling the
+changes in air pollution exposure at sensitive receptors around the UK
+to quantify the potential benefits.
+
 ### Background
 
 Societies face an Urban Emergency. Cities are not only a primary driver
@@ -10,11 +24,11 @@ environmental risks such as noise, air pollution (Woolf et al. 2024) ,
 as well as road traffic.
 
 Biodiversity loss and the resulting ecosystem collapse is a serious
-national security threat (HM Government 2026) .
+national security threat (Government 2026) .
 
-Road transport is responsible for nearly 1/3 of UKs total CO<sub>2</sub>
-emissions (DESNZ 2026) which affects health, building operation \[Kelly
-(2019b)\](Fuller 2019) and climate change.
+Road transport is responsible for nearly 1/3 of UK’s total
+CO<sub>2</sub> emissions (DESNZ 2026) which affects health, building
+operation \[Kelly (2019b)\](Fuller 2019) and climate change.
 
 Whilst violent crime is the lowest since records began (ONS 2026), motor
 vehicle traffic is the highest it has been in more than 40 years (DfT
@@ -28,23 +42,26 @@ pollution policy in the UK has historically focused on legislating
 vehicle emissions. The reductions in NO<sub>2</sub> seen in the last few
 years are the result of work that began at the start of the Millennium
 (euractiv 2001), that was passed in the EU in 2008 and came into effect
-in June 2010 (European Parliament 2008) .
+in June 2010 (*Directive 2008/50/EC of the European Parliament and of
+the Council of 21 May 2008 on Ambient Air Quality and Cleaner Air for
+Europe* 2008) .
 
 Cities across Europe largely failed to meet these targets (EC 2017)
-because of systemic fraud by vehicle manufacturers
+because of systemic fraud by vehicle manufacturers (Jong and Linde 2022)
+.
 
 In early 2018, a 7 year legal case forced the government to take the
 “fastest route to compliance” to address the exceedances (BBC 2018) .
 
-Despite continued uncertainty over real world vehicle emissions (Reid
-2019), road transport contributing \>1/5 of all CO<sub>2</sub> emissions
-(today it is \>1/4 (DESNZ 2026)) and an acknowledgement that the world
-faced a climate emergency (BBC 2019) and a study by Eunomia in 2017 for
-the Walk Wheel Cycle trust (then called Sustrans) estimated switching
-10% of car trips to cycling and walking would reduce NO<sub>2</sub> by 5
-times more than CAZs (Ballinger et al. 2017) as well as reducing
-Particulate Matter (PM) something the current CAZs have been poor at
-addressing, defras JAQU decided to push for CAZs (JAQU 2017) .
+Defras JAQU decided to push for CAZs (JAQU 2017). Despite continued
+uncertainty over real world vehicle emissions (Reid 2019), road
+transport contributing \>1/5 of all CO<sub>2</sub> emissions (today it
+is \>1/4 (DESNZ 2026)) and an acknowledgement that the world faced a
+climate emergency (BBC 2019) and a study by Eunomia in 2017 for the Walk
+Wheel Cycle trust (then called Sustrans) estimating switching 10% of car
+trips to cycling and walking would reduce NO<sub>2</sub> by 5 times more
+than CAZs (Ballinger et al. 2017) as well as reducing Particulate Matter
+(PM), something the current CAZs have been poor at addressing.
 
 Other studies have investigated the effect of modal shift on Air Quality
 by modelling changes in road emissions resulting from modelled or
@@ -52,14 +69,14 @@ measured modal shift(Matajs et al. 2026) (Mueller et al. 2020), which
 fits with the focus on directly reducing emissions from the road. The
 complicating factor in all these studies is the level of modal shift,
 which is why active travel is often ignored as the feasibility of this
-is often disputed often as a result of “motonormativity” (Walker and
-Brömmelstroet 2025).
+is often disputed often as a result of “motonormativity” (Walker, Tapp,
+and Davis 2022).
 
 ### Hypothosis
 
-However, little attention has been paid to the potential benefits from
-the physical changes to urban space that are now recognised as essential
-in enabling the modal shift needed for these emissions reductions. Most
+Little attention has been paid to the potential benefits from the
+physical changes to urban space that are now recognised as essential in
+enabling the modal shift needed for these emissions reductions. Most
 notably constraining vehicles by removing road capacity and the
 increases in source receptor distance that would follow.
 
@@ -108,14 +125,14 @@ et al. 2026) meaning there are potentially huge cost savings for people
 when this is reversed. Whilst public support for road pricing is
 generally positive the benefits are often only seen in official reports
 and statistics and they send the message that environmental measures
-mean restrictions and expense \[Bretschger (2021)\] . Manchester chose
-to spend CAZ money on other measures \[Gawne (2025)\] such as the
-largest segregated cycle network outside of London (Pidd and editor
-2018). Whilst this network has not been without controversy as have
-filtered neighbourhoods. Places like Barcelona which implemented
-ambitious “Superblocks” see that once they are installed people quickly
-come around to them and would not go back. Implementing measures that
-people can see and understand and can save them money quickly can be
+mean restrictions and expense (Bretschger 2021) . Manchester chose to
+spend CAZ money on other measures (Gawne 2025) such as the largest
+segregated cycle network outside of London (Pidd and editor 2018).
+Whilst this network has not been without controversy as have filtered
+neighbourhoods. Places like Barcelona which implemented ambitious
+“Superblocks” see that once they are installed people quickly come
+around to them and would not go back. Implementing measures that people
+can see and understand and can save them money quickly can be
 politically more popular than more charges.
 
 ### Methods
@@ -199,10 +216,12 @@ Quality Assessments (AQA) and a number of Environmental Impact
 Assessments (EIA) looking at Member status at IAQM, with Chartered
 Environmentalist status at the IES in progress.
 
+### References
+
 <div id="refs" class="references csl-bib-body hanging-indent"
 entry-spacing="0">
 
-<div id="ref-ballinger2017" class="csl-entry">
+<div id="ref-zotero-item-7409" class="csl-entry">
 
 Ballinger, Ann, Tanzir Chowdhury, George Cole, and Olly Jamieson. 2017.
 “Air Quality Benefits of Active Travel.”
@@ -210,17 +229,18 @@ Ballinger, Ann, Tanzir Chowdhury, George Cole, and Olly Jamieson. 2017.
 
 </div>
 
-<div id="ref-bbc2018" class="csl-entry">
+<div id="ref-GovernmentLosesClean2018" class="csl-entry">
 
-BBC. 2018. “Government Loses Clean Air Court Case,” February.
+BBC. 2018. “Government Loses Clean Air Court Case,” February 21, 2018.
 <https://www.bbc.com/news/science-environment-43141467>.
 
 </div>
 
-<div id="ref-bbc2019" class="csl-entry">
+<div id="ref-UKParliamentDeclares2019" class="csl-entry">
 
-———. 2019. “UK Parliament Declares Climate Change Emergency.” *BBC
-News*, May. <https://www.bbc.co.uk/news/uk-politics-48126677>.
+———. 2019. “UK Parliament Declares Climate Change Emergency.” *BBC News:
+UK Politics*, May 1, 2019.
+<https://www.bbc.co.uk/news/uk-politics-48126677>.
 
 </div>
 
@@ -233,16 +253,18 @@ Economics* 188 (October): 107116.
 
 </div>
 
-<div id="ref-defra2018" class="csl-entry">
+<div id="ref-NO2FallDistance" class="csl-entry">
 
-Defra. 2018. “NO2 Fall Off with Distance Calculator \| LAQM.”
+Defra. 2018. “NO2 Fall Off With Distance Calculator \| LAQM.” March
+2018.
 <https://laqm.defra.gov.uk/air-quality/air-quality-assessment/no2-falloff/>.
 
 </div>
 
-<div id="ref-desnz2026" class="csl-entry">
+<div id="ref-GreenhouseGasEmissions" class="csl-entry">
 
-DESNZ. 2026. “Greenhouse Gas Emissions from Transport in 2024.”
+DESNZ. 2026. “Greenhouse Gas Emissions from Transport in 2024.” GOV.UK.
+July 14, 2026.
 <https://www.gov.uk/government/statistics/transport-and-environment-statistics-2024--2/greenhouse-gas-emissions-from-transport-in-2024>.
 
 </div>
@@ -261,6 +283,14 @@ DfT. 2026a. “Road Traffic Statistics.” May 20, 2026.
 
 </div>
 
+<div id="ref-Directive2008502008" class="csl-entry">
+
+*Directive 2008/50/EC of the European Parliament and of the Council of
+21 May 2008 on Ambient Air Quality and Cleaner Air for Europe*. 2008.
+*OJ L*. Vol. 152. <http://data.europa.eu/eli/dir/2008/50/oj>.
+
+</div>
+
 <div id="ref-CommissionWarnsGermany" class="csl-entry">
 
 EC. 2017. “Commission warns Germany, France, Spain, Italy and the United
@@ -270,26 +300,18 @@ Commission - European Commission. February 15, 2017.
 
 </div>
 
-<div id="ref-euractiv2001" class="csl-entry">
+<div id="ref-NewsEULaunches" class="csl-entry">
 
-euractiv. 2001. “Ambitious "Clean Air for Europe" Programme.”
+euractiv. 2001. “Ambitious "Clean Air for Europe" Programme.” May 8,
+2001.
 <https://www.euractiv.com/news/ambitious-clean-air-for-europe-programme/>.
 
 </div>
 
-<div id="ref-europeanparliament2008" class="csl-entry">
-
-European Parliament. 2008. “Directive 2008/50/EC of the European
-Parliament and of the Council of 21 May 2008 on Ambient Air Quality and
-Cleaner Air for Europe,” May.
-<http://data.europa.eu/eli/dir/2008/50/oj>.
-
-</div>
-
-<div id="ref-fuller2019" class="csl-entry">
+<div id="ref-fullerCO2VariationsPlants2019" class="csl-entry">
 
 Fuller, Gary. 2019. “CO2 Variations from Plants Overwhelmed by Traffic
-Emissions \| Environment \| the Guardian.”
+Emissions \| Environment \| The Guardian.” April 11, 2019.
 <https://www.theguardian.com/environment/2019/apr/11/co2-variations-from-plants-overwhelmed-by-traffic-emissions?CMP=share_btn_tw>.
 
 </div>
@@ -299,6 +321,14 @@ Emissions \| Environment \| the Guardian.”
 Gawne, Ewan. 2025. “Greater Manchester Clean Air Plan with No Driver
 Charges Backed.” BBC News. January 23, 2025.
 <https://www.bbc.co.uk/news/articles/cvgm9y2kzplo>.
+
+</div>
+
+<div id="ref-zotero-item-7431" class="csl-entry">
+
+Government, HM. 2026. “Global Biodiversity Loss, Ecosystem Collapse and
+National Security - A National Security Assessment.” HM Government.
+<https://assets.publishing.service.gov.uk/media/696e0eae719d837d69afc7de/National_security_assessment_-_global_biodiversity_loss__ecosystem_collapse_and_national_security.pdf>.
 
 </div>
 
@@ -321,19 +351,21 @@ Structure.” *Journal of Urban Economics*, September, 103906.
 
 </div>
 
-<div id="ref-hmgovernment2026" class="csl-entry">
+<div id="ref-jaquUKPlanTackling2017" class="csl-entry">
 
-HM Government. 2026. “Global Biodiversity Loss, Ecosystem Collapse and
-National Security - a National Security Assessment.”
-<https://assets.publishing.service.gov.uk/media/696e0eae719d837d69afc7de/National_security_assessment_-_global_biodiversity_loss__ecosystem_collapse_and_national_security.pdf>.
+JAQU. 2017. “UK Plan for Tackling Roadside Nitrogen Dioxide
+Concentrations.” Department for Food, Environment and Rural Affairs
+(Defra).
+<https://assets.publishing.service.gov.uk/media/5a8227f0ed915d74e3402084/air-quality-plan-technical-report.pdf>.
 
 </div>
 
-<div id="ref-jaqu2017" class="csl-entry">
+<div id="ref-jong2022" class="csl-entry">
 
-JAQU. 2017. “UK Plan for Tackling Roadside Nitrogen Dioxide
-Concentrations.”
-<https://assets.publishing.service.gov.uk/media/5a8227f0ed915d74e3402084/air-quality-plan-technical-report.pdf>.
+Jong, Wouter, and Vivian van der Linde. 2022. “Clean Diesel and Dirty
+Scandal: The Echo of Volkswagen’s Dieselgate in an Intra-Industry
+Setting.” *Public Relations Review* 48 (1): 102146.
+<https://doi.org/10.1016/j.pubrev.2022.102146>.
 
 </div>
 
@@ -380,61 +412,62 @@ International* 134 (January): 105132.
 
 </div>
 
-<div id="ref-ncmd2023" class="csl-entry">
+<div id="ref-zotero-item-7421" class="csl-entry">
 
 NCMD. 2023. “Deaths of Children and Young People Due to Traumatic
 Incidents: Vehicle Collisions, Drownings, Violence and Maltreatment and
-Unintentional Injuries.”
+Unintentional Injuries.” National Child Mortality Database (NCMD).
 <https://www.ncmd.info/wp-content/uploads/2023/07/NCMD-Trauma-Thematic-Report.pdf>.
 
 </div>
 
-<div id="ref-ons2026" class="csl-entry">
+<div id="ref-HomicideEnglandWales" class="csl-entry">
 
 ONS. 2026. “Homicide in England and Wales - Office for National
-Statistics.”
+Statistics.” February 5, 2026.
 <https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/articles/homicideinenglandandwales/yearendingmarch2025>.
 
 </div>
 
-<div id="ref-pidd2018" class="csl-entry">
+<div id="ref-piddManchesterMakesBeeline2018" class="csl-entry">
 
 Pidd, Helen, and Helen Pidd North of England editor. 2018. “Manchester
-Makes a Beeline for New Dutch-Style Cycling Network.” *The Guardian*,
-June.
+Makes a Beeline for New <span class="nocase">Dutch-style</span> Cycling
+Network.” *The Guardian: Life and Style*, June 26, 2018.
 <https://www.theguardian.com/lifeandstyle/2018/jun/27/manchester-makes-a-beeline-for-new-dutch-style-cycling-network>.
 
 </div>
 
-<div id="ref-reid2019" class="csl-entry">
+<div id="ref-reidNissanRefusesGovernment2019" class="csl-entry">
 
 Reid, Carlton. 2019. “Nissan Refuses Government Request on Qashqai
-Emissions.” *The Guardian*, July.
+Emissions.” *The Guardian: Environment*, July 23, 2019.
 <https://www.theguardian.com/environment/2019/jul/23/nissan-refuses-government-request-on-qashqai-emissions>.
 
 </div>
 
-<div id="ref-schapps2020" class="csl-entry">
+<div id="ref-PS2BillionPackage" class="csl-entry">
 
 Schapps. 2020. “£2 Billion Package to Create New Era for Cycling and
-Walking.”
+Walking.” GOV.UK. May 9, 2020.
 <https://www.gov.uk/government/news/2-billion-package-to-create-new-era-for-cycling-and-walking>.
 
 </div>
 
-<div id="ref-walker2025" class="csl-entry">
+<div id="ref-walkerMotornomativityHowSocial2022" class="csl-entry">
 
-Walker, Ian, and Marco te Brömmelstroet. 2025. “Why Do Cars Get a Free
-Ride? The Social-Ecological Roots of Motonormativity.” *Global
-Environmental Change* 91 (May): 102980.
-<https://doi.org/10.1016/j.gloenvcha.2025.102980>.
+Walker, Ian, Alan Tapp, and Adrian Davis. 2022. “Motornomativity: How
+Social Norms Hide a Major Public Health Hazard.” December 14, 2022.
+<https://doi.org/10.31234/osf.io/egnmj>.
 
 </div>
 
-<div id="ref-woolf2024" class="csl-entry">
+<div id="ref-mollytooherruddUrbanEmergencyAddressing2024"
+class="csl-entry">
 
 Woolf, Darren, George Adams, Stefano Cammelli, Ben Marner, and Blaise
 Kelly. 2024. “The Urban Emergency: Addressing Environmental Quality.”
+CIBSE Journal. May 30, 2024.
 <https://www.cibsejournal.com/technical/the-urban-emergency-addressing-environmental-quality/>.
 
 </div>
