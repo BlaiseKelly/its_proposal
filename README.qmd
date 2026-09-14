@@ -80,20 +80,25 @@ Unlike filtered neighbourhoods and the Barcelona Superblocks, it would focus on 
 
 #### Datasets
 
-- Open access LiDAR 1m Digital Surface Model (DSM) and Digital Terrain Model (DTM) of England
+- Open access LiDAR 1m Digital Surface Model (DSM) and Digital Terrain Model (DTM) of England [@ea2025]
 - Road geometry data from OS/local authorities.
-- Building/Land-use data from OSM, OS, Land registry
+- Building/Land-use/Road data from OSM, OS, Land registry
 - Population data
-- state of the art datasets for hourly traffic/speed profiles for all roads - Juans PhD?, Google API etc.
-- UK Air quality observation data network for validation (openair R package)
-- Copernicus Atmospheric Modelling Service (CAMS) for historic background pollution data
-- ERA5 historic meteo data e.g. irradiation, temperature, wind speed
-- Remote albedo
+- STATS19
+- state of the art datasets for hourly traffic/speed profiles for all roads - Juans PhD?, [Google API](https://github.com/BlaiseKelly/google_speeds) etc.
+- UK Air quality observation data network for validation (openair R package) [@carslaw2026]
+- Copernicus Atmospheric Modelling Service (CAMS) for historic background pollution data [@ads2026]
+- ERA5 historic meteo data e.g. irradiation, temperature, wind speed, soil/ground parameters [@era52026]
+- Remote albedo for greenspace analysis [@era52026]
 
 ### My experience
 
 Thesis in 2010 using paper road plans and traffic signal data from Greater Manchester Transport Unit and with the help of basic network created by Simon Box Uni Portsmouth drew the road network around Chorlton-cum-hardy and setup a basic microsimulation model using S-Paramics. Sent two traffic signal scenarios to University of Strathclyde to quantify the change in emissions between the two scenarios.
 
 Gaussian dispersion modelling using ADMS, undertaking over 100 Air Quality Assessments (AQA) and a number of Environmental Impact Assessments (EIA) looking at Member status at IAQM, with Chartered Environmentalist status at the IES in progress.
+
+Automatic Air Quality Model generation for ADMS and AERMOD using Rspatial packages. Working with Chemistry Transport Model air pollution, pollen and heat data to estimate population stress. Combining population data from mobile phone and synthetically generated using census data to estimate hourly population exposure.
+
+<https://blaisekelly.github.io/me/publications/>
 
 ### References

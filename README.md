@@ -190,18 +190,21 @@ part of the Roadside Urban Air Quality Monitoring Network sites (~350).
 #### Datasets
 
 - Open access LiDAR 1m Digital Surface Model (DSM) and Digital Terrain
-  Model (DTM) of England
+  Model (DTM) of England (EA 2025)
 - Road geometry data from OS/local authorities.
-- Building/Land-use data from OSM, OS, Land registry
+- Building/Land-use/Road data from OSM, OS, Land registry
 - Population data
+- STATS19
 - state of the art datasets for hourly traffic/speed profiles for all
-  roads - Juans PhD?, Google API etc.
+  roads - Juans PhD?, [Google
+  API](https://github.com/BlaiseKelly/google_speeds) etc.
 - UK Air quality observation data network for validation (openair R
-  package)
+  package) (Carslaw, Davidson, and Ropkins 2026)
 - Copernicus Atmospheric Modelling Service (CAMS) for historic
-  background pollution data
-- ERA5 historic meteo data e.g. irradiation, temperature, wind speed
-- Remote albedo
+  background pollution data (ADS 2026)
+- ERA5 historic meteo data e.g. irradiation, temperature, wind speed,
+  soil/ground parameters (ERA5 2026)
+- Remote albedo for greenspace analysis (ERA5 2026)
 
 ### My experience
 
@@ -218,10 +221,25 @@ Quality Assessments (AQA) and a number of Environmental Impact
 Assessments (EIA) looking at Member status at IAQM, with Chartered
 Environmentalist status at the IES in progress.
 
+Automatic Air Quality Model generation for ADMS and AERMOD using
+Rspatial packages. Working with Chemistry Transport Model air pollution,
+pollen and heat data to estimate population stress. Combining population
+data from mobile phone and synthetically generated using census data to
+estimate hourly population exposure.
+
+<https://blaisekelly.github.io/me/publications/>
+
 ### References
 
 <div id="refs" class="references csl-bib-body hanging-indent"
 entry-spacing="0">
+
+<div id="ref-ads2026" class="csl-entry">
+
+ADS. 2026. “CAMS European Air Quality Reanalyses.”
+<https://ads.atmosphere.copernicus.eu/datasets/cams-europe-air-quality-reanalyses?tab=overview>.
+
+</div>
 
 <div id="ref-zotero-item-7409" class="csl-entry">
 
@@ -252,6 +270,14 @@ Bretschger, Lucas. 2021. “Getting the Costs of Environmental Protection
 Right: Why Climate Policy Is Inexpensive in the End.” *Ecological
 Economics* 188 (October): 107116.
 <https://doi.org/10.1016/j.ecolecon.2021.107116>.
+
+</div>
+
+<div id="ref-carslaw2026" class="csl-entry">
+
+Carslaw, David, Jack Davidson, and Karl Ropkins. 2026. “Tools for the
+Analysis of Air Pollution Data.”
+<https://openair-project.github.io/openair/>.
 
 </div>
 
@@ -293,12 +319,26 @@ DfT. 2026a. “Road Traffic Statistics.” May 20, 2026.
 
 </div>
 
+<div id="ref-ea2025" class="csl-entry">
+
+EA. 2025. “National LIDAR Programme.”
+<https://www.data.gov.uk/dataset/f0db0249-f17b-4036-9e65-309148c97ce4/national-lidar-programme>.
+
+</div>
+
 <div id="ref-CommissionWarnsGermany" class="csl-entry">
 
 EC. 2017. “Commission warns Germany, France, Spain, Italy and the United
 Kingdom of continued air pollution breaches.” Text. European
 Commission - European Commission. February 15, 2017.
 <https://ec.europa.eu/detail/pt/ip_17_238>.
+
+</div>
+
+<div id="ref-era52026" class="csl-entry">
+
+ERA5. 2026. “CAMS European Air Quality Reanalyses.”
+<https://ads.atmosphere.copernicus.eu/datasets/cams-europe-air-quality-reanalyses?tab=overview>.
 
 </div>
 
