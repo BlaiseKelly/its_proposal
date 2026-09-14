@@ -34,7 +34,9 @@ Little attention has been paid to the potential benefits from the physical chang
 
 NO~2~ drops off from the source significantly with distance. Figure 1 shows a calculation based on the NO~2~ "Fall off with distance" calculator [@NO2FallDistance] estimating the reduction in NO~2~ concentrations at buildings if the kerb is moved 2m away from the building on each side of the road and kerbside concentrations remain the same.
 
-![Figure 1 - Based on the Defra NO~2~ fall off with distance calculator, Increasing the distance from a road with a kerbside concentration of 60ug/m^3^ by 2 metres is estimated to drop the concentration of NO2 at the receptor (building) from 39.4 to 34.6ug/m^3^, a 14% decrease.](media/no2_dropoff.png)
+![NO2 fall off with distance](media/no2_dropoff.png)
+
+*Figure 1 - Based on the Defra NO~2~ fall off with distance calculator, increasing the distance from a road with a kerbside concentration of 60 μg/m^3^ by 2 metres is estimated to drop the concentration of NO~2~ at the receptor (building) from 39.4 to 34.6 μg/m^3^, a 14% decrease.*
 
 The concept of traffic evaporation, is increasingly being recognised. In early 2015, road space removal as part of the Cycle Superhighway build out seems to have resulted in a 20% and 23% reduction in two roadside NO~2~ monitoring sites in the space of a few months [@3LinkedIn] .
 

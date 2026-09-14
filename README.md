@@ -87,11 +87,13 @@ NO<sub>2</sub> concentrations at buildings if the kerb is moved 2m away
 from the building on each side of the road and kerbside concentrations
 remain the same.
 
-![Figure 1 - Based on the Defra NO<sub>2</sub> fall off with distance
-calculator, Increasing the distance from a road with a kerbside
-concentration of 60ug/m<sup>3</sup> by 2 metres is estimated to drop the
-concentration of NO2 at the receptor (building) from 39.4 to
-34.6ug/m<sup>3</sup>, a 14% decrease.](media/no2_dropoff.png)
+![NO2 fall off with distance](media/no2_dropoff.png)
+
+*Figure 1 - Based on the Defra NO<sub>2</sub> fall off with distance
+calculator, increasing the distance from a road with a kerbside
+concentration of 60 μg/m<sup>3</sup> by 2 metres is estimated to drop
+the concentration of NO<sub>2</sub> at the receptor (building) from 39.4
+to 34.6 μg/m<sup>3</sup>, a 14% decrease.*
 
 The concept of traffic evaporation, is increasingly being recognised. In
 early 2015, road space removal as part of the Cycle Superhighway build
