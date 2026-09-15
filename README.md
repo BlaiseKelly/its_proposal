@@ -3,16 +3,17 @@
 ### Summary
 
 In recent years the progress Londons ULEZ has made in reducing
-NO<sub>2</sub> has been well publicised. The mechanisms behind this fall
-are the result of legislative work that began in 2001. These
-NO<sub>2</sub> policies have done little to address other collectively
-more serious urban issues. But is it possible to address NO<sub>2</sub>
-potentially faster whilst also addressing the Urban Emergency? By
-reducing road width to free up urban space for walking, wheeling,
-cycling, playing and plants/trees/crops the source receptor distance is
-increased and road space is reduced. This study proposes modelling the
-changes in air pollution exposure at sensitive receptors around the UK
-to quantify the potential benefits.
+NO<sub>2</sub> has been well publicised. CAZs have been far less
+successful (Parliament 2026). The mechanisms behind this fall are the
+result of legislative work that began in 2001. These NO<sub>2</sub>
+policies have done little to address other collectively more serious
+urban issues. But is it possible to address NO<sub>2</sub> potentially
+faster whilst also addressing the Urban Emergency? By reducing road
+width to free up urban space for walking, wheeling, cycling, playing and
+plants/trees/crops the source receptor distance is increased and road
+space is reduced. This study proposes modelling the changes in air
+pollution exposure at sensitive receptors around the UK to quantify the
+potential benefits.
 
 ### Background
 
@@ -61,7 +62,8 @@ climate emergency (BBC 2019) and a study by Eunomia in 2017 for the Walk
 Wheel Cycle trust (then called Sustrans) estimating switching 10% of car
 trips to cycling and walking would reduce NO<sub>2</sub> by 5 times more
 than CAZs (Ballinger et al. 2017) as well as reducing Particulate Matter
-(PM), something the current CAZs have been poor at addressing.
+(PM), something the current CAZs have been poor at addressing
+(Parliament 2026) .
 
 Other studies have investigated the effect of modal shift on Air Quality
 by modelling changes in road emissions resulting from modelled or
@@ -468,6 +470,14 @@ Unintentional Injuries.” National Child Mortality Database (NCMD).
 ONS. 2026. “Homicide in England and Wales - Office for National
 Statistics.” February 5, 2026.
 <https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/articles/homicideinenglandandwales/yearendingmarch2025>.
+
+</div>
+
+<div id="ref-parliament2026" class="csl-entry">
+
+Parliament. 2026. “20 May 2026 - Air Pollution in England - Oral
+Evidence - Committees - UK Parliament.”
+<https://committees.parliament.uk/event/27259/formal-meeting-oral-evidence-session/>.
 
 </div>
 
