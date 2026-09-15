@@ -7,22 +7,27 @@ NO<sub>2</sub> has been well publicised. CAZs have been far less
 successful (Parliament 2026). The mechanisms behind this fall are the
 result of legislative work that began in 2001. These NO<sub>2</sub>
 policies have done little to address other collectively more serious
-urban issues. But is it possible to address NO<sub>2</sub> potentially
-faster whilst also addressing the Urban Emergency? By reducing road
-width to free up urban space for walking, wheeling, cycling, playing and
-plants/trees/crops the source receptor distance is increased and road
-space is reduced. This study proposes modelling the changes in air
-pollution exposure at sensitive receptors around the UK to quantify the
-potential benefits.
+urban issues. But is it possible to reduce NO<sub>2</sub> faster whilst
+also addressing the Urban Emergency? When active travel is mentioned in
+relation to air pollution conversations centre around traffic models and
+opinions on modal shift potential and it is mostly left out of the
+discussion as too complex. Yet by simply reducing road width to free up
+urban space for walking, wheeling, cycling, playing and
+plants/trees/crops, the source receptor distance is increased, road
+traffic is constrained and NO<sub>2</sub> at receptors is significantly
+reduced. This study proposes an alternative to the car modelling
+approach: model the changes in air pollution exposure at sensitive
+receptors as a result of road space reallocation first.
 
 ### Background
 
-Societies face an Urban Emergency. Cities are not only a primary driver
-of climate change they are extremely vulnerable to its effects, such as
-sea level rise and extreme weather. 80% of the population of developed
+Society face an Urban Emergency. Cities are not only a primary driver of
+climate change they are extremely vulnerable to its effects, such as sea
+level rise and extreme weather. 80% of the population of developed
 countries live in cities and often are exposed to significant
 environmental risks such as noise, air pollution (Woolf et al. 2024) ,
-as well as road traffic.
+as well as road traffic collisions and soaring rates of child and adult
+obesity and mental illness.
 
 Biodiversity loss and the resulting ecosystem collapse is a serious
 national security threat (Government 2026) .
@@ -54,16 +59,16 @@ because of systemic fraud by vehicle manufacturers (Jong and Linde 2022)
 In early 2018, a 7 year legal case forced the government to take the
 “fastest route to compliance” to address the exceedances (BBC 2018) .
 
-Defras JAQU decided to push for CAZs (JAQU 2017). Despite continued
-uncertainty over real world vehicle emissions (Reid 2019), road
-transport contributing \>1/5 of all CO<sub>2</sub> emissions (today it
-is \>1/4 (DESNZ 2026)) and an acknowledgement that the world faced a
-climate emergency (BBC 2019) and a study by Eunomia in 2017 for the Walk
-Wheel Cycle trust (then called Sustrans) estimating switching 10% of car
-trips to cycling and walking would reduce NO<sub>2</sub> by 5 times more
-than CAZs (Ballinger et al. 2017) as well as reducing Particulate Matter
-(PM), something the current CAZs have been poor at addressing
-(Parliament 2026) .
+Defras JAQU decided to push for CAZs (JAQU 2017). Despite:
+
+- Continued uncertainty over real world vehicle emissions (Reid 2019)
+- Road transport contributing \>1/5 of all CO<sub>2</sub> emissions
+  (today it is \>1/4 (DESNZ 2026))
+- An acknowledgement that the world faced a climate emergency (BBC 2019)
+- A study estimating switching 10% of car trips to cycling and walking
+  would reduce NO<sub>2</sub> by 5 times more than CAZs (Ballinger et
+  al. 2017) as well as reducing Particulate Matter (PM), something the
+  current CAZs have been poor at addressing (Parliament 2026) .
 
 Other studies have investigated the effect of modal shift on Air Quality
 by modelling changes in road emissions resulting from modelled or
@@ -71,8 +76,8 @@ measured modal shift(Matajs et al. 2026) (Mueller et al. 2020), which
 fits with the focus on directly reducing emissions from the road. The
 complicating factor in all these studies is the level of modal shift,
 which is why active travel is often ignored as the feasibility of this
-is often disputed often as a result of “motonormativity” (Walker, Tapp,
-and Davis 2022).
+is disputed, often as a result of “motonormativity” (Walker, Tapp, and
+Davis 2022).
 
 ### Hypothosis
 

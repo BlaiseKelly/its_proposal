@@ -6,11 +6,11 @@ bibliography: references.bib
 
 ### Summary
 
-In recent years the progress Londons ULEZ has made in reducing NO~2~ has been well publicised. CAZs have been far less successful [@parliament2026]. The mechanisms behind this fall are the result of legislative work that began in 2001. These NO~2~ policies have done little to address other collectively more serious urban issues. But is it possible to address NO~2~ potentially faster whilst also addressing the Urban Emergency? By reducing road width to free up urban space for walking, wheeling, cycling, playing and plants/trees/crops the source receptor distance is increased and road space is reduced. This study proposes modelling the changes in air pollution exposure at sensitive receptors around the UK to quantify the potential benefits.
+In recent years the progress Londons ULEZ has made in reducing NO~2~ has been well publicised. CAZs have been far less successful [@parliament2026]. The mechanisms behind this fall are the result of legislative work that began in 2001. These NO~2~ policies have done little to address other collectively more serious urban issues. But is it possible to reduce NO~2~ faster whilst also addressing the Urban Emergency? When active travel is mentioned in relation to air pollution conversations centre around traffic models and opinions on modal shift potential and it is mostly left out of the discussion as too complex. Yet by simply reducing road width to free up urban space for walking, wheeling, cycling, playing and plants/trees/crops, the source receptor distance is increased, road traffic is constrained and NO~2~ at receptors is significantly reduced. This study proposes an alternative to the car modelling approach: model the changes in air pollution exposure at sensitive receptors as a result of road space reallocation first.
 
 ### Background
 
-Societies face an Urban Emergency. Cities are not only a primary driver of climate change they are extremely vulnerable to its effects, such as sea level rise and extreme weather. 80% of the population of developed countries live in cities and often are exposed to significant environmental risks such as noise, air pollution [@mollytooherruddUrbanEmergencyAddressing2024] , as well as road traffic.
+Society face an Urban Emergency. Cities are not only a primary driver of climate change they are extremely vulnerable to its effects, such as sea level rise and extreme weather. 80% of the population of developed countries live in cities and often are exposed to significant environmental risks such as noise, air pollution [@mollytooherruddUrbanEmergencyAddressing2024] , as well as road traffic collisions and soaring rates of child and adult obesity and mental illness.
 
 Biodiversity loss and the resulting ecosystem collapse is a serious national security threat [@zotero-item-7431] .
 
@@ -24,9 +24,14 @@ Cities across Europe largely failed to meet these targets [@CommissionWarnsGerma
 
 In early 2018, a 7 year legal case forced the government to take the "fastest route to compliance" to address the exceedances [@GovernmentLosesClean2018] .
 
-Defras JAQU decided to push for CAZs [@jaquUKPlanTackling2017]. Despite continued uncertainty over real world vehicle emissions [@reidNissanRefusesGovernment2019], road transport contributing \>1/5 of all CO~2~ emissions (today it is \>1/4 [@GreenhouseGasEmissions]) and an acknowledgement that the world faced a climate emergency [@UKParliamentDeclares2019] and a study by Eunomia in 2017 for the Walk Wheel Cycle trust (then called Sustrans) estimating switching 10% of car trips to cycling and walking would reduce NO~2~ by 5 times more than CAZs [@zotero-item-7409] as well as reducing Particulate Matter (PM), something the current CAZs have been poor at addressing [@parliament2026] .
+Defras JAQU decided to push for CAZs [@jaquUKPlanTackling2017]. Despite:
 
-Other studies have investigated the effect of modal shift on Air Quality by modelling changes in road emissions resulting from modelled or measured modal shift[@matajsHowDoesRoad2026] [@muellerChangingUrbanDesign2020a], which fits with the focus on directly reducing emissions from the road. The complicating factor in all these studies is the level of modal shift, which is why active travel is often ignored as the feasibility of this is often disputed often as a result of "motonormativity" [@walkerMotornomativityHowSocial2022].
+- Continued uncertainty over real world vehicle emissions [@reidNissanRefusesGovernment2019]
+- Road transport contributing \>1/5 of all CO~2~ emissions (today it is \>1/4 [@GreenhouseGasEmissions])
+- An acknowledgement that the world faced a climate emergency [@UKParliamentDeclares2019]
+- A study estimating switching 10% of car trips to cycling and walking would reduce NO~2~ by 5 times more than CAZs [@zotero-item-7409] as well as reducing Particulate Matter (PM), something the current CAZs have been poor at addressing [@parliament2026] .
+
+Other studies have investigated the effect of modal shift on Air Quality by modelling changes in road emissions resulting from modelled or measured modal shift[@matajsHowDoesRoad2026] [@muellerChangingUrbanDesign2020a], which fits with the focus on directly reducing emissions from the road. The complicating factor in all these studies is the level of modal shift, which is why active travel is often ignored as the feasibility of this is disputed, often as a result of "motonormativity" [@walkerMotornomativityHowSocial2022].
 
 ### Hypothosis
 
