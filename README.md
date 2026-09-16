@@ -5,7 +5,7 @@
 London’s Ultra Low Emission Zone (ULEZ), introduced in central London in
 April 2019 and expanded to inner London in 2021 and London-wide in 2023
 (GLA 2025), cut NO<sub>2</sub> at central London traffic sites by around
-20% in its first three months (Tong et al. 2025), though the average
+20% in its first three months (Tong et al. 2025). However, the average
 effect across the city has been small (Ma, Graham, and Stettler 2021)
 and no change in NO<sub>2</sub> is detectable from the 2023 expansion
 (Tong et al. 2025). CAZs have been far less successful (Parliament
