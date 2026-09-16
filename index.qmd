@@ -52,7 +52,7 @@ Other studies have investigated the effect of modal shift on Air Quality by mode
 
 Little attention has been paid to the potential impacts of physical changes to urban space reducing emissions and improving air quality, in-line with government policy. The hypothesis that will be tested during this PhD is the following: 
 
-> Road space reallocation is a more effective strategy for reducing urban air pollution than simply relying on vehicle emission controls, both by directly reducing traffic volumes and the increases in source receptor distance that would follow.
+> Road space reallocation is a more effective strategy for reducing urban air pollution than relying on vehicle emission controls, both by directly reducing traffic volumes and the increases in source-receptor distance that would follow.
 
 NO~2~ levels fall with distance to source, as shown in Figure 1, which shows a calculation based on the NO~2~ "Fall off with distance" calculator [@NO2FallDistance] estimating the reduction in NO~2~ concentrations at buildings if the kerb is moved 2m away from the building on each side of the road and kerbside concentrations remain the same.
 
