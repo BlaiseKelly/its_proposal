@@ -2,7 +2,7 @@
 
 ### Summary
 
-In recent years the progress Londons ULEZ has made in reducing
+In recent years the progress London’s ULEZ has made in reducing
 NO<sub>2</sub> has been well publicised. CAZs have been far less
 successful (Parliament 2026). The mechanisms behind this fall are the
 result of legislative work that began in 2001. These NO<sub>2</sub>
@@ -34,7 +34,7 @@ national security threat (Government 2026) .
 
 Road transport is responsible for nearly 1/3 of UK’s total
 CO<sub>2</sub> emissions (DESNZ 2026) which affects health, building
-operation \[Kelly (2019b)\](Fuller 2019) and climate change.
+operation (Kelly 2019b) (Fuller 2019) and climate change.
 
 Whilst violent crime is the lowest since records began (ONS 2026), motor
 vehicle traffic is the highest it has been in more than 40 years (DfT
@@ -59,7 +59,7 @@ because of systemic fraud by vehicle manufacturers (Jong and Linde 2022)
 In early 2018, a 7 year legal case forced the government to take the
 “fastest route to compliance” to address the exceedances (BBC 2018) .
 
-Defras JAQU decided to push for CAZs (JAQU 2017). Despite:
+Defra’s JAQU decided to push for CAZs (JAQU 2017). Despite:
 
 - Continued uncertainty over real world vehicle emissions (Reid 2019)
 - Road transport contributing \>1/5 of all CO<sub>2</sub> emissions
@@ -79,7 +79,7 @@ which is why active travel is often ignored as the feasibility of this
 is disputed, often as a result of “motonormativity” (Walker, Tapp, and
 Davis 2022).
 
-### Hypothosis
+### Hypothesis
 
 Little attention has been paid to the potential benefits from the
 physical changes to urban space that are now recognised as essential in
@@ -159,13 +159,14 @@ part of the Roadside Urban Air Quality Monitoring Network sites (~350).
 - Quantify urban public space in cities and the proportion given to
   roads, using LiDAR, OSM, Land registry and OS data.
 - Get flow and speed data to estimate emissions from roads.
-- Meteo data from ERA5 to calculate neccesary meteo parameters for model
-- Combine data in the USEPAs open access AERMOD with an R shell
+- Meteo data from ERA5 to calculate necessary meteo parameters for model
+- Combine data in the US EPA’s open access AERMOD with an R shell
   (Kelly 2026) that enables domain tilling and run in parallel to model
   concentrations at sensitive receptors (locations where limit values
   apply/maybe all buildings).
-- Reduce road widths in the model with minimal to agressive approach but
-  leaving road emissions the same and model concentrations at receptors.
+- Reduce road widths in the model with minimal to aggressive approach
+  but leaving road emissions the same and model concentrations at
+  receptors.
 
 #### Additional
 
@@ -210,15 +211,15 @@ part of the Roadside Urban Air Quality Monitoring Network sites (~350).
 - Copernicus Atmospheric Modelling Service (CAMS) for historic
   background pollution data (ADS 2026)
 - ERA5 historic meteo data e.g. irradiation, temperature, wind speed,
-  soil/ground parameters (ERA5 2026)
-- Remote albedo for greenspace analysis (ERA5 2026)
+  soil/ground parameters (C3S 2018)
+- Remote albedo for greenspace analysis (C3S 2018)
 
 ### My experience
 
 Thesis in 2010 using paper road plans and traffic signal data from
 Greater Manchester Transport Unit and with the help of basic network
 created by Simon Box Uni Portsmouth drew the road network around
-Chorlton-cum-hardy and setup a basic microsimulation model using
+Chorlton-cum-Hardy and setup a basic microsimulation model using
 S-Paramics. Sent two traffic signal scenarios to University of
 Strathclyde to quantify the change in emissions between the two
 scenarios.
@@ -277,6 +278,13 @@ Bretschger, Lucas. 2021. “Getting the Costs of Environmental Protection
 Right: Why Climate Policy Is Inexpensive in the End.” *Ecological
 Economics* 188 (October): 107116.
 <https://doi.org/10.1016/j.ecolecon.2021.107116>.
+
+</div>
+
+<div id="ref-era52026" class="csl-entry">
+
+C3S. 2018. “ERA5 Hourly Data on Single Levels from 1940 to Present.”
+<https://doi.org/10.24381/cds.adbb2d47>.
 
 </div>
 
@@ -339,13 +347,6 @@ EC. 2017. “Commission warns Germany, France, Spain, Italy and the United
 Kingdom of continued air pollution breaches.” Text. European
 Commission - European Commission. February 15, 2017.
 <https://ec.europa.eu/detail/pt/ip_17_238>.
-
-</div>
-
-<div id="ref-era52026" class="csl-entry">
-
-ERA5. 2026. “CAMS European Air Quality Reanalyses.”
-<https://ads.atmosphere.copernicus.eu/datasets/cams-europe-air-quality-reanalyses?tab=overview>.
 
 </div>
 
