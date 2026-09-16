@@ -8,12 +8,12 @@ April 2019 and expanded to inner London in 2021 and London-wide in 2023
 20% in its first three months (Tong et al. 2025). However, the average
 effect across the city has been small (Ma, Graham, and Stettler 2021)
 and no change in NO<sub>2</sub> is detectable from the 2023 expansion
-(Tong et al. 2025). CAZs have been far less successful (Parliament
-2026). The mechanisms behind this fall are the result of legislative
-work that began in 2001. These NO<sub>2</sub> policies have done little
-to address other collectively more serious urban issues. But is it
-possible to reduce NO<sub>2</sub> faster whilst also addressing the
-Urban Emergency? When active travel is mentioned in relation to air
+(Tong et al. 2025). Clean Air Zones (CAZs) have been far less successful
+(Parliament 2026). The mechanisms behind this fall are the result of
+legislative work that began in 2001. These NO<sub>2</sub> policies have
+done little to address other collectively more serious urban issues. But
+is it possible to reduce NO<sub>2</sub> faster whilst also addressing
+the Urban Emergency? When active travel is mentioned in relation to air
 pollution conversations centre around traffic models and opinions on
 modal shift potential and it is mostly left out of the discussion as too
 complex. Yet by simply reducing road width to free up urban space for
