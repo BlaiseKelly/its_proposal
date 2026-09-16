@@ -12,3 +12,6 @@
 
 # Zotero and Word temporary files
 ~$*
+
+# Rendered deliverables (published as release assets, not tracked)
+*.docx
