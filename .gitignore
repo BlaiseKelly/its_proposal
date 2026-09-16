@@ -1,5 +1,6 @@
-# README.md is generated from README.qmd: edit the .qmd and run
-# `quarto render README.qmd`, or your change to the .md gets overwritten.
+# index.qmd is the source; docs/ is the built website (committed deliberately).
+# Edit the .qmd and run `quarto render` from the repo root to rebuild docs/.
+# README.md is a hand-written pointer to the published site, not generated.
 
 # Quarto build artefacts
 .quarto/
@@ -15,3 +16,6 @@
 
 # Rendered deliverables (published as release assets, not tracked)
 *.docx
+
+/.quarto/
+**/*.quarto_ipynb

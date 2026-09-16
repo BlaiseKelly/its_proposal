@@ -1,0 +1,11 @@
+---
+title: "impacts of street space allocation on health and active travel potential"
+subtitle: "PhD Proposal"
+format: clean-revealjs
+author: "Blaise Kelly<br><br><span style='font-size:0.7em'>Online version: <a href='https://blaisekelly.github.io/its_proposal'>blaisekelly.github.io/its_proposal</a></span><br><span style='font-size:0.7em'>Source code: <a href='https://github.com/blaisekelly/its_proposal'>github.com/blaisekelly/its_proposal</a></span>"
+date: last-modified
+bibliography: references.bib
+---
+
+## Introduction
+
