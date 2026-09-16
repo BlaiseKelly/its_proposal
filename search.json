@@ -1,0 +1,44 @@
+[
+  {
+    "objectID": "slides.html#introduction",
+    "href": "slides.html#introduction",
+    "title": "Quarto revealjs slides",
+    "section": "Introduction",
+    "text": "Introduction\nWhy use Quarto with continuous deployment?\n\nBuild slides in plain text (Markdown / .qmd files)\nRender to revealjs with a single command\nGitHub Actions automatically rebuilds and deploys on every push\nNo manual uploads — always up to date\nBuilt-in support for citations, tables, code, maths, and diagrams"
+  },
+  {
+    "objectID": "slides.html#how-to-get-started",
+    "href": "slides.html#how-to-get-started",
+    "title": "Quarto revealjs slides",
+    "section": "How to get started",
+    "text": "How to get started\n\nClick Use this template on GitHub\nEnable Pages: Settings → Pages → Source: GitHub Actions\nEdit slides.qmd with your content\nPush — your slides are live in ~30 seconds\n\nThis template includes:\n\nclean-revealjs theme (bundled in _extensions/)\nSelf-contained HTML release workflow\nreferences.bib ready for citations"
+  },
+  {
+    "objectID": "slides.html#two-column-layouts",
+    "href": "slides.html#two-column-layouts",
+    "title": "Quarto revealjs slides",
+    "section": "Two-column layouts",
+    "text": "Two-column layouts\n\n\nText and bullet points on the left:\n\nFirst point\nSecond point\nEmphasised text\n\n\nA figure or code on the right:\nprint(\"Hello Quarto!\")"
+  },
+  {
+    "objectID": "slides.html#tables-with-citations",
+    "href": "slides.html#tables-with-citations",
+    "title": "Quarto revealjs slides",
+    "section": "Tables with citations",
+    "text": "Tables with citations\n\n\n\nFeature\nStatus\n\n\n\n\nAuto-deploy\n✓\n\n\nCitations\n(peng2011?)\n\n\nExecutable code\nOptional\n\n\nSelf-contained export\n✓"
+  },
+  {
+    "objectID": "slides.html#next-steps",
+    "href": "slides.html#next-steps",
+    "title": "Quarto revealjs slides",
+    "section": "Next steps",
+    "text": "Next steps\n\nReplace placeholder text with your content\nUpdate references.bib with your citations\nCustomise _quarto.yml for your project\nAdd your name and ORCID to the YAML header"
+  },
+  {
+    "objectID": "slides.html#references",
+    "href": "slides.html#references",
+    "title": "Quarto revealjs slides",
+    "section": "References",
+    "text": "References"
+  }
+]
