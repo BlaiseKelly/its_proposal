@@ -1,0 +1,14 @@
+# README.md is generated from README.qmd: edit the .qmd and run
+# `quarto render README.qmd`, or your change to the .md gets overwritten.
+
+# Quarto build artefacts
+.quarto/
+*_files/
+
+# Editor / OS
+.DS_Store
+.Rproj.user/
+.Rhistory
+
+# Zotero and Word temporary files
+~$*
