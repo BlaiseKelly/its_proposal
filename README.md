@@ -2,22 +2,27 @@
 
 ### Summary
 
-In recent years the progress London’s ULEZ has made in reducing
-NO<sub>2</sub> has been well publicised. CAZs have been far less
-successful (Parliament 2026). The mechanisms behind this fall are the
-result of legislative work that began in 2001. These NO<sub>2</sub>
-policies have done little to address other collectively more serious
-urban issues. But is it possible to reduce NO<sub>2</sub> faster whilst
-also addressing the Urban Emergency? When active travel is mentioned in
-relation to air pollution conversations centre around traffic models and
-opinions on modal shift potential and it is mostly left out of the
-discussion as too complex. Yet by simply reducing road width to free up
-urban space for walking, wheeling, cycling, playing and
-plants/trees/crops, the source receptor distance is increased, road
-traffic is constrained and NO<sub>2</sub> at receptors is significantly
-reduced. This study proposes an alternative to the car modelling
-approach: model the changes in air pollution exposure at sensitive
-receptors as a result of road space reallocation first.
+London’s Ultra Low Emission Zone (ULEZ), introduced in central London in
+April 2019 and expanded to inner London in 2021 and London-wide in 2023
+(GLA 2025), cut NO<sub>2</sub> at central London traffic sites by around
+20% in its first three months (Tong et al. 2025), though the average
+effect across the city has been small (Ma, Graham, and Stettler 2021)
+and no change in NO<sub>2</sub> is detectable from the 2023 expansion
+(Tong et al. 2025). CAZs have been far less successful (Parliament
+2026). The mechanisms behind this fall are the result of legislative
+work that began in 2001. These NO<sub>2</sub> policies have done little
+to address other collectively more serious urban issues. But is it
+possible to reduce NO<sub>2</sub> faster whilst also addressing the
+Urban Emergency? When active travel is mentioned in relation to air
+pollution conversations centre around traffic models and opinions on
+modal shift potential and it is mostly left out of the discussion as too
+complex. Yet by simply reducing road width to free up urban space for
+walking, wheeling, cycling, playing and plants/trees/crops, the source
+receptor distance is increased, road traffic is constrained and
+NO<sub>2</sub> at receptors is significantly reduced. This study
+proposes an alternative to the car modelling approach: model the changes
+in air pollution exposure at sensitive receptors as a result of road
+space reallocation first.
 
 ### Background
 
@@ -259,7 +264,7 @@ Ballinger, Ann, Tanzir Chowdhury, George Cole, and Olly Jamieson. 2017.
 
 <div id="ref-GovernmentLosesClean2018" class="csl-entry">
 
-BBC. 2018. “Government Loses Clean Air Court Case,” February 21, 2018.
+BBC. 2018. “Government Loses Clean Air Court Case.”
 <https://www.bbc.com/news/science-environment-43141467>.
 
 </div>
@@ -267,8 +272,7 @@ BBC. 2018. “Government Loses Clean Air Court Case,” February 21, 2018.
 <div id="ref-UKParliamentDeclares2019" class="csl-entry">
 
 ———. 2019. “UK Parliament Declares Climate Change Emergency.” *BBC News:
-UK Politics*, May 1, 2019.
-<https://www.bbc.co.uk/news/uk-politics-48126677>.
+UK Politics*. <https://www.bbc.co.uk/news/uk-politics-48126677>.
 
 </div>
 
@@ -374,6 +378,14 @@ Charges Backed.” BBC News. January 23, 2025.
 
 </div>
 
+<div id="ref-glaLondonWideULEZOneYear2025" class="csl-entry">
+
+GLA. 2025. “London-Wide Ultra Low Emission Zone One Year Report.”
+Greater London Authority.
+<https://www.london.gov.uk/programmes-strategies/environment-and-climate-change/environment-and-climate-change-publications/london-wide-ultra-low-emission-zone-one-year-report>.
+
+</div>
+
 <div id="ref-zotero-item-7431" class="csl-entry">
 
 Government, HM. 2026. “Global Biodiversity Loss, Ecosystem Collapse and
@@ -439,6 +451,15 @@ Sciences: The IES.
 
 ———. 2026. “Aermodr R Package.”
 <https://github.com/activeanalytics-nl/aermodr>.
+
+</div>
+
+<div id="ref-maHasUltraLow2021" class="csl-entry">
+
+Ma, Liang, Daniel J. Graham, and Marc E. J. Stettler. 2021. “Has the
+Ultra Low Emission Zone in London Improved Air Quality?” *Environmental
+Research Letters* 16 (12): 124001.
+<https://doi.org/10.1088/1748-9326/ac30c1>.
 
 </div>
 
@@ -509,6 +530,16 @@ Emissions.” *The Guardian: Environment*, July 23, 2019.
 Schapps. 2020. “£2 Billion Package to Create New Era for Cycling and
 Walking.” GOV.UK. May 9, 2020.
 <https://www.gov.uk/government/news/2-billion-package-to-create-new-era-for-cycling-and-walking>.
+
+</div>
+
+<div id="ref-tongFurtherImprovement2025" class="csl-entry">
+
+Tong, Chengxu, Yuqing Dai, Matthew Cole, Robert J. R. Elliott, Suzanne
+E. Bartington, Bowen Liu, and Zongbo Shi. 2025. “Further Improvement in
+London’s Air Quality Demands More Than the Ultra Low Emission Zone
+Policy.” *Npj Clean Air* 1 (1): 29.
+<https://doi.org/10.1038/s44407-025-00030-9>.
 
 </div>
 
