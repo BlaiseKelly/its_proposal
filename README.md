@@ -3,4 +3,4 @@
 
 See https://blaisekelly.github.io/its_proposal/ for proposal
 
-and https://blaisekelly.github.io/its_proposal/slides.html#/title-slide for slides
+and https://blaisekelly.github.io/its_proposal/slides.html#/title-slide for slides.
