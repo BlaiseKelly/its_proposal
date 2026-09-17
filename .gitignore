@@ -1,21 +1,6 @@
-# index.qmd is the source; docs/ is the built website (committed deliberately).
-# Edit the .qmd and run `quarto render` from the repo root to rebuild docs/.
-# README.md is a hand-written pointer to the published site, not generated.
-
-# Quarto build artefacts
-.quarto/
-*_files/
-
-# Editor / OS
-.DS_Store
-.Rproj.user/
+.Rproj.user
 .Rhistory
-
-# Zotero and Word temporary files
-~$*
-
-# Rendered deliverables (published as release assets, not tracked)
-*.docx
-
+.RData
+.Ruserdata
 /.quarto/
 **/*.quarto_ipynb
