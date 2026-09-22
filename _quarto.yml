@@ -3,6 +3,7 @@ project:
   output-dir: docs
   render:
     - index.qmd
+    - plan.qmd
     - slides.qmd
 
 execute:
@@ -15,5 +16,7 @@ website:
     left:
       - text: "Home"
         href: index.qmd
+      - text: "Plan"
+        href: plan.qmd
       - text: "Slides"
         href: slides.qmd
