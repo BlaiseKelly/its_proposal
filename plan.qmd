@@ -1,0 +1,95 @@
+---
+title: "PhD Application Plan and Key Dates"
+subtitle: "WRDTP Studentship 2027/28 (Cohort 4)"
+format: html
+---
+
+## Overview
+
+ 
+
+This document outlines key official dates, application milestones, and task checklists for the White Rose Doctoral Training Partnership (WRDTP) studentship competition for entry in October 2027.
+
+ 
+
+The primary target is the Advanced Quantitative Methods (AQM) Award, with parallel eligibility for the Advanced Data Analytics (ADA) Award and standard Pathway Awards.
+
+ 
+
+## Key Official Dates
+
+ 
+
+* **Wednesday 30 September 2026 (10:00 to 11:00)**: WRDTP Collaborative Awards briefing session for supervisors.
+
+* **Wednesday 7 October 2026 (11:00 to 12:00)**: WRDTP staff briefing session on Pathway, AQM, and ADA awards.
+
+* **Thursday 8 October 2026 (17:30 to 18:30)**: WRDTP applicant briefing session for prospective students.
+
+* **Wednesday 20 January 2027 (17:00 UK time)**: Institutional deadline for applicants to submit completed studentship applications to the host university.
+
+* **Wednesday 24 February 2027**: Institutional deadline for universities to submit official candidate nominations to the WRDTP.
+
+* **April to May 2027**: WRDTP funding decisions announced.
+
+* **October 2027**: Doctoral programme commencement.
+
+ 
+
+## Action Checklist
+
+ 
+
+### Phase 1: Interview and Programme Selection
+
+ 
+
+- [x] Review WRDTP studentship guidelines, assessment criteria, and institutional best practice documents.
+
+- [x] Schedule internal academic interview with prospective supervisory team.
+
+- [ ] Conduct academic interview and research discussion.
+
+- [ ] Complete internal interview assessment records required by the host university.
+
+- [ ] Check masters transcripts to determine study route (3.5 year PhD or 3.75 year PGCert and PhD).
+
+ 
+
+### Phase 2: Briefing Sessions and Study Application
+
+ 
+
+- [ ] Attend WRDTP staff or applicant briefing sessions (October 2026).
+
+- [ ] Submit formal application for doctoral study through the university admissions portal.
+
+ 
+
+### Phase 3: Proposal Development
+
+ 
+
+- [ ] Frame core research questions within the ESRC social science remit (environmental equity, mode choice, and public policy evaluation).
+
+- [ ] Draft the dedicated AQM and ADA methodological justification (causal inference, big data integration, and open-source dispersion tools).
+
+- [ ] Structure the doctoral research plan around three academic papers and a three-month research in practice placement.
+
+- [ ] Complete statements on research ethics, positionality, and project contingencies.
+
+ 
+
+### Phase 4: Institutional Nomination
+
+ 
+
+- [ ] Complete all fields of the official student application form, observing strict word limits.
+
+- [ ] Complete the artificial intelligence declaration and usage statement.
+
+- [ ] Supervisory team prepares nomination form and Development Needs Analysis.
+
+- [ ] Submit final application to the host university before Wednesday 20 January 2027 (17:00 UK time).
+
+- [ ] University submits final nomination to the WRDTP by Wednesday 24 February 2027.
