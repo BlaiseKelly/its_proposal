@@ -6,38 +6,27 @@ bibliography: references.bib
 
 ### Summary
 
-London's Ultra Low Emission Zone (ULEZ), introduced in central London in April 2019 and expanded to inner London in 2021 and London-wide in 2023 [@glaLondonWideULEZOneYear2025], cut NO~2~ at central London traffic sites by around 20% in its first three months [@tongFurtherImprovement2025].
-<!-- Added as interesting but commented out as not relevant to main argument -->
-<!-- However, the average effect across the city appears to be small [@maHasUltraLow2021] and no change in NO~2~ has been observed from the 2023 [@tongFurtherImprovement2025]. -->
-<!-- Commented out this sentence as not relevant to the main argument (RL): -->
-<!-- The mechanisms behind this fall are the result of legislative work that began in 2001. -->
-Outside central London, there is little evidence of that ULEZ and Clean Air Zones (CAZs) (7 of which have been implemented) in other cities have been effective in one of the main goals: reducing NO~2~ levels.
-Furthermore, these policies have done little to address other collectively more serious urban issues which should also be considered given their public health rationale. 
+London's Ultra Low Emission Zone (ULEZ), introduced in central London in April 2019 and expanded to inner London in 2021 and London-wide in 2023 [@glaLondonWideULEZOneYear2025], cut NO~2~ at central London traffic sites by around 20% in its first three months [@tongFurtherImprovement2025]. <!-- Added as interesting but commented out as not relevant to main argument --> <!-- However, the average effect across the city appears to be small [@maHasUltraLow2021] and no change in NO~2~ has been observed from the 2023 [@tongFurtherImprovement2025]. --> <!-- Commented out this sentence as not relevant to the main argument (RL): --> <!-- The mechanisms behind this fall are the result of legislative work that began in 2001. --> Outside central London, there is little evidence that ULEZ and Clean Air Zones (CAZs) (7 of which have been implemented) in other cities have been effective in one of the main goals: reducing NO~2~ levels. Furthermore, these policies have done little to address other collectively more serious urban issues which should also be considered given their public health rationale.
 
-This raises a key question: is it possible to reduce NO~2~ faster whilst also addressing other urban challenges that collectively have a bigger impact on public health, including road traffic casualties, obesity, and poor mental health? Modal shift to active modes has great potential to tackle each of these issues, but is mostly left out of the discussion around CAZ-type policies. Yet large co-benefits to be found in joint active travel and air quality policies. For example, by simply reducing road widths to free up urban space for active travel, the source-receptor distance is increased, road traffic is constrained and NO~2~ can be reduced.
-<!-- Citation needed for the claim above (RL). -->
-Furthermore, the reclaimed street space could support activities such as walking, wheeling, cycling, playing and plants/trees/crops which have been shown to have large health benefits.
+This raises a key question: is it possible to reduce NO~2~ faster whilst also addressing other urban challenges that collectively have a bigger impact on public health, including road traffic casualties, obesity, and poor mental health? Modal shift to active modes has great potential to tackle each of these issues, but is mostly left out of the discussion around CAZ-type policies. Yet large co-benefits to be found in joint active travel and air quality policies. For example, by reducing road widths to free up urban space for active travel, the source-receptor distance is increased, road traffic is constrained and NO~2~ can be reduced. <!-- Citation needed for the claim above (RL). --> Furthermore, the reclaimed street space could support activities such as walking, wheeling, cycling, playing and plants/trees/crops which have been shown to have large health benefits.
 
-This study proposes an alternative to the car modelling approach:
-<!-- Citation needed to explain what the car modelling approach is (RL). -->
-model the changes in air pollution exposure at the level of sensitive receptors as a result of policies including road space reallocation which is where the negative impacts of emissions are most felt, rather than focusing solely on vehicle emissions.
+This study proposes to model the changes in air pollution exposure at the level of sensitive receptors as a result of policies including road space reallocation which is where the negative impacts of emissions are most felt, rather than focusing solely on vehicle emissions.
 
 ### Background
 
 Society faces severe urban environmental challenges. Cities are not only a major driver of climate change they are extremely vulnerable to its effects, such as sea level rise and extreme weather. 80% of the population of developed countries live in cities and often are exposed to environmental risks such as noise, air pollution [@mollytooherruddUrbanEmergencyAddressing2024], as well as road traffic collisions and soaring rates of child and adult obesity and mental illness.
 
-Biodiversity loss and the resulting ecosystem collapse is a serious national security threat [@zotero-item-7431] .
-Road transport is responsible for nearly 1/3 of UK's total CO~2~ emissions [@GreenhouseGasEmissions] which affects health, building operation [@OutdoorCO2Pollution2019] [@fullerCO2VariationsPlants2019] and climate change.
+Biodiversity loss and the resulting ecosystem collapse is a serious national security threat [@zotero-item-7431] . Road transport is responsible for nearly 1/3 of UK's total CO~2~ emissions [@GreenhouseGasEmissions] which affects health, building operation [@OutdoorCO2Pollution2019] [@fullerCO2VariationsPlants2019] and climate change.
 
-Whilst violent crime is the lowest since records began [@HomicideEnglandWales], motor vehicle traffic is the highest it has been in more than 40 years [@RoadTrafficStatistics]. Girls under 16 now walk on average 70 miles less per year than they did in 2004 [@NationalTravelSurvey2026] Children's play opportunities are well below where needed.
-<!-- how far did they walk each year in 2004? (RL) -->
-The two leading external causes of death of children are road traffic collisions and suicide [@zotero-item-7421] .
+Many people drive instead of walk because they don't feel safe on streets, yet violent crime is the lowest since records began [@HomicideEnglandWales] but motor vehicle traffic is the highest it has ever been [@RoadTrafficStatistics]. In 2025 girls under 20 walked on average 70 miles (27%) less per year than the 264 miles they did in 2004 [@NationalTravelSurvey2026] Children's play opportunities are well below where needed [@firth2025]. The two leading external causes of death of children are road traffic collisions and suicide [@zotero-item-7421] .
 
-Air pollution is another major urban challenge. Air pollution policy in the UK has historically focused on legislating vehicle emissions. The reductions in NO~2~ seen in the last few years are the result of work that began at the start of the Millennium [@NewsEULaunches], that was passed in the EU in 2008 and came into effect in June 2010 [@Directive2008502008] .
+One of the major urban challenges is Air pollution. Air pollution policy in the UK has historically focused on legislating vehicle emissions. The reductions in NO~2~ seen in the last few years are the result of work that began at the start of the Millennium [@NewsEULaunches], that was passed in the EU in 2008 and came into effect in June 2010 [@Directive2008502008] .
 
-Cities across Europe largely failed to meet these targets [@CommissionWarnsGermany] because of systemic fraud by vehicle manufacturers [@jong2022] .
+Legislation can be a powerful tool in making change, but used in isolation can also have unintended consequences. In making EU legislation on vehicle CO~2~ emissions less burdensome for manufacturers a mass element was added which led to the proliferation of SUVs, slowing the emissions reductions it was designed to create and creating other problems for cities[@te2019][@te2011] .
 
-In early 2018, a 7 year legal case forced the government to take the "fastest route to compliance" to address the exceedances [@GovernmentLosesClean2018] .
+In a similar way NO~2~ legislation did not have much effect for nearly 10 years, with cities across Europe largely failed to meet these targets [@CommissionWarnsGermany] because instead of reducing emissions, manufacturers chose to defraud the system [@jong2022] .
+
+In early 2018, a 7 year legal case brought by Client Earth forced the government to take the "fastest route to compliance" to address the exceedances [@GovernmentLosesClean2018] .
 
 Defra's Joint Air Quality Unit (JAQU) decided to push for CAZs as a narrowly-focussed solution to air quality issues [@jaquUKPlanTackling2017]. This was despite:
 
@@ -46,11 +35,19 @@ Defra's Joint Air Quality Unit (JAQU) decided to push for CAZs as a narrowly-foc
 - An acknowledgement that the world faced a climate emergency [@UKParliamentDeclares2019]
 - A study estimating switching 10% of car trips to cycling and walking would reduce NO~2~ by 5 times more than CAZs [@zotero-item-7409] as well as reducing Particulate Matter (PM), something the current CAZs have been poor at addressing [@parliament2026] .
 
-Other studies have investigated the effect of modal shift on Air Quality by modelling changes in road emissions resulting from modelled or measured modal shift[@matajsHowDoesRoad2026] [@muellerChangingUrbanDesign2020a], which fits with the focus on directly reducing emissions from the road. The complicating factor in all these studies is the level of modal shift, which is why active travel is often ignored as the feasibility of this is disputed, often as a result of "motonormativity" [@walkerMotornomativityHowSocial2022].
+Other studies have investigated the effect of modal shift on Air Quality by modelling changes in road emissions resulting from modelled or measured modal shift[@matajsHowDoesRoad2026] [@muellerChangingUrbanDesign2020a], which fits with the focus on directly reducing emissions from the road. The complicating factor in all these studies is the level of modal shift, one of the reasons active travel is often ignored as the feasibility of this is disputed, often as a result of "motonormativity" [@walkerMotornomativityHowSocial2022].
+
+It is often thought reducing space for vehicles on one road is like blocking a river, neighbouring roads, which might not be designed with the same capacity become overloaded, like blocking a river. However, as far back as 1994 the government was acknowledging evidence of induced traffic [@sactra1994]. In 1998 evidence was presented on what is now termed traffic evaporation[@cairns1998] demonstrating with more than 100 examples from around the world how removing space for vehicles reduces traffic on the road and in the wider area. Other studies have come to similar conclusions[@sloman2017] but the concept still remains divisive with few follow up studies[@goodwin2016]. The introduction of Low Traffic Neighbourhoods (LTN) in London and other cities was an opportunity to study this and the results concur, showing traffic and pollutant reductions in the LTNs as well as on surrounding roads [@yang2022][@khreis2026][@thomas2023][@lambethcouncil2021][@whelan2024].
+
+The cost of living continues to be one of the most pressing political issues. The shifts from active to motorised modes that has happened over the past century in most cities has had significant negative cost implications for the public in cities, and there are potentially huge cost savings when this trend is reversed [@hendrichCyclingCitiesMode2026]. Whilst public support for road pricing is generally positive, the benefits are often only seen in official reports and statistics and they send the message that environmental measures mean restrictions and expense [@bretschgerGettingCostsEnvironmental2021]. Manchester chose to spend money originally designated for CAZ on other measures [@GreaterManchesterClean2025] such as one of the the largest segregated cycle networks outside of London [@piddManchesterMakesBeeline2018].
+
+It is sometimes recommended that cycle routes focus on routes through parks and green spaces that avoid heavy traffic and pollution [@epictaskgroup2024 . However, to make cycle routes attractive for everyday journeys, the routes should be as direct and short as possible [@lovelace2016].
+
+Road traffic dispersion models such as ADMS-Roads/Urban are often subject to substantial input data uncertainty. These arise from e.g. simplified source geometry, generalised land-use and boundary-layer parameterisation, limited spatial representativeness of meteorological inputs, and coarse spatial disaggregation of emission inventories. Many models typically represent only road traffic emissions, excluding non-traffic and regional background contributions. There is a huge potential to improve model inputs and automate the model setup.
 
 ### Hypothesis
 
-Little attention has been paid to the potential impacts of physical changes to urban space reducing emissions and improving air quality, in-line with government policy. The hypothesis that will be tested during this PhD is the following: 
+Little attention has been paid to the potential impacts of physical changes to urban space reducing emissions and improving air quality, in-line with government policy. The hypothesis that will be tested during this PhD is the following:
 
 > Road space reallocation is a more effective strategy for reducing urban air pollution than relying on vehicle emission controls, both by directly reducing traffic volumes and the increases in source-receptor distance that would follow.
 
@@ -60,23 +57,38 @@ NO~2~ levels fall with distance to source, as shown in Figure 1, which shows a c
 
 *Figure 1 - Based on the Defra NO~2~ fall off with distance calculator, increasing the distance from a road with a kerbside concentration of 60 μg/m^3^ by 2 metres is estimated to drop the concentration of NO~2~ at the receptor (building) from 39.4 to 34.6 μg/m^3^, a 14% decrease.*
 
-The concept of traffic evaporation also supports our hypothesis. In early 2015, road space removal as part of London's Cycle Superhighway build out seems to have resulted in a 20% and 23% reduction in two roadside NO~2~ monitoring sites in the space of a few months [@3LinkedIn] .
+In early 2015, road space removal as part of London's Cycle Superhighway build out seems to have resulted in a 20% and 23% reduction in two roadside NO~2~ monitoring sites in the space of a few months [@3LinkedIn] .
 
-To facilitate travel during the COVID19 pandemic urban space was reallocated in the form of Emergency "pop-up", or tactical cycle lanes [@PS2BillionPackage]. Despite in some cases only being movable cones these lanes were effective and some were converted to permanent infrastructure e.g. [Stretford in Trafford, 2021](https://www.google.com/maps/@53.4423165,-2.3118749,3a,75y,85.55h,90t/data=!3m8!1e1!3m6!1sM2ZOW26AZy1dssfn7qI7wg!2e0!5s20210101T000000!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D0%26panoid%3DM2ZOW26AZy1dssfn7qI7wg%26yaw%3D85.54594382393394!7i16384!8i8192?entry=ttu&g_ep=EgoyMDI2MDkwOC4wIKXMDSoASAFQAw%3D%3D) and [later in 2025](https://www.google.com/maps/@53.4423566,-2.3118395,3a,75y,85.55h,90t/data=!3m7!1e1!3m5!1sKw0ok_ptQrXaqveMFmWjdA!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D0%26panoid%3DKw0ok_ptQrXaqveMFmWjdA%26yaw%3D85.54594382393394!7i16384!8i8192?entry=ttu&g_ep=EgoyMDI2MDkwOC4wIKXMDSoASAFQAw%3D%3D). Studying how these affected receptor pollutant concentrations is complicated by drastic changes in emissions from roads during this time.
+The majority of air pollution exceedances are along major roads where the 350 Roadside Urban Air Quality Monitoring Network [sites are located](https://docs.google.com/spreadsheets/d/1rL_2SMzHo3cHwMxyB2VJu-YKKZU8_aveLGAonTHpK4Q/edit?usp=sharing). Focusing on these roads could not only reduce air pollution directly at the worst sites, but also have a bigger impact on reducing overall vehicle traffic, through traffic evaporation.
 
-Focusing on these approaches could not only improve air pollution faster, but give cities more control than relying on engine manufacturers as well as delivering a plethora of systems benefits that addresses the urban emergency and also engages the public with visible measures, such as green space to absorb rainfall and reduce heat boost biodiversity, areas to sit/play, walking, cycling routes, space for cafes and restaurants, to make their city more livable.
+Many studies have looked at the benefits of interventions such as filtered permeability/LTNs but few have assessed the impact of altering major city arteries that are responsible for the most air pollution. Placing walking and cycling routes along main roads is more acceptable if the roads have less motor traffic, are less polluted, quieter, cooler and safer.
 
-The cost of living continues to be one of the most pressing political issues. The shifts from active to motorised modes that has happened over the past century in most cities has had significant negative cost implications for the public in cities, and there are potentially huge cost savings when this trend is reversed [@hendrichCyclingCitiesMode2026].
-Whilst public support for road pricing is generally positive, the benefits are often only seen in official reports and statistics and they send the message that environmental measures mean restrictions and expense [@bretschgerGettingCostsEnvironmental2021]. Manchester chose to spend money originally designated for CAZ on other measures [@GreaterManchesterClean2025] such as one of the the largest segregated cycle networks outside of London [@piddManchesterMakesBeeline2018].
+Once proven to be effective through modelling implementation could be as simple as laying some cones out. To facilitate travel during the COVID19 pandemic urban space was reallocated in the form of Emergency "pop-up", or tactical cycle lanes [@PS2BillionPackage], almost overnight. Despite in some cases only being movable cones these lanes were effective and some were converted to permanent infrastructure e.g. [Stretford in Trafford, 2021](https://www.google.com/maps/@53.4423165,-2.3118749,3a,75y,85.55h,90t/data=!3m8!1e1!3m6!1sM2ZOW26AZy1dssfn7qI7wg!2e0!5s20210101T000000!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D0%26panoid%3DM2ZOW26AZy1dssfn7qI7wg%26yaw%3D85.54594382393394!7i16384!8i8192?entry=ttu&g_ep=EgoyMDI2MDkwOC4wIKXMDSoASAFQAw%3D%3D) and [later in 2025](https://www.google.com/maps/@53.4423566,-2.3118395,3a,75y,85.55h,90t/data=!3m7!1e1!3m5!1sKw0ok_ptQrXaqveMFmWjdA!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D0%26panoid%3DKw0ok_ptQrXaqveMFmWjdA%26yaw%3D85.54594382393394!7i16384!8i8192?entry=ttu&g_ep=EgoyMDI2MDkwOC4wIKXMDSoASAFQAw%3D%3D).
 
-<!-- I commented out this next sentence as not central to the main argument and not related to road space reallocation. Will the PhD focus on filtered permeability in addition to road space reallocation? One to think about but I think it's fine to focus just on road space reallocation for now (RL). -->
+Focusing on these approaches could not only improve air pollution faster, but give cities more control than relying on engine manufacturers as well as delivering a plethora of systems benefits that addresses the urban emergency and also engages the public with visible measures, such as green space to absorb rainfall, reduce heat, boost biodiversity, provide areas to sit/play, walking, cycling routes, space for cafes and restaurants, to make their city more livable.
+
+```{=html}
+<!-- I commented out this next sentence as not central to the main argument and not related to road space reallocation. Will the PhD focus on filtered permeability in addition to road space reallocation? One to think about but I think it's fine to focus just on road space reallocation for now (RL). 
+I think there has been a lot of work on filtered permeability. It would be easier to get data for main roads and potentially more impactful.-->
+```
+
 <!-- Cities including Barcelona which implemented ambitious "Superblocks" show that that after they are installed people quickly come around to them and would not go back. Implementing measures that people can see and understand and can save them money quickly can be politically more popular than more charges. -->
 
 ### Methods
 
-The study will develop a dispersion model to estimate the changes in roadside concentrations by modelling only road width changes, keeping the emissions factor for the road the same.
+The study will to characterise each site to be modelled. On the one hand it will build on existing reproducible and open access geospatial tools already created by the student, many of these geospatial tools are underpinned by packages developed by ITS, such as osmextract, osmactive, stplanr and it will also make use of significant advances in geospatial processing such as duckspatial and H3 grids.
 
-Unlike research focussing on filtered neighbourhoods and the Barcelona Superblocks, it will focus on main roads that have been deemed to be the most polluted, those part of the Roadside Urban Air Quality Monitoring Network sites (\~350).
+The modelling package 'aermodr', which is still in its early stages, currently builds and runs self-contained, tileable AERMOD guassian dispersion model runs entirely from open data, for example bypassing AERMET; AERMODs meteo processor with ERA5 reanalysis meteorology inputs. It derives LiDAR and land-use based surface roughness and Monin-Obukhov length. Source geometry is derived from OSM road networks and gridded emissions as source data, and large domains are split into independent tiles — each with its own locally-derived roughness and meteorology, run in parallel — so the model can represent spatially varying surface characteristics as an improvement over a single monolithic AERMOD run. Separate tools enable Chemistry Transport Model (CTM) NetCDF-to-raster conversion, NOAA observational data import, based on the Worldmet R package and plotting functions for evaluating model output against measured concentrations heavily based on the openair and tmap R packages.
+
+The output will be characterisation of the urban space, for example current road/green space area and the differences for various scenarios.
+
+The air pollution modelling outputs will estimate the changes in roadside concentrations by modelling the road width differences.
+
+Whilst the urban space element is the key focus it will probably be helpful and interesting to undertake some modelling to assess vehicle flows/modal shift potential.
+
+Additionally looking at the impact of the "pop-up" cycle lanes roadside sites mentioned above will be part of this research.
+
+Unlike research focusing on filtered neighbourhoods and the Barcelona Superblocks, it will focus on main roads that have been deemed to be the most polluted, those part of the
 
 #### Core analysis
 
@@ -85,21 +97,36 @@ Unlike research focussing on filtered neighbourhoods and the Barcelona Superbloc
 - Meteo data from ERA5 to calculate necessary meteo parameters for model
 - Combine data in the US EPA's open access AERMOD with an R interface [@kellyAermodrPackage2026] that enables domain tilling and run in parallel to model concentrations at sensitive receptors (locations where limit values apply/maybe all buildings).
 - Reduce road widths in the model with minimal to aggressive approach but leaving road emissions the same and model concentrations at receptors.
+- Coupling regional air quality models from the Copernicus ADS/run labelled LOTOS-EUROS [@segers2025].\
+- Tools such as osmextractm osmactive, stplanr, sfnetworks which have been developed by the ITS team.
+- use H3 grid outputs for AERMOD, this enables adaptive resolution e.g. finer near roads and simplification of projection and spatial joining.
 
 #### Additional
 
+```{=html}
 <!-- Is this quantification based on case studies in which road space has been reallocated?
 Is it based on comparing NO~2~ and PM~10~ concentrations in roads with different widths?
 Clarify (RL): -->
+```
+
 - Quantify effect reduced road space has on traffic flows and modify pollutant emissions
-- Apply this to CO~2~ emissions estimates
-- Meteorological normalisation tools for removing the effect of weather from observation data [@grangeRandomForestMeteorological2018]
+- Apply this to CO~2~ emissions estimates\
+- PCT as a framework for cycle route identification.
+- stplanr
+- Meteorological normalisation tools for removing the effect of weather from observation data [@grangeRandomForestMeteorological2018] as well as AQEval [@ropkins2026]
 - Tools such as DuckDB and Apache Arrow for improving efficiency of RAM use.
 
 #### Outcomes
 
-<!-- This first is the key one, should we also add something along the lines of "compared with CAZ type policies" ? -->
-- Calculate impact on all applicable pollutant concentrations at sensitive receptors (NO~2~, PM~10~, PM~2.5~)
+```{=html}
+<!-- This first is the key one, should we also add something along the lines of "compared with CAZ type policies" ?
+In my experience the problem with CAZ type policies is that what happens in real world isn't reflective of the euro standard that is applied to the emissions factor. But it could be one scenario. I am also trying to avoid getting bogged down with traffic model assumptions. We have a road and an emissions factor that represents what is going on now, what happens if vehicles move away from the receptors but the emissions stay the same? In reality it won't remain the same, because something has changed. I think it is likely it will go down because fewer vehicles are using or if the lanes are just narrower (Dutch standards) vehicles will move slower?
+-->
+```
+
+- Calculate impact on all applicable pollutant concentrations at sensitive receptors (NO~2~, PM~10~, PM~2.5~) for the following scenarios:
+  - road emissions factor stays the same
+  - road emissions factor is adjusted to represent various traffic scenarios, congested, reduced speed, euro standards.
 - Calculate urban area reclaimed (km^2^)
 - Quantify potential of increase in cycling and walking based on assumptions of urban space allocation
 - Estimate increase in green space and quantify the effect on urban heat island effect/drainage/biodiversity/human well being
