@@ -1,52 +1,94 @@
 [
   {
-    "objectID": "slides.html#question",
-    "href": "slides.html#question",
-    "title": "impacts of street space allocation on health and active travel potential",
-    "section": "Question",
-    "text": "Question\n“Is legislation and tougher punishments the best way to solve problems”?\nLegislation important for society and most people agree the law should be upheld Scientific process, law is made, people obey, problem is addressed.\nSuccess\n\nSmoking in public spaces\n\nsimple policy\nbusiness loss from smokers\nbusiness gain from non-smokers\npolicing, straight forward, people smoking = fine.\n\n\nNot success\nTougher legislation and harsher punishments are not effective in reducing crime.\nCrime in general - why do people commit crime? - Desperation - lack of alternative means - opportunistic - environmental stressors - air pollution - lead - bordom\nviolent crime, burglary down dramatically - Empowerment of people to prevent, better security - Reduced pollution, particularly Lead"
+    "objectID": "slides.html#social-science-question",
+    "href": "slides.html#social-science-question",
+    "title": "Impacts of street space allocation on health and active travel potential",
+    "section": "Social Science Question",
+    "text": "Social Science Question\n“How successful is a legislative approach in addressing societal problems and how does this relate to efforts to reduce air pollution?”\nLaw is important for maintaining cohesion.\nSuccessful legislation\n\nSmoking in public spaces\n\nsimple policy\nbusiness loss from smokers\nbusiness gain from non-smokers\npolicing, straight forward, people smoking = penalty."
   },
   {
-    "objectID": "slides.html#no2",
-    "href": "slides.html#no2",
-    "title": "impacts of street space allocation on health and active travel potential",
-    "section": "NO2",
-    "text": "NO2\nLegislation on NO2 set in motion 2001\nPositives - Improved vehicle emissions eventually - Once in place raises money for measures such as active travel\nNegatives - Slow to implement - Doesn’t provide an alternative - Open to abuse/difficult to police - Slight increase in vehicle size and weight/Doesn’t address efficiency - Issues with precious metals used in converters - Costs people more money -\nReduced equivalent to &lt;1% a year between 2001 to 2025 with negligible reductions in some places\nWhy do people drive? - Cities have been designed for driving - speed, comfort, weather, convenience, social expectation, perceptions on safety\nWhat is it about driving that causes NO2? - Fuel used - Quantity burnt"
+    "objectID": "slides.html#crime",
+    "href": "slides.html#crime",
+    "title": "Impacts of street space allocation on health and active travel potential",
+    "section": "Crime",
+    "text": "Crime\nOften assumed fear of punishment will stop people committing crime. But the truth is more complex.\nWhy do people commit crime?\n\nDesperation, dependancy e.g. drugs\nLack of alternative means\nOpportunistic\nBordom\nEnvironmental stressors\nAir pollution\nLead\n\nMany crimes e.g. violent, burglary are at lowest levels since records began."
   },
   {
-    "objectID": "slides.html#no2-2",
-    "href": "slides.html#no2-2",
-    "title": "impacts of street space allocation on health and active travel potential",
-    "section": "NO2 2",
-    "text": "NO2 2\nHow can people change their habits? What are the solutions\nPlay space done right for all ages, involving communities etc\nCO2"
+    "objectID": "slides.html#why-is-crime-down",
+    "href": "slides.html#why-is-crime-down",
+    "title": "Impacts of street space allocation on health and active travel potential",
+    "section": "Why is crime down?",
+    "text": "Why is crime down?\n\nMore legislation and tougher penalties\n\n\nEmpowerment of people to prevent e.g. better security options\nBetter diets\nReduced pollution, particularly Lead"
   },
   {
-    "objectID": "slides.html#environmental-justice",
-    "href": "slides.html#environmental-justice",
-    "title": "impacts of street space allocation on health and active travel potential",
-    "section": "Environmental justice",
-    "text": "Environmental justice"
+    "objectID": "slides.html#how-does-this-relate-to-air-pollution",
+    "href": "slides.html#how-does-this-relate-to-air-pollution",
+    "title": "Impacts of street space allocation on health and active travel potential",
+    "section": "How does this relate to air pollution?",
+    "text": "How does this relate to air pollution?\nNO2 legislation in motion in 2001.\nScientific method: introduce a law and people will obey.\nPositives\n\nHas reduced roadside concentrations\nOnce in place raises money for measures such as active travel\n\nNegatives\n\nSlow to implement\nDoesn’t provide an alternative\nOpen to abuse/difficult to police\nSlight increase in vehicle size and weight/Doesn’t address efficiency\nIssues with precious metals used in converters\nCosts people more money\n\nWhy do people drive?\n\nCities have been designed for driving\nspeed, comfort, weather, convenience, social expectation, perceptions on safety"
   },
   {
-    "objectID": "slides.html#introduction",
-    "href": "slides.html#introduction",
-    "title": "impacts of street space allocation on health and active travel potential",
-    "section": "Introduction",
-    "text": "Introduction"
+    "objectID": "slides.html#systems-connection",
+    "href": "slides.html#systems-connection",
+    "title": "Impacts of street space allocation on health and active travel potential",
+    "section": "Systems connection",
+    "text": "Systems connection\nThe relationship between urban challenges"
+  },
+  {
+    "objectID": "slides.html#drop-off",
+    "href": "slides.html#drop-off",
+    "title": "Impacts of street space allocation on health and active travel potential",
+    "section": "Drop-off",
+    "text": "Drop-off"
   },
   {
     "objectID": "slides.html#examples",
     "href": "slides.html#examples",
-    "title": "impacts of street space allocation on health and active travel potential",
+    "title": "Impacts of street space allocation on health and active travel potential",
     "section": "Examples",
     "text": "Examples"
   },
   {
-    "objectID": "slides.html#connections",
-    "href": "slides.html#connections",
-    "title": "impacts of street space allocation on health and active travel potential",
-    "section": "Connections",
-    "text": "Connections\n\n\n\n\n\nflowchart LR\nA[Vehicle mass & size] --&gt; B[Transport Energy]\nA --&gt; F[Road damage & collision risk]\nA --&gt; G[Urban space]\n\nB --&gt; C[Fuel use]\nC --&gt; D[CO2 & air pollution]\nB --&gt; E[Noise]\n\nG --&gt; H[Heat, flooding,\\nbiodiversity loss]\nG --&gt; I[Crime & fear]\n\nD --&gt; J[Public health]\nE --&gt; J\nF --&gt; J\n\nI -. deters .-&gt; K[Walking & cycling]\nK --&gt; J\nK --&gt; L[Reallocate road space]\nL --&gt; B\n\nstyle A fill:#E5E25F\nstyle B fill:#87AB51\nstyle C fill:#3C8937\nstyle D fill:#23772C\nstyle E fill:#B6E6E6"
+    "objectID": "slides.html#comparison",
+    "href": "slides.html#comparison",
+    "title": "Impacts of street space allocation on health and active travel potential",
+    "section": "Comparison",
+    "text": "Comparison\n\n\n\n\nChester road, Manchester\n\n\n\n\n\nVluetensbaan, Utrecht"
+  },
+  {
+    "objectID": "slides.html#approach",
+    "href": "slides.html#approach",
+    "title": "Impacts of street space allocation on health and active travel potential",
+    "section": "Approach",
+    "text": "Approach\n\nLook for examples of existing interventions for causal inference\nModel scenarios using dispersion modelling"
+  },
+  {
+    "objectID": "slides.html#characterising-urban-space",
+    "href": "slides.html#characterising-urban-space",
+    "title": "Impacts of street space allocation on health and active travel potential",
+    "section": "Characterising Urban Space",
+    "text": "Characterising Urban Space\nOffsetting OSM road segment data at 0.5m intervals over LiDAR data to determine the point with the biggest dropoff to characterise the building-building distances and the heights of the surrounding buildings."
+  },
+  {
+    "objectID": "slides.html#aermod",
+    "href": "slides.html#aermod",
+    "title": "Impacts of street space allocation on health and active travel potential",
+    "section": "AERMOD",
+    "text": "AERMOD\nSimplified overview of required inputs for AERMOD and datasets used.\n\n\n\n\n\nflowchart TB\nA[Model]\nG[ERA5] --&gt; B[Meteo] --&gt; A\nH[CAMS] --&gt; C[Background&lt;br&gt;Concentrations] --&gt; A\nI[OSM] --&gt; D[Road&lt;br&gt;Geometry] --&gt; A \nJ[OS] --&gt; D\nK[Traffic data] --&gt; E[Emissions] --&gt; A\nL[LiDAR] --&gt; F[Terrain] --&gt; A\nM[Land use] --&gt; F\n\nstyle A fill:#EDAE49, color:#222, font-size:16px, font-weight:bold border-color:#fffff\nstyle B fill:#00798C, color:#fff, font-size:16px, font-weight:bold\nstyle G fill:#00798C, color:#fff, font-size:16px, font-weight:bold\nstyle C fill:#D1495B, color:#fff, font-size:16px, font-weight:bold\nstyle H fill:#D1495B, color:#fff, font-size:16px, font-weight:bold\nstyle D fill:#66A182, color:#fff, font-size:16px, font-weight:bold\nstyle I fill:#66A182, color:#fff, font-size:16px, font-weight:bold\nstyle J fill:#66A182, color:#fff, font-size:16px, font-weight:bold\nstyle E fill:#2E4057, color:#fff, font-size:16px, font-weight:bold\nstyle K fill:#2E4057, color:#fff, font-size:16px, font-weight:bold\nstyle F fill:#8D96A3, color:#fff, font-size:16px, font-weight:bold\nstyle L fill:#8D96A3, color:#fff, font-size:16px, font-weight:bold\nstyle M fill:#8D96A3, color:#fff, font-size:16px, font-weight:bold"
+  },
+  {
+    "objectID": "slides.html#aermod-1",
+    "href": "slides.html#aermod-1",
+    "title": "Impacts of street space allocation on health and active travel potential",
+    "section": "AERMOD",
+    "text": "AERMOD"
+  },
+  {
+    "objectID": "slides.html#lidar",
+    "href": "slides.html#lidar",
+    "title": "Impacts of street space allocation on health and active travel potential",
+    "section": "LiDAR",
+    "text": "LiDAR"
   },
   {
     "objectID": "index.html",

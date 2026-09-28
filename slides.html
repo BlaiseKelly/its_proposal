@@ -10,8 +10,8 @@
   <meta name="generator" content="quarto-1.8.25">
 
   <meta name="author" content="Blaise Kelly Online version: blaisekelly.github.io/its_proposal Source code: github.com/blaisekelly/its_proposal">
-  <meta name="dcterms.date" content="2026-09-27">
-  <title>impacts of street space allocation on health and active travel potential</title>
+  <meta name="dcterms.date" content="2026-09-28">
+  <title>Impacts of street space allocation on health and active travel potential</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -47,6 +47,7 @@
     }
     .reveal .slide:not(.center) {
       height: 100%;
+      overflow-y: auto;
     }
     .reveal .slide.scrollable {
       overflow-y: auto;
@@ -126,13 +127,23 @@
   <script src="site_libs/quarto-diagram/mermaid.min.js"></script>
   <script src="site_libs/quarto-diagram/mermaid-init.js"></script>
   <link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
+  <link href="site_libs/htmltools-fill-0.5.9/fill.css" rel="stylesheet">
+
+  <script src="site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+
+  <script src="site_libs/d3-4.9.1/d3.min.js"></script>
+
+  <script src="site_libs/sankey-1/sankey.js"></script>
+
+  <script src="site_libs/sankeyNetwork-binding-0.4.1/sankeyNetwork.js"></script>
+
 </head>
 <body class="quarto-light">
   <div class="reveal">
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">impacts of street space allocation on health and active travel potential</h1>
+  <h1 class="title">Impacts of street space allocation on health and active travel potential</h1>
   <p class="subtitle">PhD Proposal</p>
 
 <div class="quarto-title-authors">
@@ -143,48 +154,96 @@ Blaise Kelly<br><br><span style="font-size:0.7em">Online version: <a href="https
 </div>
 </div>
 
-  <p class="date">2026-09-27</p>
+  <p class="date">2026-09-28</p>
 </section>
-<section id="question" class="slide level2">
-<h2>Question</h2>
-<p>“Is legislation and tougher punishments the best way to solve problems”?</p>
-<p>Legislation important for society and most people agree the law should be upheld Scientific process, law is made, people obey, problem is addressed.</p>
-<h4 id="success">Success</h4>
+<section id="social-science-question" class="slide level2">
+<h2>Social Science Question</h2>
+<p><span class="big center">“How successful is a legislative approach in addressing societal problems and how does this relate to efforts to reduce air pollution?”</span></p>
+<p>Law is important for maintaining cohesion.</p>
+<h4 id="successful-legislation">Successful legislation</h4>
 <ul>
 <li>Smoking in public spaces
 <ul>
 <li>simple policy</li>
 <li>business loss from smokers</li>
 <li>business gain from non-smokers</li>
-<li>policing, straight forward, people smoking = fine.</li>
+<li>policing, straight forward, people smoking = penalty.</li>
 </ul></li>
 </ul>
-<h4 id="not-success">Not success</h4>
-<p>Tougher legislation and harsher punishments are not effective in reducing crime.</p>
-<p>Crime in general - why do people commit crime? - Desperation - lack of alternative means - opportunistic - environmental stressors - air pollution - lead - bordom</p>
-<p>violent crime, burglary down dramatically - Empowerment of people to prevent, better security - Reduced pollution, particularly Lead</p>
 </section>
-<section id="no2" class="slide level2">
-<h2>NO2</h2>
-<p>Legislation on NO2 set in motion 2001</p>
-<p>Positives - Improved vehicle emissions eventually - Once in place raises money for measures such as active travel</p>
-<p>Negatives - Slow to implement - Doesn’t provide an alternative - Open to abuse/difficult to police - Slight increase in vehicle size and weight/Doesn’t address efficiency - Issues with precious metals used in converters - Costs people more money -</p>
-<p>Reduced equivalent to &lt;1% a year between 2001 to 2025 with negligible reductions in some places</p>
-<p>Why do people drive? - Cities have been designed for driving - speed, comfort, weather, convenience, social expectation, perceptions on safety</p>
-<p>What is it about driving that causes NO2? - Fuel used - Quantity burnt</p>
+<section id="crime" class="slide level2">
+<h2>Crime</h2>
+<p>Often assumed fear of punishment will stop people committing crime. But the truth is more complex.</p>
+<h4 id="why-do-people-commit-crime">Why do people commit crime?</h4>
+<ul>
+<li>Desperation, dependancy e.g.&nbsp;drugs</li>
+<li>Lack of alternative means</li>
+<li>Opportunistic</li>
+<li>Bordom</li>
+<li>Environmental stressors</li>
+<li>Air pollution</li>
+<li>Lead</li>
+</ul>
+<p>Many crimes e.g.&nbsp;violent, burglary are at <span class="highlight">lowest levels since records began</span>.</p>
 </section>
-<section id="no2-2" class="slide level2">
-<h2>NO2 2</h2>
-<p>How can people change their habits? What are the solutions</p>
-<p>Play space done right for all ages, involving communities etc</p>
-<p>CO2</p>
+<section id="why-is-crime-down" class="slide level2">
+<h2>Why is crime down?</h2>
+<del>
+More legislation and tougher penalties
+</del>
+<ul>
+<li>Empowerment of people to prevent e.g.&nbsp;better security options</li>
+<li>Better diets</li>
+<li>Reduced pollution, particularly Lead</li>
+</ul>
 </section>
-<section id="environmental-justice" class="slide level2">
-<h2>Environmental justice</h2>
+<section id="how-does-this-relate-to-air-pollution" class="slide level2">
+<h2>How does this relate to air pollution?</h2>
+<p>NO<sub>2</sub> legislation in motion in 2001.</p>
+<p>Scientific method: introduce a law and people will obey.</p>
+<h4 id="positives">Positives</h4>
+<ul>
+<li>Has reduced roadside concentrations</li>
+<li>Once in place raises money for measures such as active travel</li>
+</ul>
+<h4 id="negatives">Negatives</h4>
+<ul>
+<li>Slow to implement</li>
+<li>Doesn’t provide an alternative</li>
+<li>Open to abuse/difficult to police</li>
+<li>Slight increase in vehicle size and weight/Doesn’t address efficiency</li>
+<li>Issues with precious metals used in converters</li>
+<li>Costs people more money</li>
+</ul>
+<h4 id="why-do-people-drive">Why do people drive?</h4>
+<ul>
+<li>Cities have been designed for driving</li>
+<li>speed, comfort, weather, convenience, social expectation, perceptions on safety</li>
+</ul>
 </section>
-<section id="introduction" class="slide level2">
-<h2>Introduction</h2>
-<div class="absolute" style="top: 10%; left: 0px; width: 600px; ">
+<section>
+<section id="where-does-no2-come-from" class="title-slide slide level1 center">
+<h1>Where does NO<sub>2</sub> come from?</h1>
+<p>Mean commute occupancy of a car is 1.1 ~ 80kg. 1500kg Car.<br>
+Car accelerating to 30kph.<br>
+5% of KE is used to push the person and only 1.2% of chemical energy.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="sankeyNetwork html-widget html-fill-item" id="htmlwidget-937759c808da99b5982a" style="width:960px;height:480px;"></div>
+<script type="application/json" data-for="htmlwidget-937759c808da99b5982a">{"x":{"links":{"source":[0,0,2,2],"target":[1,2,3,4],"value":[457.1759259259259,152.391975308642,144.6759259259259,7.71604938271605]},"nodes":{"name":["Fuel energy in (610 kJ)","Lost as heat (457 kJ)","Car total, incl. passenger (152 kJ)","Car (145 kJ)","Person (7.7 kJ)"],"group":["Fuel energy in (610 kJ)","Lost as heat (457 kJ)","Car total, incl. passenger (152 kJ)","Car (145 kJ)","Person (7.7 kJ)"]},"options":{"NodeID":"name","NodeGroup":"name","LinkGroup":null,"colourScale":"d3.scaleOrdinal(d3.schemeCategory20);","fontSize":20,"fontFamily":"Helvetica","nodeWidth":24,"nodePadding":10,"units":"","margin":{"top":null,"right":null,"bottom":null,"left":null},"iterations":32,"sinksRight":true}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section>
+<section id="systems-connection" class="slide level2">
+<h2>Systems connection</h2>
+The relationship between urban challenges
+<div class="image-sequence">
+<p><img src="plots/The_urban_connection_web.png" class="fragment fade-in-then-out" data-fragment-index="1"> <img src="plots/community_web.png" class="fragment fade-in-then-out" data-fragment-index="2"> <img src="plots/energy_web.png" class="fragment fade-in-then-out" data-fragment-index="3"> <img src="plots/living_costs_web.png" class="fragment fade-in-then-out" data-fragment-index="4"> <img src="plots/pollution_web.png" class="fragment fade-in-then-out" data-fragment-index="5"> <img src="plots/resilience_web.png" class="fragment fade-in-then-out" data-fragment-index="6"> <img src="plots/wellbeing_web.png" class="fragment fade-in-then-out" data-fragment-index="7"> <img src="plots/street_space_web.png" class="fragment fade-in" data-fragment-index="8"></p>
+</div>
+</section>
+<section id="drop-off" class="slide level2">
+<h2>Drop-off</h2>
+<div class="absolute" style="top: 10%; left: 0px; width: 550px; ">
 <div style="text-align: center">
 <p><img data-src="media/no2_dropoff.png"></p>
 </div>
@@ -199,39 +258,66 @@ Blaise Kelly<br><br><span style="font-size:0.7em">Online version: <a href="https
 <p><img data-src="media/LC003_popup.png"></p>
 </div>
 </section>
-<section id="connections" class="slide level2">
-<h2>Connections</h2>
+<section id="comparison" class="slide level2">
+<h2>Comparison</h2>
+<div class="image-grid">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="media/chester_rd.png"></p>
+<figcaption>Chester road, Manchester</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="media/GOW50_2.png"></p>
+<figcaption>Vluetensbaan, Utrecht</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section id="approach" class="slide level2">
+<h2>Approach</h2>
+<ul>
+<li><p>Look for examples of existing interventions for causal inference</p></li>
+<li><p>Model scenarios using dispersion modelling</p></li>
+</ul>
+</section>
+<section id="characterising-urban-space" class="slide level2">
+<h2>Characterising Urban Space</h2>
+<p>Offsetting OSM road segment data at 0.5m intervals over LiDAR data to determine the point with the biggest dropoff to characterise the building-building distances and the heights of the surrounding buildings.</p>
+
+<img data-src="media/lidar/all_geo.png" class="r-stretch"></section>
+<section id="aermod" class="slide level2">
+<h2>AERMOD</h2>
+<p>Simplified overview of required inputs for AERMOD and datasets used.</p>
 <div class="cell" data-reveal="true" data-layout-align="default">
 <div class="cell-output-display">
 <div>
 <p></p><figure class=""><p></p>
 <div>
-<pre class="mermaid mermaid-js">flowchart LR
-A[Vehicle mass &amp; size] --&gt; B[Transport Energy]
-A --&gt; F[Road damage &amp; collision risk]
-A --&gt; G[Urban space]
+<pre class="mermaid mermaid-js">flowchart TB
+A[Model]
+G[ERA5] --&gt; B[Meteo] --&gt; A
+H[CAMS] --&gt; C[Background&lt;br&gt;Concentrations] --&gt; A
+I[OSM] --&gt; D[Road&lt;br&gt;Geometry] --&gt; A 
+J[OS] --&gt; D
+K[Traffic data] --&gt; E[Emissions] --&gt; A
+L[LiDAR] --&gt; F[Terrain] --&gt; A
+M[Land use] --&gt; F
 
-B --&gt; C[Fuel use]
-C --&gt; D[CO2 &amp; air pollution]
-B --&gt; E[Noise]
-
-G --&gt; H[Heat, flooding,\nbiodiversity loss]
-G --&gt; I[Crime &amp; fear]
-
-D --&gt; J[Public health]
-E --&gt; J
-F --&gt; J
-
-I -. deters .-&gt; K[Walking &amp; cycling]
-K --&gt; J
-K --&gt; L[Reallocate road space]
-L --&gt; B
-
-style A fill:#E5E25F
-style B fill:#87AB51
-style C fill:#3C8937
-style D fill:#23772C
-style E fill:#B6E6E6
+style A fill:#EDAE49, color:#222, font-size:16px, font-weight:bold border-color:#fffff
+style B fill:#00798C, color:#fff, font-size:16px, font-weight:bold
+style G fill:#00798C, color:#fff, font-size:16px, font-weight:bold
+style C fill:#D1495B, color:#fff, font-size:16px, font-weight:bold
+style H fill:#D1495B, color:#fff, font-size:16px, font-weight:bold
+style D fill:#66A182, color:#fff, font-size:16px, font-weight:bold
+style I fill:#66A182, color:#fff, font-size:16px, font-weight:bold
+style J fill:#66A182, color:#fff, font-size:16px, font-weight:bold
+style E fill:#2E4057, color:#fff, font-size:16px, font-weight:bold
+style K fill:#2E4057, color:#fff, font-size:16px, font-weight:bold
+style F fill:#8D96A3, color:#fff, font-size:16px, font-weight:bold
+style L fill:#8D96A3, color:#fff, font-size:16px, font-weight:bold
+style M fill:#8D96A3, color:#fff, font-size:16px, font-weight:bold
 
 </pre>
 </div>
@@ -240,11 +326,20 @@ style E fill:#B6E6E6
 </div>
 </div>
 </section>
-<section id="section" class="slide level2">
-<h2></h2>
-
-
+<section id="aermod-1" class="slide level2">
+<h2>AERMOD</h2>
+<div class="image-sequence">
+<p><img src="media/AERMOD/model_structure.png" class="fragment fade-out" data-fragment-index="1"> <img src="media/AERMOD/grid_0.png" class="fragment fade-out" data-fragment-index="2"> <img src="media/AERMOD/grid_1.png" class="fragment fade-in-then-out" data-fragment-index="3"> <img src="media/AERMOD/grid_2.png" class="fragment fade-in" data-fragment-index="4"></p>
+</div>
 </section>
+<section id="lidar" class="slide level2">
+<h2>LiDAR</h2>
+<div class="image-sequence">
+<p><img src="media/lidar/height_0.png" class="fragment fade-out" data-fragment-index="1"> <img src="media/lidar/height_1.png" class="fragment fade-in-then-out" data-fragment-index="2"> <img src="media/lidar/height_2.png" class="fragment fade-in" data-fragment-index="3"> <img src="media/lidar/all_geo.png" class="fragment fade-in" data-fragment-index="4"></p>
+</div>
+
+
+</section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
@@ -460,6 +555,82 @@ style E fill:#B6E6E6
         ]
       });
     </script>
+    
+
+    <script>
+
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+
+      // slide changes (different for each slide format).
+
+      (function () {
+
+        // dispatch for htmlwidgets
+
+        function fireSlideEnter() {
+
+          const event = window.document.createEvent("Event");
+
+          event.initEvent("slideenter", true, true);
+
+          window.document.dispatchEvent(event);
+
+        }
+
+    
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+
+          fireSlideEnter();
+
+    
+
+          // dispatch for shiny
+
+          if (window.jQuery) {
+
+            if (previousSlide) {
+
+              window.jQuery(previousSlide).trigger("hidden");
+
+            }
+
+            if (currentSlide) {
+
+              window.jQuery(currentSlide).trigger("shown");
+
+            }
+
+          }
+
+        }
+
+    
+
+        // hookup for slidy
+
+        if (window.w3c_slidy) {
+
+          window.w3c_slidy.add_observer(function (slide_num) {
+
+            // slide_num starts at position 1
+
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+
+          });
+
+        }
+
+    
+
+      })();
+
+    </script>
+
+    
+
     <script id="quarto-html-after-body" type="application/javascript">
       window.document.addEventListener("DOMContentLoaded", function (event) {
         const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
