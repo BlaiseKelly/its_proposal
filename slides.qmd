@@ -1,11 +1,200 @@
 ---
-title: "impacts of street space allocation on health and active travel potential"
+title: "Impacts of street space allocation on health and active travel potential"
 subtitle: "PhD Proposal"
-format: revealjs
+format: 
+  revealjs:
+    css: styles.css
+    scrollable: true
 author: "Blaise Kelly<br><br><span style='font-size:0.7em'>Online version: <a href='https://blaisekelly.github.io/its_proposal'>blaisekelly.github.io/its_proposal</a></span><br><span style='font-size:0.7em'>Source code: <a href='https://github.com/blaisekelly/its_proposal'>github.com/blaisekelly/its_proposal</a></span>"
 date: last-modified
 bibliography: references.bib
 ---
 
-## Introduction
+## Social Science Question
 
+["How successful is a legislative approach in addressing societal problems and how does this relate to efforts to reduce air pollution?"]{.big .center}
+
+Law is important for maintaining cohesion.  
+
+#### Successful legislation
+ - Smoking in public spaces
+    - simple policy
+    - business loss from smokers
+    - business gain from non-smokers
+    - policing, straight forward, people smoking = penalty.  
+
+## Crime
+
+Often assumed fear of punishment will stop people committing crime. But the truth is more complex.
+
+#### Why do people commit crime?
+ - Desperation, dependancy e.g. drugs
+ - Lack of alternative means
+ - Opportunistic
+ - Bordom
+ - Environmental stressors
+ - Air pollution
+ - Lead 
+
+Many crimes e.g. violent, burglary are at [lowest levels since records began]{.highlight}.
+
+## Why is crime down?
+
+<del>More legislation and tougher penalties</del>
+
+  - Empowerment of people to prevent e.g. better security options
+  - Better diets
+  - Reduced pollution, particularly Lead
+  
+## How does this relate to air pollution?
+
+NO~2~ legislation in motion in 2001.
+
+Scientific method: introduce a law and people will obey.
+
+#### Positives
+ - Has reduced roadside concentrations
+ - Once in place raises money for measures such as active travel
+ 
+#### Negatives
+ - Slow to implement
+ - Doesn't provide an alternative
+ - Open to abuse/difficult to police
+ - Slight increase in vehicle size and weight/Doesn't address efficiency
+ - Issues with precious metals used in converters
+ - Costs people more money
+
+#### Why do people drive?
+ - Cities have been designed for driving
+ - speed, comfort, weather, convenience, social expectation, perceptions on safety
+
+# Where does NO~2~ come from?
+
+Mean commute occupancy of a car is 1.1 ~ 80kg. 1500kg Car.   
+Car accelerating to 30kph.  
+5% of KE is used to push the person and only 1.2% of chemical energy.
+```{r}
+source("R/sankeys.R")
+
+sk = make_ke_sankey(speed_kmh = 50,
+               vehicle_mass = 1500,      # kg
+               occupant_mass = 80,       # kg
+               loss_fraction = 0.75)    # engine efficiency
+
+sk
+
+```
+
+## Drop-off
+
+::: {.absolute top="10%" left="0" width="550"}
+::: {style="text-align: center"}
+![](media/no2_dropoff.png)
+:::
+:::
+
+## Systems connection
+
+The relationship between urban challenges
+<div class="image-sequence">
+
+<img src="plots/The_urban_connection_web.png" class="fragment fade-in-then-out" data-fragment-index="1">
+<img src="plots/community_web.png" class="fragment fade-in-then-out" data-fragment-index="2">
+<img src="plots/energy_web.png" class="fragment fade-in-then-out" data-fragment-index="3">
+<img src="plots/living_costs_web.png" class="fragment fade-in-then-out" data-fragment-index="4">
+<img src="plots/pollution_web.png" class="fragment fade-in-then-out" data-fragment-index="5">
+<img src="plots/resilience_web.png" class="fragment fade-in-then-out" data-fragment-index="6">
+<img src="plots/wellbeing_web.png" class="fragment fade-in-then-out" data-fragment-index="7">
+<img src="plots/street_space_web.png" class="fragment fade-in" data-fragment-index="8">
+
+</div>
+
+## Examples
+
+<div class="image-grid">
+
+![](media/ABD3.png)
+
+![](media/ABD3_popup.png)
+
+![](media/LC003.png)
+
+![](media/LC003_popup.png)
+
+</div>
+
+## Comparison
+
+<div class="image-grid">
+
+![Chester road, Manchester](media/chester_rd.png)
+
+![Vluetensbaan, Utrecht](media/GOW50_2.png)
+
+</div>
+
+## Approach
+
+ - Look for examples of existing interventions for causal inference
+
+ - Model scenarios using dispersion modelling
+
+## Characterising Urban Space
+
+Offsetting OSM road segment data at 0.5m intervals over LiDAR data to determine the point with the biggest dropoff to characterise the building-building distances and the heights of the surrounding buildings.
+
+![](media/lidar/all_geo.png) 
+
+## AERMOD
+
+Simplified overview of required inputs for AERMOD and datasets used.
+
+```{mermaid}
+
+flowchart TB
+A[Model]
+G[ERA5] --> B[Meteo] --> A
+H[CAMS] --> C[Background<br>Concentrations] --> A
+I[OSM] --> D[Road<br>Geometry] --> A 
+J[OS] --> D
+K[Traffic data] --> E[Emissions] --> A
+L[LiDAR] --> F[Terrain] --> A
+M[Land use] --> F
+
+style A fill:#EDAE49, color:#222, font-size:16px, font-weight:bold border-color:#fffff
+style B fill:#00798C, color:#fff, font-size:16px, font-weight:bold
+style G fill:#00798C, color:#fff, font-size:16px, font-weight:bold
+style C fill:#D1495B, color:#fff, font-size:16px, font-weight:bold
+style H fill:#D1495B, color:#fff, font-size:16px, font-weight:bold
+style D fill:#66A182, color:#fff, font-size:16px, font-weight:bold
+style I fill:#66A182, color:#fff, font-size:16px, font-weight:bold
+style J fill:#66A182, color:#fff, font-size:16px, font-weight:bold
+style E fill:#2E4057, color:#fff, font-size:16px, font-weight:bold
+style K fill:#2E4057, color:#fff, font-size:16px, font-weight:bold
+style F fill:#8D96A3, color:#fff, font-size:16px, font-weight:bold
+style L fill:#8D96A3, color:#fff, font-size:16px, font-weight:bold
+style M fill:#8D96A3, color:#fff, font-size:16px, font-weight:bold
+
+```
+
+## AERMOD
+
+<div class="image-sequence">
+
+<img src="media/AERMOD/model_structure.png" class="fragment fade-out" data-fragment-index="1">
+<img src="media/AERMOD/grid_0.png" class="fragment fade-out" data-fragment-index="2">
+<img src="media/AERMOD/grid_1.png" class="fragment fade-in-then-out" data-fragment-index="3">
+<img src="media/AERMOD/grid_2.png" class="fragment fade-in" data-fragment-index="4">
+
+</div>
+
+## LiDAR
+
+<div class="image-sequence">
+
+<img src="media/lidar/height_0.png" class="fragment fade-out" data-fragment-index="1">
+<img src="media/lidar/height_1.png" class="fragment fade-in-then-out" data-fragment-index="2">
+<img src="media/lidar/height_2.png" class="fragment fade-in" data-fragment-index="3">
+<img src="media/lidar/all_geo.png" class="fragment fade-in" data-fragment-index="4">
+
+</div>
