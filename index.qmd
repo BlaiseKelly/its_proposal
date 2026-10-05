@@ -1,5 +1,5 @@
 ---
-title: "impacts of street space allocation on health and active travel potential"
+title: "Impacts of street space allocation on health and active travel potential"
 format: html
 bibliography: references.bib
 ---
