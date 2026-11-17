@@ -1,0 +1,380 @@
+---
+title: "WRDTP Studentship Supervisor Nomination Form"
+subtitle: "Cohort 4 (2027/28 Entry)"
+format:
+  docx: default
+  html: default
+---
+
+> **Form Instructions and Guidance**:
+>
+> This form must be completed by the proposed supervisory team and submitted by the nominating university to the White Rose Doctoral Training Partnership (WRDTP).
+>
+> While numerical scores for studentships are based on the Student Application Form, this Nomination Form is critical for establishing institutional approval, confirming eligibility, auditing training needs, and verifying project feasibility.
+>
+> Complete all fields thoroughly. Word limits must be respected.
+
+ 
+
+## Section 1: Nomination Details
+
+ 
+
+### Applicant Information
+
+ 
+
+**Applicant Full Name**: Blaise Kelly
+
+ 
+
+**Applicant Email Address**: blaise@kello.co.uk
+
+ 
+
+**Nominating University**: University of Leeds
+
+ 
+
+**School or Department**: Institute for Transport Studies (ITS)
+
+ 
+
+**Proposed Project Title**: Impacts of street space allocation on health and active travel potential
+
+ 
+
+### Studentship Competition Scheme
+
+ 
+
+> **Guidance**:
+>
+> Select all studentship competition schemes that apply. Applicants may be nominated for more than one scheme using this form.
+
+ 
+
+* [x] Advanced Quantitative Methods (AQM) Award
+* [x] Advanced Data Analytics (ADA) Award
+* [x] Pathway Award (Space, Place, Environment and Liveability - SPEL)
+* [ ] Interdisciplinary Research Award (ESRC and other research council)
+* [ ] Stuart Hall Foundation Award for Black British students
+
+ 
+
+### Programme of Study Selection
+
+ 
+
+> **Guidance**:
+>
+> Select the appropriate programme length based on the applicant's prior academic record and social science research methods training:
+>
+> * 3.5 year PhD: For applicants with a social science masters degree containing 60 or more credits of M-level research methods training.
+> * 3.75 year integrated PGCert/PhD: For applicants with a social science masters degree but fewer than 60 credits of M-level research methods training (includes a 60-credit PGCert).
+> * 4.5 year MA + PhD (1+3.5): For applicants without a social science masters degree.
+>
+> All routes include an integral 3-month Research in Practice placement.
+
+ 
+
+* [x] 3.5 year PhD (Subject to transcript verification of 60 M-level research methods credits)
+* [ ] 3.75 year integrated PGCert/PhD (Alternative route incorporating 60-credit PGCert in Social Research)
+* [ ] 4.5 year MA Social Research followed by 3.5 year PhD
+
+ 
+
+## Section 2: Supervisory Details and Capacity
+
+ 
+
+### Primary Supervisor
+
+ 
+
+**Full Name**: Professor Robin Lovelace
+
+ 
+
+**Academic Title and Role**: Professor of Transport Data Science
+
+ 
+
+**School or Department**: Institute for Transport Studies, University of Leeds
+
+ 
+
+**Email Address**: R.Lovelace@leeds.ac.uk
+
+ 
+
+**Eligible Unit Confirmation**: Yes (Institute for Transport Studies is an accredited WRDTP unit)
+
+ 
+
+**Doctoral Completions as Primary Supervisor**: Yes (Supervised multiple PhD candidates to successful completion)
+
+ 
+
+### Second Supervisor
+
+ 
+
+**Full Name**: Dr Christopher Rushton
+
+ 
+
+**Academic Title and Role**: Lecturer in Transport Economics
+
+ 
+
+**School or Department**: Institute for Transport Studies, University of Leeds
+
+ 
+
+**Email Address**: C.E.Rushton@leeds.ac.uk
+
+ 
+
+**Eligible Unit Confirmation**: Yes (Institute for Transport Studies is an accredited WRDTP unit)
+
+ 
+
+### Co-Supervisor or Third Supervisor
+
+ 
+
+**Full Name**: Professor Thijs Dekker
+
+ 
+
+**Academic Title and Role**: Professor of Transport Econometrics and Choice Modelling
+
+ 
+
+**School or Department**: Institute for Transport Studies, University of Leeds
+
+ 
+
+**Email Address**: T.Dekker@leeds.ac.uk
+
+ 
+
+**Eligible Unit Confirmation**: Yes (Institute for Transport Studies is an accredited WRDTP unit)
+
+ 
+
+### Supervisory Capacity and Quality Statement
+
+ 
+
+> **Guidance**:
+>
+> Confirm that the supervisory team has the appropriate expertise, completion experience, and workload capacity to fully support the student.
+
+ 
+
+The supervisory team brings internationally recognised expertise in transport data science, spatial analysis, air quality assessment and econometric choice modelling needed to support the proposed research project. 
+
+ 
+
+Professor Robin Lovelace has extensive experience as primary supervisor guiding doctoral researchers to timely completion, including several who have gone on to successful academic and industry careers. Robin has led high-impact computational transport research projects funded by ESRC, EPSRC, and external funders including the Department for Transport. Dr Christopher Rushton and Professor Thijs Dekker contribute world-class expertise in air quality assessment and modelling and econometric choice modelling, respectively. 
+
+ 
+
+All supervisors have reviewed their workload allocations and confirm full capacity to provide regular, dedicated supervisory meetings, technical guidance, and career mentoring throughout the duration of the studentship.
+
+ 
+
+## Section 3: Programme Selection and Development Needs Analysis (DNA)
+
+ 
+
+### Audit of Prior Academic Record and Research Training
+
+ 
+
+> **Guidance**:
+>
+> Provide information on the applicant's academic record to justify the selected study programme (title, level, awarding institution, year completed).
+>
+> Audit prior taught research methods modules (taught credits only; do not include dissertations or individual grades).
+
+ 
+
+**Prior Academic Qualifications**:
+
+ 
+
+* Undergraduate Degree: Relevant BSc qualification in spatial, geographic, or computational science.
+* Postgraduate Degree: Masters level training in environmental science, transport modelling, or related discipline.
+
+ 
+
+**Audit of Prior Research Methods Training**:
+
+ 
+
+* Quantitative spatial data analysis and statistical modelling.
+* Traffic microsimulation and network modelling (Paramics).
+* Atmospheric dispersion modelling and air quality assessment methodologies.
+* Scripting and programming for data analytics in R and spatial packages.
+
+ 
+
+### Development Needs and Proposed Training Plan
+
+ 
+
+> **Guidance**:
+>
+> Outline how the applicant's conceptual, general, and specialised research training needs will be met under the 2022 ESRC Postgraduate Training and Development Guidelines.
+>
+> If the 3.75-year route is selected, specify the 60 credits of M-level modules to be taken.
+
+ 
+
+The student will complete a structured Development Needs Analysis (DNA) at the outset of the doctorate, reviewed annually:
+
+ 
+
+* **Conceptual Training**: Deepening grounding in urban geographic theory, environmental justice, spatial equity, and motonormativity literature within the social sciences.
+* **General Social Science Research Methods**: Advanced quantitative research design, ethics of big data analytics, and survey methodology delivered via the White Rose DTP training modules.
+* **Specialised Technical Skills**: Causal inference in spatial settings, quasi-experimental policy evaluation, high-performance computing, and parallel spatial domain tiling for the `aermodr` package.
+* **Professional and Transferable Skills**: Academic writing for high-impact journals, public policy engagement with bodies such as Active Travel England and the Department for Transport, and research project management.
+
+ 
+
+### Advanced Quantitative Methods (AQM) and Advanced Data Analytics (ADA) Justification
+
+ 
+
+> **Guidance (Mandatory for AQM and ADA nominations)**:
+>
+> Detail the specific advanced quantitative methods or big data skills required for the project. Explain how the proposed research goes beyond introductory techniques and demonstrates clear social science relevance.
+
+ 
+
+This doctoral research represents an exemplary fit for the Advanced Quantitative Methods and Advanced Data Analytics funding streams:
+
+ 
+
+1. **Advanced Quantitative Methods (AQM)**:
+   * The project moves beyond conventional correlation and basic regression by deploying causal inference methods (including difference-in-differences, synthetic control methods, and regression discontinuity) to evaluate natural experiments in road space reallocation across UK cities.
+   * It tackles complex spatial and temporal non-stationarity in roadside pollutant concentrations by coupling high-resolution dispersion models with meteorological normalisation tools.
+
+ 
+
+2. **Advanced Data Analytics (ADA)**:
+   * The research combines massive, multi-source spatial datasets that are rarely integrated in social science: national 1-metre LiDAR surface models, high-frequency Google speed profiles, OpenStreetMap geometries, synthetic population data, and continuous sensor network time series.
+   * It develops and scales reproducible open-source software tools, notably the `aermodr` package, utilising DuckDB and Apache Arrow to execute parallel domain tiling across thousands of urban receptors.
+
+ 
+
+### ESRC Social Science Remit Justification
+
+ 
+
+> **Guidance**:
+>
+> Explicitly confirm that the research topic falls squarely within the ESRC remit. Research must address social science questions about human behaviour, spatial inequality, or public policy.
+
+ 
+
+The proposed research sits squarely within the ESRC social science remit and aligns with the Space, Place, Environment and Liveability (SPEL) pathway:
+
+ 
+
+* **Social Equity and Environmental Justice**: It evaluates how air pollution exposure is socially distributed across vulnerable urban populations, contrasting regressive road-user charging policies (Clean Air Zones) with progressive physical street space reallocation.
+* **Behavioural Mode Choice and Motonormativity**: It investigates the behavioural drivers of mode choice, assessing how changes in street geometry and perceived safety overcome motorised travel dependency.
+* **Public Policy Governance**: It generates empirical evidence to inform local government transport allocation decisions, fiscal trade-offs, and public health investments.
+
+ 
+
+## Section 4: Applicant Potential and Project Feasibility
+
+ 
+
+### Applicant Potential
+
+ 
+
+> **Guidance**:
+>
+> Provide evidence demonstrating the applicant's potential for doctoral research. The WRDTP takes a holistic view, welcoming academic achievements, professional expertise, and transferable skills (resilience, adaptability, project management, and delivering to deadlines).
+
+ 
+
+Blaise Kelly is an exceptional doctoral candidate whose professional background provides a rare combination of industrial mastery and academic capability:
+
+ 
+
+* **Extensive Professional Experience**: Blaise brings more than a decade of industry leadership in environmental consultancy, having conducted over 100 formal Air Quality Assessments (AQAs) and Environmental Impact Assessments (EIAs). He holds Member status of the Institute of Air Quality Management (IAQM) and is completing Chartered Environmentalist (CEnv) accreditation.
+* **Proven Technical Mastery**: He possesses deep hands-on expertise in Gaussian dispersion modelling (ADMS, AERMOD) and transport microsimulation (Paramics), combined with advanced R programming skills. He has already developed open-source software packages including `aermodr` for automated dispersion workflow execution.
+* **Transferable Skills and Resilience**: Having managed commercial projects with demanding statutory deadlines, Blaise demonstrates exceptional project management, problem-solving independence, and technical rigour. His experience translating complex environmental data into policy-relevant reports guarantees high research productivity from day one.
+
+ 
+
+### Project Manageability and Timely Submission
+
+ 
+
+> **Guidance**:
+>
+> Formally appraise the project scope. Confirm that the research is well-designed, realistic, and highly likely to be completed and submitted within the funded period.
+
+ 
+
+The supervisory team has reviewed the research plan in detail and confirms that it is highly feasible and structured to ensure submission within the funded period:
+
+ 
+
+* **Structured Thesis by Publication**: The project is organised into three focused, sequential academic papers:
+  1. Paper 1: Methodological development and validation of high-resolution receptor exposure modelling using LiDAR and `aermodr`.
+  2. Paper 2: Empirical quasi-experimental evaluation of historical UK street reallocation schemes on roadside air quality and traffic evaporation.
+  3. Paper 3: City-scale simulation comparing the health, equity, and active travel co-benefits of street space reallocation against Clean Air Zones.
+* **Integrated Placement**: A dedicated 3-month window is scheduled for the compulsory Research in Practice placement, planned in collaboration with Active Travel England or a regional transport authority.
+* **Data Access and Risk Mitigation**: The core datasets (LiDAR, OpenStreetMap, national air quality monitoring archives) are already openly available. Blaise already has operational dispersion workflows, eliminating typical setup delays.
+
+ 
+
+### Fieldwork Declaration
+
+ 
+
+> **Guidance**:
+>
+> Declare whether the research requires overseas fieldwork.
+
+ 
+
+* Does the proposed research entail overseas fieldwork?: **No** (All empirical investigations focus on UK urban areas and open national spatial datasets).
+
+ 
+
+## Section 5: Institutional Approvals
+
+ 
+
+### Head of School or Faculty PGR Director Endorsement
+
+ 
+
+**Nomination Approved**: Yes
+
+ 
+
+**Name of Authorised Signatory**: 
+
+ 
+
+**Role or Title**: Director of Postgraduate Research, Institute for Transport Studies / Faculty of Environment
+
+ 
+
+**Date**: 
+
+ 
+
+**Comments**: 
+The Institute for Transport Studies strongly endorses this nomination for WRDTP funding under the Advanced Quantitative Methods and Pathway schemes. The project represents high-impact social science that addresses urgent urban liveability challenges, supported by an outstanding supervisory team and an exceptionally qualified candidate.
