@@ -1,0 +1,221 @@
+---
+title: "PhD Application and Proposal Plan"
+subtitle: "WRDTP Studentship 2027/28 (Cohort 4)"
+format: html
+---
+
+## Overview
+
+ 
+
+This document sets out the timetable, application requirements, and task checklist to prepare Blaise Kelly for the White Rose Doctoral Training Partnership (WRDTP) studentship competition for entry in October 2027.
+
+ 
+
+The primary funding route is the Advanced Quantitative Methods (AQM) Award, with parallel eligibility for the Advanced Data Analytics (ADA) Award and standard Pathway Awards.
+
+ 
+
+## Key Dates and Timetable
+
+ 
+
+* **Week beginning 28 September 2026**: Academic interview and research discussion with prospective supervisors.
+
+* **Wednesday 30 September 2026 (10:00 to 11:00)**: WRDTP Collaborative Awards briefing session for academic supervisors.
+
+* **Wednesday 7 October 2026 (11:00 to 12:00)**: WRDTP staff briefing session on Pathway, AQM, and ADA awards.
+
+* **Thursday 8 October 2026 (17:30 to 18:30)**: WRDTP applicant briefing session for prospective students.
+
+* **October to November 2026**: Formal application submission via the University of Leeds research degrees portal.
+
+* **October to December 2026**: Iterative drafting of proposal text in `index.qmd` and matching Word application fields.
+
+* **December 2026 to early January 2027**: Faculty internal review and shortlisting at the University of Leeds.
+
+* **Wednesday 20 January 2027 (17:00 UK time)**: Strict deadline for applicants to submit their completed studentship application form to the University of Leeds.
+
+* **Wednesday 24 February 2027**: Deadline for the University of Leeds to submit official candidate nominations to the WRDTP.
+
+* **April to May 2027**: WRDTP funding outcomes announced.
+
+* **October 2027**: PhD start date.
+
+ 
+
+## Application Form Access and Locations
+
+ 
+
+The application process involves two distinct forms: the Student Application Form and the Supervisor Nomination Form.
+
+ 
+
+### 1. Student Application Form
+
+ 
+
+* Only the information provided by the applicant in this form attracts marks.
+
+* The official preview version is hosted on Google Docs: [WRDTP Application Form Preview](https://docs.google.com/document/d/1fJV3lGWAQw_jOVOl38W33In_yJm9l_27tZb0_Jeh_DE/edit?usp=drive_link).
+
+* Access to the Google Doc requires an institutional login.
+
+* The University of Leeds Graduate School Office will also distribute an editable Microsoft Word version directly to applicants who apply via the Leeds study portal.
+
+* Applicants must not submit directly to the WRDTP. All submissions go through the University of Leeds Graduate School.
+
+ 
+
+### 2. Supervisor Nomination Form
+
+ 
+
+* This form is completed by the supervisory team and institutional leads.
+
+* The official preview is available on Google Docs: [WRDTP Nomination Form Preview](https://docs.google.com/document/d/1F92uKQdXjRduprlmji7ayaHc9sLUjXqXeryBUY2IN_8/edit?usp=drive_link).
+
+* Nominating universities submit final nominations using an online Google Form in February 2027.
+
+* Per University of Leeds best practice, supervisors should draft all responses in an offline Word document before final submission.
+
+ 
+
+### 3. University Study Application
+
+ 
+
+* In addition to the scholarship form, Blaise must submit a formal application for a PhD place through the University of Leeds application portal: [Applying for research degrees at Leeds](https://www.leeds.ac.uk/research-applying/doc/applying-research-degrees).
+
+* Candidates must hold an offer of study to be eligible for nomination.
+
+ 
+
+## Structure of the Application Form
+
+ 
+
+* **Section 1: Applicant Details and Programme Selection**: Selection of award type (Pathway, AQM, ADA) and award duration (3.5 years, 3.75 years with integrated PGCert, or 4.5 years with MA Social Research).
+
+* **Section 2: About Your Project (Double-weighted: 10 marks out of 20)**: Research questions, background, methodology, feasibility, ethics, positionality, and APA references. Applicants for AQM and ADA must complete additional dedicated boxes detailing their advanced quantitative methods and data analytics.
+
+* **Section 3: Project Fit with WRDTP Core Priorities (5 marks out of 20)**: Alignment with thematic interdisciplinary pathways and planned pathways to societal and economic impact.
+
+* **Section 4: Applicant Motivation and Potential (5 marks out of 20)**: Personal and professional motivation, research potential, and evidence of transferable skills.
+
+* **Section 5: Stuart Hall Foundation Statement**: Optional statement for eligible Black British applicants.
+
+* **Section 6: Applicant Declarations**: Confirmation of eligibility and accuracy.
+
+* **Section 7: Statement on the Use of Artificial Intelligence**: Mandatory disclosure and description of any AI tools used during proposal preparation.
+
+ 
+
+## Task Checklist
+
+ 
+
+### Phase 1: Initial Setup and Interview Preparation
+
+ 
+
+- [x] Clone the proposal repository into the local working directory (`its_proposal`).
+
+- [x] Review WRDTP call guidance, supervisor guidance, assessment criteria, and University of Leeds best practice documents.
+
+- [x] Create `plan.qmd` and integrate it into the Quarto website navigation (`_quarto.yml`).
+
+- [x] Initial email exchange with prospective supervisors and date agreed for academic interview.
+
+- [ ] Complete presentation slides in `slides.qmd` covering problem context, methodology, data sources, and proposed papers.
+
+- [ ] Conduct academic interview and research discussion with Robin Lovelace, Christopher Rushton, and Thijs Dekker (week beginning 28 September 2026).
+
+- [ ] Complete internal interview record sheet required by the University of Leeds Graduate School.
+
+ 
+
+### Phase 2: Degree Route and Briefing Sessions
+
+ 
+
+- [ ] Review Blaise's previous masters transcripts to confirm eligibility for the 3.5 year PhD route or the 3.75 year PGCert/PhD route.
+
+- [ ] Supervisory team attendance at WRDTP Collaborative Awards session (Wednesday 30 September 2026, 10:00 to 11:00).
+
+- [ ] Supervisory team attendance at WRDTP staff briefing session (Wednesday 7 October 2026, 11:00 to 12:00).
+
+- [ ] Candidate attendance at WRDTP applicant briefing session (Thursday 8 October 2026, 17:30 to 18:30).
+
+ 
+
+### Phase 3: Proposal Revisions and Methodological Strengthening
+
+ 
+
+- [ ] Reframe `index.qmd` to center on social science and policy questions within the ESRC remit (spatial inequality, public health, mode choice, and CAZ policy comparison).
+
+- [ ] Resolve supervisor review comments in `index.qmd`:
+
+  - [ ] Add citations showing that road width reductions increase source-receptor distance, constrain traffic, and reduce roadside pollution.
+
+  - [ ] Define and cite the conventional car modelling approach versus receptor-centric exposure modelling.
+
+  - [ ] Add baseline statistics on child walking distances from the National Travel Survey (2004 versus 2026).
+
+  - [ ] Clarify project scope between main road reallocation and filtered permeability schemes.
+
+  - [ ] Clarify the method for quantifying traffic evaporation (empirical case studies versus road geometry comparisons).
+
+  - [ ] Add explicit comparison against Clean Air Zone and ULEZ policies.
+
+- [ ] Clean up `references.bib` by replacing temporary citation keys and fixing unescaped URL characters.
+
+- [ ] Draft the dedicated AQM and ADA methodological justification text:
+
+  - [ ] Define the causal inference framework for evaluating street interventions.
+
+  - [ ] Detail big data integration across 1m LiDAR models, Google speed profiles, OpenStreetMap data, and air quality sensor networks.
+
+  - [ ] Detail the development and testing of the open-source `aermodr` package for spatial domain tiling and high-performance execution.
+
+ 
+
+### Phase 4: Feasibility, Ethics, and Publication Outline
+
+ 
+
+- [ ] Outline a three-year thesis by publication plan consisting of three specific academic papers.
+
+- [ ] Schedule the mandatory three-month WRDTP Research in Practice placement (such as with Active Travel England or a local transport authority).
+
+- [ ] Write the research ethics statement, including data governance for high-resolution spatial and speed data.
+
+- [ ] Write the personal positionality statement, drawing upon Blaise's career as an air quality consultant and transition into academic research.
+
+- [ ] Write contingency plans covering data access limits and computational bottlenecks.
+
+- [ ] Map the project explicitly to the WRDTP thematic pathway: Cities, Environment and Green Technology (CEGT), with secondary links to Wellbeing, Health and Communities (WHC).
+
+ 
+
+### Phase 5: Formal Application and Institutional Nomination
+
+ 
+
+- [ ] Blaise submits formal PhD study application through the University of Leeds research degree portal.
+
+- [ ] Obtain the official editable Word version of the WRDTP student application form from the Leeds Graduate School Office.
+
+- [ ] Populate all text boxes of the student application form in Word, strictly observing all word limits.
+
+- [ ] Complete mandatory statement on the use of artificial intelligence in Section 7 of the application form.
+
+- [ ] Supervisory team drafts the nomination text and Development Needs Analysis (DNA) in Word.
+
+- [ ] Submit completed studentship application form to the University of Leeds before Wednesday 20 January 2027 (17:00 UK time).
+
+- [ ] University of Leeds internal review panel approves nomination.
+
+- [ ] University of Leeds submits official candidate nomination to WRDTP by Wednesday 24 February 2027.

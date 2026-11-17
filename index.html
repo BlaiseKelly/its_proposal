@@ -2,17 +2,23 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.25">
+<meta name="generator" content="quarto-1.11.9">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>Impacts of street space allocation on health and active travel potential</title>
 <style>
-code{white-space: pre-wrap;}
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -24,7 +30,6 @@ ul.task-list li input[type="checkbox"] {
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
-  margin-bottom: 0em;
 }
 .hanging-indent div.csl-entry {
   margin-left:2em;
@@ -52,15 +57,15 @@ div.csl-indent {
 <meta name="quarto:offset" content="./">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-dec27a635df3619fee3abd01ce5a42f4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-ffc5c5f2af9c928ba9b8015ebe65d22f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -92,18 +97,13 @@ div.csl-indent {
 
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed fullcontent quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a>
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark" aria-label="Site">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    </a>
-  </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -124,6 +124,7 @@ div.csl-indent {
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
 </div>
+            <div id="quarto-search" class="" title="Search"></div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -133,7 +134,7 @@ div.csl-indent {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content" id="quarto-document-content" tabindex="-1">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -156,16 +157,16 @@ div.csl-indent {
 
 <section id="summary" class="level3">
 <h3 class="anchored" data-anchor-id="summary">Summary</h3>
-<p>London’s Ultra Low Emission Zone (ULEZ), introduced in central London in April 2019 and expanded to inner London in 2021 and London-wide in 2023 <span class="citation" data-cites="glaLondonWideULEZOneYear2025">(<a href="#ref-glaLondonWideULEZOneYear2025" role="doc-biblioref">GLA 2025</a>)</span>, cut NO<sub>2</sub> at central London traffic sites by around 20% in its first three months <span class="citation" data-cites="tongFurtherImprovement2025">(<a href="#ref-tongFurtherImprovement2025" role="doc-biblioref">Tong et al. 2025</a>)</span>. <!-- Added as interesting but commented out as not relevant to main argument --> <!-- However, the average effect across the city appears to be small [@maHasUltraLow2021] and no change in NO~2~ has been observed from the 2023 [@tongFurtherImprovement2025]. --> <!-- Commented out this sentence as not relevant to the main argument (RL): --> <!-- The mechanisms behind this fall are the result of legislative work that began in 2001. --> Outside central London, there is little evidence that ULEZ and Clean Air Zones (CAZs) (7 of which have been implemented) in other cities have been effective in one of the main goals: reducing NO<sub>2</sub> levels. Furthermore, these policies have done little to address other collectively more serious urban issues which should also be considered given their public health rationale.</p>
-<p>This raises a key question: is it possible to reduce NO<sub>2</sub> faster whilst also addressing other urban challenges that collectively have a bigger impact on public health, including road traffic casualties, obesity, and poor mental health? Modal shift to active modes has great potential to tackle each of these issues, but is mostly left out of the discussion around CAZ-type policies. Yet large co-benefits to be found in joint active travel and air quality policies. For example, by reducing road widths to free up urban space for active travel, the source-receptor distance is increased, road traffic is constrained and NO<sub>2</sub> can be reduced. <!-- Citation needed for the claim above (RL). --> Furthermore, the reclaimed street space could support activities such as walking, wheeling, cycling, playing and plants/trees/crops which have been shown to have large health benefits.</p>
+<p>Air pollution is a serious threat to public health. Most emissions in urban areas come from internal combustion engine (ICE) emissions from motor vehicles. At the start of the Millennium work began to tackle rising NO<sub>2</sub> emissions in cities <span class="citation" data-cites="NewsEULaunches">(<a href="#ref-NewsEULaunches" role="doc-biblioref"><span class="nocase">euractiv</span> 2001</a>)</span>, resulting in the passing of legislation in 2008 which came into effect in June 2010 <span class="citation" data-cites="Directive2008502008">(<a href="#ref-Directive2008502008" role="doc-biblioref">Directive 2008/50/<span>EC</span> of the <span>European Parliament</span> and of the <span>Council</span> of 21&nbsp;<span>May</span> 2008 on Ambient Air Quality and Cleaner Air for <span>Europe</span> 2008</a>)</span>. However, for various reasons it wasn’t until London’s Ultra Low Emission Zone (ULEZ), introduced in central London in April 2019 and expanded to inner London in 2021 and London-wide in 2023 <span class="citation" data-cites="glaLondonWideULEZOneYear2025">(<a href="#ref-glaLondonWideULEZOneYear2025" role="doc-biblioref">GLA 2025</a>)</span>, that NO<sub>2</sub> was cut. At central London traffic sites it dropped by around 20% in its first three months <span class="citation" data-cites="tongFurtherImprovement2025">(<a href="#ref-tongFurtherImprovement2025" role="doc-biblioref">Tong et al. 2025</a>)</span>. <!-- Added as interesting but commented out as not relevant to main argument --> <!-- However, the average effect across the city appears to be small [@maHasUltraLow2021] and no change in NO~2~ has been observed from the 2023 [@tongFurtherImprovement2025]. --> <!-- Commented out this sentence as not relevant to the main argument (RL): --> <!-- The mechanisms behind this fall are the result of legislative work that began in 2001. --> Outside central London, there is little evidence that ULEZ and Clean Air Zones (CAZs) (7 of which have been implemented) in other cities have been effective in one of the main goals: reducing NO<sub>2</sub> levels. Furthermore, these policies have done little to address other equally serious pollutant emissions as well as collectively more serious public health issues, such as climate change and lack of physical activity as well as acute threats such as as flooding and heat.</p>
+<p>Prior to the ULEZ, in early 2015 road space removal as part of London’s Cycle Superhighway build out resulted in a 20% and 23% reduction at two roadside NO<sub>2</sub> monitoring sites in the space of a few weeks <span class="citation" data-cites="3LinkedIn">(<a href="#ref-3LinkedIn" role="doc-biblioref">Kelly 2019a</a>)</span>, possibly due to the reduction in capacity and reallocation of urban space from construction. This raises a key question: is it possible to reduce NO<sub>2</sub> faster whilst also addressing other urban challenges that collectively have a bigger impact on public health, including road traffic casualties, obesity, and poor mental health? Modal shift to active modes has great potential to tackle each of these issues, but is mostly left out of the discussion around CAZ-type policies. Yet large co-benefits to be found in joint active travel and air quality policies. For example, by reducing road widths to free up urban space for active travel, the source-receptor distance is increased, road traffic is constrained and NO<sub>2</sub> can be reduced. <!-- Citation needed for the claim above (RL). --> Furthermore, the reclaimed street space could support activities such as walking, wheeling, cycling, playing and plants/trees/crops which have been shown to have large health benefits.</p>
 <p>This study proposes to model the changes in air pollution exposure at the level of sensitive receptors as a result of policies including road space reallocation which is where the negative impacts of emissions are most felt, rather than focusing solely on vehicle emissions.</p>
 </section>
 <section id="background" class="level3">
 <h3 class="anchored" data-anchor-id="background">Background</h3>
 <p>Society faces severe urban environmental challenges. Cities are not only a major driver of climate change they are extremely vulnerable to its effects, such as sea level rise and extreme weather. 80% of the population of developed countries live in cities and often are exposed to environmental risks such as noise, air pollution <span class="citation" data-cites="mollytooherruddUrbanEmergencyAddressing2024">(<a href="#ref-mollytooherruddUrbanEmergencyAddressing2024" role="doc-biblioref">Woolf et al. 2024</a>)</span>, as well as road traffic collisions and soaring rates of child and adult obesity and mental illness.</p>
 <p>Biodiversity loss and the resulting ecosystem collapse is a serious national security threat <span class="citation" data-cites="zotero-item-7431">(<a href="#ref-zotero-item-7431" role="doc-biblioref">Government 2026</a>)</span> . Road transport is responsible for nearly 1/3 of UK’s total CO<sub>2</sub> emissions <span class="citation" data-cites="GreenhouseGasEmissions">(<a href="#ref-GreenhouseGasEmissions" role="doc-biblioref">DESNZ 2026</a>)</span> which affects health, building operation <span class="citation" data-cites="OutdoorCO2Pollution2019">(<a href="#ref-OutdoorCO2Pollution2019" role="doc-biblioref">Kelly 2019b</a>)</span> <span class="citation" data-cites="fullerCO2VariationsPlants2019">(<a href="#ref-fullerCO2VariationsPlants2019" role="doc-biblioref">Fuller 2019</a>)</span> and climate change.</p>
-<p>Many people drive instead of walk because they don’t feel safe on streets, yet violent crime is the lowest since records began <span class="citation" data-cites="HomicideEnglandWales">(<a href="#ref-HomicideEnglandWales" role="doc-biblioref">ONS 2026</a>)</span> but motor vehicle traffic is the highest it has ever been <span class="citation" data-cites="RoadTrafficStatistics">(<a href="#ref-RoadTrafficStatistics" role="doc-biblioref">DfT 2026a</a>)</span>. In 2025 girls under 20 walked on average 70 miles (27%) less per year than the 264 miles they did in 2004 <span class="citation" data-cites="NationalTravelSurvey2026">(<a href="#ref-NationalTravelSurvey2026" role="doc-biblioref">DfT 2026b</a>)</span> Children’s play opportunities are well below where needed <span class="citation" data-cites="firth2025">(<a href="#ref-firth2025" role="doc-biblioref">Firth and Powell 2025</a>)</span>. The two leading external causes of death of children are road traffic collisions and suicide <span class="citation" data-cites="zotero-item-7421">(<a href="#ref-zotero-item-7421" role="doc-biblioref">NCMD 2023</a>)</span> .</p>
-<p>One of the major urban challenges is Air pollution. Air pollution policy in the UK has historically focused on legislating vehicle emissions. The reductions in NO<sub>2</sub> seen in the last few years are the result of work that began at the start of the Millennium <span class="citation" data-cites="NewsEULaunches">(<a href="#ref-NewsEULaunches" role="doc-biblioref">euractiv 2001</a>)</span>, that was passed in the EU in 2008 and came into effect in June 2010 <span class="citation" data-cites="Directive2008502008">(<a href="#ref-Directive2008502008" role="doc-biblioref"><em>Directive 2008/50/<span>EC</span> of the <span>European Parliament</span> and of the <span>Council</span> of 21&nbsp;<span>May</span> 2008 on Ambient Air Quality and Cleaner Air for <span>Europe</span></em> 2008</a>)</span> .</p>
+<p>Many people drive instead of walk because they don’t feel safe on streets, yet violent crime is the lowest since records began <span class="citation" data-cites="HomicideEnglandWales">(<a href="#ref-HomicideEnglandWales" role="doc-biblioref">ONS 2026</a>)</span> but motor vehicle traffic is the highest it has ever been <span class="citation" data-cites="RoadTrafficStatistics">(<a href="#ref-RoadTrafficStatistics" role="doc-biblioref">DfT 2026b</a>)</span>. In 2025 girls under 20 walked on average 70 miles (27%) less per year than the 264 miles they did in 2004 <span class="citation" data-cites="NationalTravelSurvey2026">(<a href="#ref-NationalTravelSurvey2026" role="doc-biblioref">DfT 2026a</a>)</span> Children’s play opportunities are well below where needed <span class="citation" data-cites="firth2025">(<a href="#ref-firth2025" role="doc-biblioref">Firth and Powell 2025</a>)</span>. The two leading external causes of death of children are road traffic collisions and suicide <span class="citation" data-cites="zotero-item-7421">(<a href="#ref-zotero-item-7421" role="doc-biblioref">NCMD 2023</a>)</span> .</p>
+<p>One of the major urban challenges is Air pollution. Air pollution policy in the UK has historically focused on legislating vehicle emissions. The reductions in NO<sub>2</sub> seen in the last few years are the result of work that began at the start of the Millennium <span class="citation" data-cites="NewsEULaunches">(<a href="#ref-NewsEULaunches" role="doc-biblioref"><span class="nocase">euractiv</span> 2001</a>)</span>, that was passed in the EU in 2008 and came into effect in June 2010 <span class="citation" data-cites="Directive2008502008">(<a href="#ref-Directive2008502008" role="doc-biblioref">Directive 2008/50/<span>EC</span> of the <span>European Parliament</span> and of the <span>Council</span> of 21&nbsp;<span>May</span> 2008 on Ambient Air Quality and Cleaner Air for <span>Europe</span> 2008</a>)</span> .</p>
 <p>Legislation can be a powerful tool in making change, but used in isolation can also have unintended consequences. In making EU legislation on vehicle CO<sub>2</sub> emissions less burdensome for manufacturers a mass element was added which led to the proliferation of SUVs, slowing the emissions reductions it was designed to create and creating other problems for cities[<span class="citation" data-cites="te2019">T&amp;E (<a href="#ref-te2019" role="doc-biblioref">2019</a>)</span>]<span class="citation" data-cites="te2011">(<a href="#ref-te2011" role="doc-biblioref">T&amp;E 2011</a>)</span> .</p>
 <p>In a similar way NO<sub>2</sub> legislation did not have much effect for nearly 10 years, with cities across Europe largely failed to meet these targets <span class="citation" data-cites="CommissionWarnsGermany">(<a href="#ref-CommissionWarnsGermany" role="doc-biblioref">EC 2017</a>)</span> because instead of reducing emissions, manufacturers chose to defraud the system <span class="citation" data-cites="jong2022">(<a href="#ref-jong2022" role="doc-biblioref">Jong and Linde 2022</a>)</span> .</p>
 <p>In early 2018, a 7 year legal case brought by Client Earth forced the government to take the “fastest route to compliance” to address the exceedances <span class="citation" data-cites="GovernmentLosesClean2018">(<a href="#ref-GovernmentLosesClean2018" role="doc-biblioref">BBC 2018</a>)</span> .</p>
@@ -176,9 +177,9 @@ div.csl-indent {
 <li>An acknowledgement that the world faced a climate emergency <span class="citation" data-cites="UKParliamentDeclares2019">(<a href="#ref-UKParliamentDeclares2019" role="doc-biblioref">BBC 2019</a>)</span></li>
 <li>A study estimating switching 10% of car trips to cycling and walking would reduce NO<sub>2</sub> by 5 times more than CAZs <span class="citation" data-cites="zotero-item-7409">(<a href="#ref-zotero-item-7409" role="doc-biblioref">Ballinger et al. 2017</a>)</span> as well as reducing Particulate Matter (PM), something the current CAZs have been poor at addressing <span class="citation" data-cites="parliament2026">(<a href="#ref-parliament2026" role="doc-biblioref">Parliament 2026</a>)</span> .</li>
 </ul>
-<p>Other studies have investigated the effect of modal shift on Air Quality by modelling changes in road emissions resulting from modelled or measured modal shift<span class="citation" data-cites="matajsHowDoesRoad2026">(<a href="#ref-matajsHowDoesRoad2026" role="doc-biblioref">Matajs et al. 2026</a>)</span> <span class="citation" data-cites="muellerChangingUrbanDesign2020a">(<a href="#ref-muellerChangingUrbanDesign2020a" role="doc-biblioref">Mueller et al. 2020</a>)</span>, which fits with the focus on directly reducing emissions from the road. The complicating factor in all these studies is the level of modal shift, one of the reasons active travel is often ignored as the feasibility of this is disputed, often as a result of “motonormativity” <span class="citation" data-cites="walkerMotornomativityHowSocial2022">(<a href="#ref-walkerMotornomativityHowSocial2022" role="doc-biblioref">Walker, Tapp, and Davis 2022</a>)</span>.</p>
-<p>It is often thought reducing space for vehicles on one road is like blocking a river, neighbouring roads, which might not be designed with the same capacity become overloaded, like blocking a river. However, as far back as 1994 the government was acknowledging evidence of induced traffic <span class="citation" data-cites="sactra1994">(<a href="#ref-sactra1994" role="doc-biblioref">SACTRA 1994</a>)</span>. In 1998 evidence was presented on what is now termed traffic evaporation<span class="citation" data-cites="cairns1998">(<a href="#ref-cairns1998" role="doc-biblioref">Cairns, Hass-Klau, and Goodwin 1998</a>)</span> demonstrating with more than 100 examples from around the world how removing space for vehicles reduces traffic on the road and in the wider area. Other studies have come to similar conclusions<span class="citation" data-cites="sloman2017">(<a href="#ref-sloman2017" role="doc-biblioref">Sloman, Hopkinson, and Taylor 2017</a>)</span> but the concept still remains divisive with few follow up studies<span class="citation" data-cites="goodwin2016">(<a href="#ref-goodwin2016" role="doc-biblioref">Goodwin 2016</a>)</span>. The introduction of Low Traffic Neighbourhoods (LTN) in London and other cities was an opportunity to study this and the results concur, showing traffic and pollutant reductions in the LTNs as well as on surrounding roads [<span class="citation" data-cites="yang2022">Yang et al. (<a href="#ref-yang2022" role="doc-biblioref">2022</a>)</span>]<span class="citation" data-cites="khreis2026">(<a href="#ref-khreis2026" role="doc-biblioref">Khreis et al. 2026</a>)</span>[<span class="citation" data-cites="thomas2023">Thomas and Aldred (<a href="#ref-thomas2023" role="doc-biblioref">2023</a>)</span>]<span class="citation" data-cites="lambethcouncil2021">(<a href="#ref-lambethcouncil2021" role="doc-biblioref">Lambeth Council 2021</a>)</span><span class="citation" data-cites="whelan2024">(<a href="#ref-whelan2024" role="doc-biblioref">Whelan, Luiu, and Pope 2024</a>)</span>.</p>
-<p>The cost of living continues to be one of the most pressing political issues. The shifts from active to motorised modes that has happened over the past century in most cities has had significant negative cost implications for the public in cities, and there are potentially huge cost savings when this trend is reversed <span class="citation" data-cites="hendrichCyclingCitiesMode2026">(<a href="#ref-hendrichCyclingCitiesMode2026" role="doc-biblioref">Hendrich et al. 2026</a>)</span>. Whilst public support for road pricing is generally positive, the benefits are often only seen in official reports and statistics and they send the message that environmental measures mean restrictions and expense <span class="citation" data-cites="bretschgerGettingCostsEnvironmental2021">(<a href="#ref-bretschgerGettingCostsEnvironmental2021" role="doc-biblioref">Bretschger 2021</a>)</span>. Manchester chose to spend money originally designated for CAZ on other measures <span class="citation" data-cites="GreaterManchesterClean2025">(<a href="#ref-GreaterManchesterClean2025" role="doc-biblioref">Gawne 2025</a>)</span> such as one of the the largest segregated cycle networks outside of London <span class="citation" data-cites="piddManchesterMakesBeeline2018">(<a href="#ref-piddManchesterMakesBeeline2018" role="doc-biblioref">Pidd and editor 2018</a>)</span>.</p>
+<p>Other studies have investigated the effect of modal shift on Air Quality by modelling changes in road emissions resulting from modelled or measured modal shift<span class="citation" data-cites="matajsHowDoesRoad2026">(<a href="#ref-matajsHowDoesRoad2026" role="doc-biblioref">Matajs et al. 2026</a>)</span> <span class="citation" data-cites="muellerChangingUrbanDesign2020a">(<a href="#ref-muellerChangingUrbanDesign2020a" role="doc-biblioref">Mueller et al. 2020</a>)</span>, which fits with the focus on directly reducing emissions from the road. The complicating factor in all these studies is the level of modal shift, one of the reasons active travel is often ignored as the feasibility of this is disputed, often as a result of “motonormativity” <span class="citation" data-cites="walkerMotornomativityHowSocial2022">(<a href="#ref-walkerMotornomativityHowSocial2022" role="doc-biblioref">Walker et al. 2022</a>)</span>.</p>
+<p>It is often thought reducing space for vehicles on one road is like blocking a river, neighbouring roads, which might not be designed with the same capacity become overloaded, like blocking a river. However, as far back as 1994 the government was acknowledging evidence of induced traffic <span class="citation" data-cites="sactra1994">(<a href="#ref-sactra1994" role="doc-biblioref">SACTRA 1994</a>)</span>. In 1998 evidence was presented on what is now termed traffic evaporation<span class="citation" data-cites="cairns1998">(<a href="#ref-cairns1998" role="doc-biblioref">Cairns et al. 1998</a>)</span> demonstrating with more than 100 examples from around the world how removing space for vehicles reduces traffic on the road and in the wider area. Other studies have come to similar conclusions<span class="citation" data-cites="sloman2017">(<a href="#ref-sloman2017" role="doc-biblioref">Sloman et al. 2017</a>)</span> but the concept still remains divisive with few follow up studies<span class="citation" data-cites="goodwin2016">(<a href="#ref-goodwin2016" role="doc-biblioref">Goodwin 2016</a>)</span>. The introduction of Low Traffic Neighbourhoods (LTN) in London and other cities was an opportunity to study this and the results concur, showing traffic and pollutant reductions in the LTNs as well as on surrounding roads [<span class="citation" data-cites="yang2022">Yang et al. (<a href="#ref-yang2022" role="doc-biblioref">2022</a>)</span>]<span class="citation" data-cites="khreis2026">(<a href="#ref-khreis2026" role="doc-biblioref">Khreis et al. 2026</a>)</span>[<span class="citation" data-cites="thomas2023">Thomas and Aldred (<a href="#ref-thomas2023" role="doc-biblioref">2023</a>)</span>]<span class="citation" data-cites="lambethcouncil2021">(<a href="#ref-lambethcouncil2021" role="doc-biblioref">Lambeth Council 2021</a>)</span><span class="citation" data-cites="whelan2024">(<a href="#ref-whelan2024" role="doc-biblioref">Whelan et al. 2024</a>)</span>.</p>
+<p>The cost of living continues to be one of the most pressing political issues. The shifts from active to motorised modes that has happened over the past century in most cities has had significant negative cost implications for the public in cities, and there are potentially huge cost savings when this trend is reversed <span class="citation" data-cites="hendrichCyclingCitiesMode2026">(<a href="#ref-hendrichCyclingCitiesMode2026" role="doc-biblioref">Hendrich et al. 2026</a>)</span>. Whilst public support for road pricing is generally positive, the benefits are often only seen in official reports and statistics and they send the message that environmental measures mean restrictions and expense <span class="citation" data-cites="bretschgerGettingCostsEnvironmental2021">(<a href="#ref-bretschgerGettingCostsEnvironmental2021" role="doc-biblioref">Bretschger 2021</a>)</span>. Manchester chose to spend money originally designated for CAZ on other measures <span class="citation" data-cites="GreaterManchesterClean2025">(<a href="#ref-GreaterManchesterClean2025" role="doc-biblioref">Gawne 2025</a>)</span> such as one of the the largest segregated cycle networks outside of London <span class="citation" data-cites="piddManchesterMakesBeeline2018">(<a href="#ref-piddManchesterMakesBeeline2018" role="doc-biblioref"><span class="nocase">Pidd and editor</span> 2018</a>)</span>.</p>
 <p>It is sometimes recommended that cycle routes focus on routes through parks and green spaces that avoid heavy traffic and pollution [<span class="citation" data-cites="epictaskgroup2024">EPIC task group (<a href="#ref-epictaskgroup2024" role="doc-biblioref">2024</a>)</span> . However, to make cycle routes attractive for everyday journeys, the routes should be as direct and short as possible <span class="citation" data-cites="lovelace2016">(<a href="#ref-lovelace2016" role="doc-biblioref">Lovelace et al. 2016</a>)</span>.</p>
 <p>Road traffic dispersion models such as ADMS-Roads/Urban are often subject to substantial input data uncertainty. These arise from e.g.&nbsp;simplified source geometry, generalised land-use and boundary-layer parameterisation, limited spatial representativeness of meteorological inputs, and coarse spatial disaggregation of emission inventories. Many models typically represent only road traffic emissions, excluding non-traffic and regional background contributions. There is a huge potential to improve model inputs and automate the model setup.</p>
 </section>
@@ -273,7 +274,7 @@ In my experience the problem with CAZ type policies is that what happens in real
 <li>Population data</li>
 <li>STATS19</li>
 <li>state of the art datasets for hourly traffic/speed profiles for all roads - Juans PhD?, <a href="https://github.com/BlaiseKelly/google_speeds">Google API</a> etc.</li>
-<li>UK Air quality observation data network for validation (openair R package) <span class="citation" data-cites="carslaw2026">(<a href="#ref-carslaw2026" role="doc-biblioref">Carslaw, Davidson, and Ropkins 2026</a>)</span></li>
+<li>UK Air quality observation data network for validation (openair R package) <span class="citation" data-cites="carslaw2026">(<a href="#ref-carslaw2026" role="doc-biblioref">Carslaw et al. 2026</a>)</span></li>
 <li>Copernicus Atmospheric Modelling Service (CAMS) for historic background pollution data <span class="citation" data-cites="ads2026">(<a href="#ref-ads2026" role="doc-biblioref">ADS 2026</a>)</span></li>
 <li>ERA5 historic meteo data e.g.&nbsp;irradiation, temperature, wind speed, soil/ground parameters <span class="citation" data-cites="era52026">(<a href="#ref-era52026" role="doc-biblioref">C3S 2018</a>)</span></li>
 <li>Remote albedo for greenspace analysis <span class="citation" data-cites="era52026">(<a href="#ref-era52026" role="doc-biblioref">C3S 2018</a>)</span></li>
@@ -296,165 +297,165 @@ In my experience the problem with CAZ type policies is that what happens in real
 
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
 <div id="ref-ads2026" class="csl-entry" role="listitem">
-ADS. 2026. <span>“CAMS European Air Quality Reanalyses.”</span> <a href="https://ads.atmosphere.copernicus.eu/datasets/cams-europe-air-quality-reanalyses?tab=overview">https://ads.atmosphere.copernicus.eu/datasets/cams-europe-air-quality-reanalyses?tab=overview</a>.
+ADS. 2026. <em>CAMS European Air Quality Reanalyses</em>. <a href="https://ads.atmosphere.copernicus.eu/datasets/cams-europe-air-quality-reanalyses?tab=overview">https://ads.atmosphere.copernicus.eu/datasets/cams-europe-air-quality-reanalyses?tab=overview</a>.
 </div>
 <div id="ref-zotero-item-7409" class="csl-entry" role="listitem">
-Ballinger, Ann, Tanzir Chowdhury, George Cole, and Olly Jamieson. 2017. <span>“Air <span>Quality Benefits</span> of <span>Active Travel</span>.”</span> <a href="https://www.walkwheelcycletrust.org.uk/media/2919/2919.pdf">https://www.walkwheelcycletrust.org.uk/media/2919/2919.pdf</a>.
+Ballinger, Ann, Tanzir Chowdhury, George Cole, and Olly Jamieson. 2017. <em>Air <span>Quality Benefits</span> of <span>Active Travel</span></em>. <a href="https://www.walkwheelcycletrust.org.uk/media/2919/2919.pdf">https://www.walkwheelcycletrust.org.uk/media/2919/2919.pdf</a>.
 </div>
 <div id="ref-GovernmentLosesClean2018" class="csl-entry" role="listitem">
-BBC. 2018. <span>“Government Loses Clean Air Court Case.”</span> <a href="https://www.bbc.com/news/science-environment-43141467">https://www.bbc.com/news/science-environment-43141467</a>.
+BBC. 2018. <em>Government Loses Clean Air Court Case</em>. <a href="https://www.bbc.com/news/science-environment-43141467">https://www.bbc.com/news/science-environment-43141467</a>.
 </div>
 <div id="ref-UKParliamentDeclares2019" class="csl-entry" role="listitem">
-———. 2019. <span>“<span>UK Parliament</span> Declares Climate Change Emergency.”</span> <em>BBC News: UK Politics</em>. <a href="https://www.bbc.co.uk/news/uk-politics-48126677">https://www.bbc.co.uk/news/uk-politics-48126677</a>.
+BBC. 2019. <span>“<span>UK Parliament</span> Declares Climate Change Emergency.”</span> In <em>BBC News: UK Politics</em>. <a href="https://www.bbc.co.uk/news/uk-politics-48126677">https://www.bbc.co.uk/news/uk-politics-48126677</a>.
 </div>
 <div id="ref-bretschgerGettingCostsEnvironmental2021" class="csl-entry" role="listitem">
 Bretschger, Lucas. 2021. <span>“Getting the <span>Costs</span> of <span>Environmental Protection Right</span>: <span>Why Climate Policy Is Inexpensive</span> in the <span>End</span>.”</span> <em>Ecological Economics</em> 188 (October): 107116. <a href="https://doi.org/10.1016/j.ecolecon.2021.107116">https://doi.org/10.1016/j.ecolecon.2021.107116</a>.
 </div>
 <div id="ref-era52026" class="csl-entry" role="listitem">
-C3S. 2018. <span>“ERA5 Hourly Data on Single Levels from 1940 to Present.”</span> <a href="https://doi.org/10.24381/cds.adbb2d47">https://doi.org/10.24381/cds.adbb2d47</a>.
+C3S. 2018. <em>ERA5 Hourly Data on Single Levels from 1940 to Present</em>. <a href="https://doi.org/10.24381/cds.adbb2d47">https://doi.org/10.24381/cds.adbb2d47</a>.
 </div>
 <div id="ref-cairns1998" class="csl-entry" role="listitem">
-Cairns, Sally, Carmen Hass-Klau, and Phil Goodwin. 1998. <span>“Traffic Impact of Highway Capacity Reductions: Assessment of the Evidence.”</span> <a href="https://issuu.com/landorlinks/docs/cairns-hass-klau-goodwin-1998">https://issuu.com/landorlinks/docs/cairns-hass-klau-goodwin-1998</a>.
+Cairns, Sally, Carmen Hass-Klau, and Phil Goodwin. 1998. <em>Traffic Impact of Highway Capacity Reductions: Assessment of the Evidence</em>. <a href="https://issuu.com/landorlinks/docs/cairns-hass-klau-goodwin-1998">https://issuu.com/landorlinks/docs/cairns-hass-klau-goodwin-1998</a>.
 </div>
 <div id="ref-carslaw2026" class="csl-entry" role="listitem">
-Carslaw, David, Jack Davidson, and Karl Ropkins. 2026. <span>“Tools for the Analysis of Air Pollution Data.”</span> <a href="https://openair-project.github.io/openair/">https://openair-project.github.io/openair/</a>.
+Carslaw, David, Jack Davidson, and Karl Ropkins. 2026. <em>Tools for the Analysis of Air Pollution Data</em>. <a href="https://openair-project.github.io/openair/">https://openair-project.github.io/openair/</a>.
 </div>
 <div id="ref-NO2FallDistance" class="csl-entry" role="listitem">
-Defra. 2018. <span>“<span>NO2 Fall Off With Distance Calculator</span> | <span>LAQM</span>.”</span> March 2018. <a href="https://laqm.defra.gov.uk/air-quality/air-quality-assessment/no2-falloff/">https://laqm.defra.gov.uk/air-quality/air-quality-assessment/no2-falloff/</a>.
+Defra. 2018. <span>“<span>NO2 Fall Off With Distance Calculator</span> | <span>LAQM</span>.”</span> March. <a href="https://laqm.defra.gov.uk/air-quality/air-quality-assessment/no2-falloff/">https://laqm.defra.gov.uk/air-quality/air-quality-assessment/no2-falloff/</a>.
 </div>
 <div id="ref-GreenhouseGasEmissions" class="csl-entry" role="listitem">
-DESNZ. 2026. <span>“Greenhouse Gas Emissions from Transport in 2024.”</span> GOV.UK. July 14, 2026. <a href="https://www.gov.uk/government/statistics/transport-and-environment-statistics-2024--2/greenhouse-gas-emissions-from-transport-in-2024">https://www.gov.uk/government/statistics/transport-and-environment-statistics-2024--2/greenhouse-gas-emissions-from-transport-in-2024</a>.
-</div>
-<div id="ref-RoadTrafficStatistics" class="csl-entry" role="listitem">
-DfT. 2026a. <span>“Road Traffic Statistics.”</span> May 20, 2026. <a href="https://roadtraffic.dft.gov.uk/">https://roadtraffic.dft.gov.uk/</a>.
+DESNZ. 2026. <span>“Greenhouse Gas Emissions from Transport in 2024.”</span> GOV.UK, July 14. <a href="https://www.gov.uk/government/statistics/transport-and-environment-statistics-2024--2/greenhouse-gas-emissions-from-transport-in-2024">https://www.gov.uk/government/statistics/transport-and-environment-statistics-2024--2/greenhouse-gas-emissions-from-transport-in-2024</a>.
 </div>
 <div id="ref-NationalTravelSurvey2026" class="csl-entry" role="listitem">
-———. 2026b. <span>“National <span>Travel Survey</span>: 2025.”</span> GOV.UK. September 11, 2026. <a href="https://www.gov.uk/government/statistics/national-travel-survey-2025">https://www.gov.uk/government/statistics/national-travel-survey-2025</a>.
+DfT. 2026a. <span>“National <span>Travel Survey</span>: 2025.”</span> GOV.UK, September 11. <a href="https://www.gov.uk/government/statistics/national-travel-survey-2025">https://www.gov.uk/government/statistics/national-travel-survey-2025</a>.
+</div>
+<div id="ref-RoadTrafficStatistics" class="csl-entry" role="listitem">
+DfT. 2026b. <span>“Road Traffic Statistics.”</span> May 20. <a href="https://roadtraffic.dft.gov.uk/">https://roadtraffic.dft.gov.uk/</a>.
 </div>
 <div id="ref-Directive2008502008" class="csl-entry" role="listitem">
-<em>Directive 2008/50/<span>EC</span> of the <span>European Parliament</span> and of the <span>Council</span> of 21&nbsp;<span>May</span> 2008 on Ambient Air Quality and Cleaner Air for <span>Europe</span></em>. 2008. <em>OJ L</em>. Vol. 152. <a href="http://data.europa.eu/eli/dir/2008/50/oj">http://data.europa.eu/eli/dir/2008/50/oj</a>.
+Directive 2008/50/<span>EC</span> of the <span>European Parliament</span> and of the <span>Council</span> of 21&nbsp;<span>May</span> 2008 on Ambient Air Quality and Cleaner Air for <span>Europe</span>, 152 OJ L (2008). <a href="http://data.europa.eu/eli/dir/2008/50/oj">http://data.europa.eu/eli/dir/2008/50/oj</a>.
 </div>
 <div id="ref-ea2025" class="csl-entry" role="listitem">
-EA. 2025. <span>“National LIDAR Programme.”</span> <a href="https://www.data.gov.uk/dataset/f0db0249-f17b-4036-9e65-309148c97ce4/national-lidar-programme">https://www.data.gov.uk/dataset/f0db0249-f17b-4036-9e65-309148c97ce4/national-lidar-programme</a>.
+EA. 2025. <em>National LIDAR Programme</em>. <a href="https://www.data.gov.uk/dataset/f0db0249-f17b-4036-9e65-309148c97ce4/national-lidar-programme">https://www.data.gov.uk/dataset/f0db0249-f17b-4036-9e65-309148c97ce4/national-lidar-programme</a>.
 </div>
 <div id="ref-CommissionWarnsGermany" class="csl-entry" role="listitem">
-EC. 2017. <span>“Commission warns Germany, France, Spain, Italy and the United Kingdom of continued air pollution breaches.”</span> Text. European Commission - European Commission. February 15, 2017. <a href="https://ec.europa.eu/detail/pt/ip_17_238">https://ec.europa.eu/detail/pt/ip_17_238</a>.
+EC. 2017. <span>“Commission warns Germany, France, Spain, Italy and the United Kingdom of continued air pollution breaches.”</span> Text. European Commission - European Commission, February 15. <a href="https://ec.europa.eu/detail/pt/ip_17_238">https://ec.europa.eu/detail/pt/ip_17_238</a>.
 </div>
 <div id="ref-epictaskgroup2024" class="csl-entry" role="listitem">
-EPIC task group. 2024. <span>“Integrating Action on Air Quality &amp; Climate Change.”</span>
+EPIC task group. 2024. <em>Integrating Action on Air Quality &amp; Climate Change</em>.
 </div>
 <div id="ref-NewsEULaunches" class="csl-entry" role="listitem">
-euractiv. 2001. <span>“Ambitious "<span>Clean Air</span> for <span>Europe</span>" <span>Programme</span>.”</span> May 8, 2001. <a href="https://www.euractiv.com/news/ambitious-clean-air-for-europe-programme/">https://www.euractiv.com/news/ambitious-clean-air-for-europe-programme/</a>.
+<span class="nocase">euractiv</span>. 2001. <span>“Ambitious "<span>Clean Air</span> for <span>Europe</span>" <span>Programme</span>.”</span> May 8. <a href="https://www.euractiv.com/news/ambitious-clean-air-for-europe-programme/">https://www.euractiv.com/news/ambitious-clean-air-for-europe-programme/</a>.
 </div>
 <div id="ref-firth2025" class="csl-entry" role="listitem">
-Firth, Ben, and Rachel Powell. 2025. <span>“Everything to Play for - a Plan to Ensure Every Child in England Can Play.”</span> <a href="https://drive.google.com/file/d/1ckOdG4Rf7tdUUv4B2P6C7BoP5ei_ferT/">https://drive.google.com/file/d/1ckOdG4Rf7tdUUv4B2P6C7BoP5ei_ferT/</a>.
+Firth, Ben, and Rachel Powell. 2025. <em>Everything to Play for - a Plan to Ensure Every Child in England Can Play</em>. <a href="https://drive.google.com/file/d/1ckOdG4Rf7tdUUv4B2P6C7BoP5ei_ferT/">https://drive.google.com/file/d/1ckOdG4Rf7tdUUv4B2P6C7BoP5ei_ferT/</a>.
 </div>
 <div id="ref-fuller2018" class="csl-entry" role="listitem">
 Fuller, Gary. 2018. <em>The Invisible Killer: The Rising Global Threat of Air Pollution - and How We Can Fight Back</em>. Melville House UK.
 </div>
 <div id="ref-fullerCO2VariationsPlants2019" class="csl-entry" role="listitem">
-———. 2019. <span>“<span>CO2</span> Variations from Plants Overwhelmed by Traffic Emissions | <span>Environment</span> | <span>The Guardian</span>.”</span> April 11, 2019. <a href="https://www.theguardian.com/environment/2019/apr/11/co2-variations-from-plants-overwhelmed-by-traffic-emissions?CMP=share_btn_tw">https://www.theguardian.com/environment/2019/apr/11/co2-variations-from-plants-overwhelmed-by-traffic-emissions?CMP=share_btn_tw</a>.
+Fuller, Gary. 2019. <span>“<span>CO2</span> Variations from Plants Overwhelmed by Traffic Emissions | <span>Environment</span> | <span>The Guardian</span>.”</span> April 11. <a href="https://www.theguardian.com/environment/2019/apr/11/co2-variations-from-plants-overwhelmed-by-traffic-emissions?CMP=share_btn_tw">https://www.theguardian.com/environment/2019/apr/11/co2-variations-from-plants-overwhelmed-by-traffic-emissions?CMP=share_btn_tw</a>.
 </div>
 <div id="ref-GreaterManchesterClean2025" class="csl-entry" role="listitem">
-Gawne, Ewan. 2025. <span>“Greater <span>Manchester</span> Clean Air Plan with No Driver Charges Backed.”</span> BBC News. January 23, 2025. <a href="https://www.bbc.co.uk/news/articles/cvgm9y2kzplo">https://www.bbc.co.uk/news/articles/cvgm9y2kzplo</a>.
+Gawne, Ewan. 2025. <span>“Greater <span>Manchester</span> Clean Air Plan with No Driver Charges Backed.”</span> BBC News, January 23. <a href="https://www.bbc.co.uk/news/articles/cvgm9y2kzplo">https://www.bbc.co.uk/news/articles/cvgm9y2kzplo</a>.
 </div>
 <div id="ref-glaLondonWideULEZOneYear2025" class="csl-entry" role="listitem">
-GLA. 2025. <span>“London-Wide Ultra Low Emission Zone One Year Report.”</span> <span>Greater London Authority</span>. <a href="https://www.london.gov.uk/programmes-strategies/environment-and-climate-change/environment-and-climate-change-publications/london-wide-ultra-low-emission-zone-one-year-report">https://www.london.gov.uk/programmes-strategies/environment-and-climate-change/environment-and-climate-change-publications/london-wide-ultra-low-emission-zone-one-year-report</a>.
+GLA. 2025. <em>London-Wide Ultra Low Emission Zone One Year Report</em>. <span>Greater London Authority</span>. <a href="https://www.london.gov.uk/programmes-strategies/environment-and-climate-change/environment-and-climate-change-publications/london-wide-ultra-low-emission-zone-one-year-report">https://www.london.gov.uk/programmes-strategies/environment-and-climate-change/environment-and-climate-change-publications/london-wide-ultra-low-emission-zone-one-year-report</a>.
 </div>
 <div id="ref-goodwin2016" class="csl-entry" role="listitem">
-Goodwin, Phil. 2016. <span>“<span>“</span>Disappearing Traffic<span>”</span> <span></span> the Report That Didn<span>’</span>t Quite Disapp.”</span> <a href="https://www.transportxtra.com/publications/local-transport-today/news/48672/-disappearing-traffic--the-report-that-didn-t-quite-disappear/">https://www.transportxtra.com/publications/local-transport-today/news/48672/-disappearing-traffic--the-report-that-didn-t-quite-disappear/</a>.
+Goodwin, Phil. 2016. <em><span>“</span>Disappearing Traffic<span>”</span> <span></span> the Report That Didn<span>’</span>t Quite Disapp</em>. <a href="https://www.transportxtra.com/publications/local-transport-today/news/48672/-disappearing-traffic--the-report-that-didn-t-quite-disappear/">https://www.transportxtra.com/publications/local-transport-today/news/48672/-disappearing-traffic--the-report-that-didn-t-quite-disappear/</a>.
 </div>
 <div id="ref-zotero-item-7431" class="csl-entry" role="listitem">
-Government, HM. 2026. <span>“Global Biodiversity Loss, Ecosystem Collapse and National Security - <span>A</span> National Security Assessment.”</span> HM Government. <a href="https://assets.publishing.service.gov.uk/media/696e0eae719d837d69afc7de/National_security_assessment_-_global_biodiversity_loss__ecosystem_collapse_and_national_security.pdf">https://assets.publishing.service.gov.uk/media/696e0eae719d837d69afc7de/National_security_assessment_-_global_biodiversity_loss__ecosystem_collapse_and_national_security.pdf</a>.
+Government, HM. 2026. <em>Global Biodiversity Loss, Ecosystem Collapse and National Security - <span>A</span> National Security Assessment</em>. HM Government. <a href="https://assets.publishing.service.gov.uk/media/696e0eae719d837d69afc7de/National_security_assessment_-_global_biodiversity_loss__ecosystem_collapse_and_national_security.pdf">https://assets.publishing.service.gov.uk/media/696e0eae719d837d69afc7de/National_security_assessment_-_global_biodiversity_loss__ecosystem_collapse_and_national_security.pdf</a>.
 </div>
 <div id="ref-grangeRandomForestMeteorological2018" class="csl-entry" role="listitem">
 Grange, Stuart K., David C. Carslaw, Alastair C. Lewis, Eirini Boleti, and Christoph Hueglin. 2018. <span>“Random Forest Meteorological Normalisation Models for <span>Swiss PM</span><span><sub>10</sub></span> Trend Analysis.”</span> <em>Atmospheric Chemistry and Physics</em> 18 (9): 6223–39. <a href="https://doi.org/10.5194/acp-18-6223-2018">https://doi.org/10.5194/acp-18-6223-2018</a>.
 </div>
 <div id="ref-hendrichCyclingCitiesMode2026" class="csl-entry" role="listitem">
-Hendrich, Tijl, Hans R. A. Koster, Nicole Loumeau, and Jos van Ommeren. 2026. <span>“Cycling Cities: <span>Mode</span> Choice, Car Congestion, and Urban Structure.”</span> <em>Journal of Urban Economics</em>, September, 103906. <a href="https://doi.org/10.1016/j.jue.2026.103906">https://doi.org/10.1016/j.jue.2026.103906</a>.
+Hendrich, Tijl, Hans R. A. Koster, Nicole Loumeau, and Jos van Ommeren. 2026. <span>“Cycling Cities: <span>Mode</span> Choice, Car Congestion, and Urban Structure.”</span> <em>Journal of Urban Economics</em>, September 2, 103906. <a href="https://doi.org/10.1016/j.jue.2026.103906">https://doi.org/10.1016/j.jue.2026.103906</a>.
 </div>
 <div id="ref-jaquUKPlanTackling2017" class="csl-entry" role="listitem">
-JAQU. 2017. <span>“<span>UK Plan</span> for Tackling Roadside Nitrogen Dioxide Concentrations.”</span> <span>Department for Food, Environment and Rural Affairs (Defra)</span>. <a href="https://assets.publishing.service.gov.uk/media/5a8227f0ed915d74e3402084/air-quality-plan-technical-report.pdf">https://assets.publishing.service.gov.uk/media/5a8227f0ed915d74e3402084/air-quality-plan-technical-report.pdf</a>.
+JAQU. 2017. <em><span>UK Plan</span> for Tackling Roadside Nitrogen Dioxide Concentrations</em>. <span>Department for Food, Environment and Rural Affairs (Defra)</span>. <a href="https://assets.publishing.service.gov.uk/media/5a8227f0ed915d74e3402084/air-quality-plan-technical-report.pdf">https://assets.publishing.service.gov.uk/media/5a8227f0ed915d74e3402084/air-quality-plan-technical-report.pdf</a>.
 </div>
 <div id="ref-jong2022" class="csl-entry" role="listitem">
 Jong, Wouter, and Vivian van der Linde. 2022. <span>“Clean Diesel and Dirty Scandal: The Echo of Volkswagen<span>’</span>s Dieselgate in an Intra-Industry Setting.”</span> <em>Public Relations Review</em> 48 (1): 102146. <a href="https://doi.org/10.1016/j.pubrev.2022.102146">https://doi.org/10.1016/j.pubrev.2022.102146</a>.
 </div>
 <div id="ref-3LinkedIn" class="csl-entry" role="listitem">
-Kelly, Blaise. 2019a. <span>“Are <span>London</span> Style <span>Cycle Superhighways</span> a Better Solution to <span>Air Pollution</span> Than <span>CAZs</span>?”</span> July 28, 2019. <a href="https://www.linkedin.com/pulse/arcticle-blaise-kelly/">https://www.linkedin.com/pulse/arcticle-blaise-kelly/</a>.
+Kelly, Blaise. 2019a. <span>“Are <span>London</span> Style <span>Cycle Superhighways</span> a Better Solution to <span>Air Pollution</span> Than <span>CAZs</span>?”</span> July 28. <a href="https://www.linkedin.com/pulse/arcticle-blaise-kelly/">https://www.linkedin.com/pulse/arcticle-blaise-kelly/</a>.
 </div>
 <div id="ref-OutdoorCO2Pollution2019" class="csl-entry" role="listitem">
-———. 2019b. <span>“Outdoor <span>CO2</span> Pollution.”</span> The Institution of Environmental Sciences: The IES. <a href="https://www.the-ies.org/resources/outdoor-co2-pollution">https://www.the-ies.org/resources/outdoor-co2-pollution</a>.
+Kelly, Blaise. 2019b. <em>Outdoor <span>CO2</span> Pollution</em>. The Institution of Environmental Sciences: The IES. <a href="https://www.the-ies.org/resources/outdoor-co2-pollution">https://www.the-ies.org/resources/outdoor-co2-pollution</a>.
 </div>
 <div id="ref-kellyAermodrPackage2026" class="csl-entry" role="listitem">
-———. 2026. <span>“Aermodr <span>R</span> Package.”</span> <a href="https://github.com/activeanalytics-nl/aermodr">https://github.com/activeanalytics-nl/aermodr</a>.
+Kelly, Blaise. 2026. <em>Aermodr <span>R</span> Package</em>. <a href="https://github.com/activeanalytics-nl/aermodr">https://github.com/activeanalytics-nl/aermodr</a>.
 </div>
 <div id="ref-khreis2026" class="csl-entry" role="listitem">
-Khreis, Haneen, Matthew Williams, Chetan Lad, Dave Fevyer, Anthony A. Laverty, David Jinks, Jamie Furlong, James Woodcock, Phil Edwards, and Anna Goodman. 2026. <span>“The Modelled Impact of Low Traffic Neighbourhoods (LTNs) on Air Pollution: Findings from 5 Schemes in London.”</span> <em>Environmental Research</em> 306 (September): 125093. <a href="https://doi.org/10.1016/j.envres.2026.125093">https://doi.org/10.1016/j.envres.2026.125093</a>.
+Khreis, Haneen, Matthew Williams, Chetan Lad, et al. 2026. <span>“The Modelled Impact of Low Traffic Neighbourhoods (LTNs) on Air Pollution: Findings from 5 Schemes in London.”</span> <em>Environmental Research</em> 306 (September): 125093. <a href="https://doi.org/10.1016/j.envres.2026.125093">https://doi.org/10.1016/j.envres.2026.125093</a>.
 </div>
 <div id="ref-lambethcouncil2021" class="csl-entry" role="listitem">
-Lambeth Council. 2021. <span>“Railton Low Traffic Neighbourhood Stage Two Monitoring Report | Lambeth Council.”</span> <a href="https://www.lambeth.gov.uk/streets-roads-transport/low-traffic-neighbourhood-monitoring-reports/railton-ltn-stage-two-monitoring-report">https://www.lambeth.gov.uk/streets-roads-transport/low-traffic-neighbourhood-monitoring-reports/railton-ltn-stage-two-monitoring-report</a>.
+Lambeth Council. 2021. <em>Railton Low Traffic Neighbourhood Stage Two Monitoring Report | Lambeth Council</em>. <a href="https://www.lambeth.gov.uk/streets-roads-transport/low-traffic-neighbourhood-monitoring-reports/railton-ltn-stage-two-monitoring-report">https://www.lambeth.gov.uk/streets-roads-transport/low-traffic-neighbourhood-monitoring-reports/railton-ltn-stage-two-monitoring-report</a>.
 </div>
 <div id="ref-lovelace2016" class="csl-entry" role="listitem">
-Lovelace, Robin, Anna Goodman, Rachel Aldred, Nikolai Berkoff, Ali Abbas, and James Woodcock. 2016. <span>“The Propensity to Cycle Tool: An Open Source Online System for Sustainable Transport Planning.”</span> <em>The Journal of Transport and Land Use</em>, December. <a href="https://www.jtlu.org/index.php/jtlu/article/view/862/859">https://www.jtlu.org/index.php/jtlu/article/view/862/859</a>.
+Lovelace, Robin, Anna Goodman, Rachel Aldred, Nikolai Berkoff, Ali Abbas, and James Woodcock. 2016. <span>“The Propensity to Cycle Tool: An Open Source Online System for Sustainable Transport Planning.”</span> <em>The Journal of Transport and Land Use</em>, December 6. <a href="https://www.jtlu.org/index.php/jtlu/article/view/862/859">https://www.jtlu.org/index.php/jtlu/article/view/862/859</a>.
 </div>
 <div id="ref-matajsHowDoesRoad2026" class="csl-entry" role="listitem">
 Matajs, C., P. Baptista, G. Valença, R. Félix, and F. Moura. 2026. <span>“How Does Road Space Allocation Affect the Environment and Health? <span>An</span> Evaluation Framework for Dynamic and Static Urban Interventions.”</span> <em>Journal of Transport &amp; Health</em> 49 (June): 102316. <a href="https://doi.org/10.1016/j.jth.2026.102316">https://doi.org/10.1016/j.jth.2026.102316</a>.
 </div>
 <div id="ref-muellerChangingUrbanDesign2020a" class="csl-entry" role="listitem">
-Mueller, Natalie, David Rojas-Rueda, Haneen Khreis, Marta Cirach, David Andrés, Joan Ballester, Xavier Bartoll, et al. 2020. <span>“Changing the Urban Design of Cities for Health: <span>The</span> Superblock Model.”</span> <em>Environment International</em> 134 (January): 105132. <a href="https://doi.org/10.1016/j.envint.2019.105132">https://doi.org/10.1016/j.envint.2019.105132</a>.
+Mueller, Natalie, David Rojas-Rueda, Haneen Khreis, et al. 2020. <span>“Changing the Urban Design of Cities for Health: <span>The</span> Superblock Model.”</span> <em>Environment International</em> 134 (January): 105132. <a href="https://doi.org/10.1016/j.envint.2019.105132">https://doi.org/10.1016/j.envint.2019.105132</a>.
 </div>
 <div id="ref-zotero-item-7421" class="csl-entry" role="listitem">
-NCMD. 2023. <span>“Deaths of Children and Young People Due to Traumatic Incidents: <span>Vehicle Collisions</span>, <span>Drownings</span>, <span>Violence</span> and <span>Maltreatment</span> and <span>Unintentional Injuries</span>.”</span> National Child Mortality Database (NCMD). <a href="https://www.ncmd.info/wp-content/uploads/2023/07/NCMD-Trauma-Thematic-Report.pdf">https://www.ncmd.info/wp-content/uploads/2023/07/NCMD-Trauma-Thematic-Report.pdf</a>.
+NCMD. 2023. <em>Deaths of Children and Young People Due to Traumatic Incidents: <span>Vehicle Collisions</span>, <span>Drownings</span>, <span>Violence</span> and <span>Maltreatment</span> and <span>Unintentional Injuries</span></em>. National Child Mortality Database (NCMD). <a href="https://www.ncmd.info/wp-content/uploads/2023/07/NCMD-Trauma-Thematic-Report.pdf">https://www.ncmd.info/wp-content/uploads/2023/07/NCMD-Trauma-Thematic-Report.pdf</a>.
 </div>
 <div id="ref-HomicideEnglandWales" class="csl-entry" role="listitem">
-ONS. 2026. <span>“Homicide in <span>England</span> and <span>Wales</span> - <span>Office</span> for <span>National Statistics</span>.”</span> February 5, 2026. <a href="https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/articles/homicideinenglandandwales/yearendingmarch2025">https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/articles/homicideinenglandandwales/yearendingmarch2025</a>.
+ONS. 2026. <span>“Homicide in <span>England</span> and <span>Wales</span> - <span>Office</span> for <span>National Statistics</span>.”</span> February 5. <a href="https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/articles/homicideinenglandandwales/yearendingmarch2025">https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/articles/homicideinenglandandwales/yearendingmarch2025</a>.
 </div>
 <div id="ref-parliament2026" class="csl-entry" role="listitem">
-Parliament. 2026. <span>“20 May 2026 - Air Pollution in England - Oral Evidence - Committees - UK Parliament.”</span> <a href="https://committees.parliament.uk/event/27259/formal-meeting-oral-evidence-session/">https://committees.parliament.uk/event/27259/formal-meeting-oral-evidence-session/</a>.
+Parliament. 2026. <em>20 May 2026 - Air Pollution in England - Oral Evidence - Committees - UK Parliament</em>. <a href="https://committees.parliament.uk/event/27259/formal-meeting-oral-evidence-session/">https://committees.parliament.uk/event/27259/formal-meeting-oral-evidence-session/</a>.
 </div>
 <div id="ref-piddManchesterMakesBeeline2018" class="csl-entry" role="listitem">
-Pidd, Helen, and Helen Pidd North of England editor. 2018. <span>“Manchester Makes a <span>Beeline</span> for New <span class="nocase">Dutch-style</span> Cycling Network.”</span> <em>The Guardian: Life and Style</em>, June 26, 2018. <a href="https://www.theguardian.com/lifeandstyle/2018/jun/27/manchester-makes-a-beeline-for-new-dutch-style-cycling-network">https://www.theguardian.com/lifeandstyle/2018/jun/27/manchester-makes-a-beeline-for-new-dutch-style-cycling-network</a>.
+<span class="nocase">Pidd, Helen, and Helen Pidd North of England editor</span>. 2018. <span>“Manchester Makes a <span>Beeline</span> for New <span class="nocase">Dutch-style</span> Cycling Network.”</span> <em>The Guardian: Life and Style</em>, June 26. <a href="https://www.theguardian.com/lifeandstyle/2018/jun/27/manchester-makes-a-beeline-for-new-dutch-style-cycling-network">https://www.theguardian.com/lifeandstyle/2018/jun/27/manchester-makes-a-beeline-for-new-dutch-style-cycling-network</a>.
 </div>
 <div id="ref-reidNissanRefusesGovernment2019" class="csl-entry" role="listitem">
-Reid, Carlton. 2019. <span>“Nissan Refuses Government Request on <span>Qashqai</span> Emissions.”</span> <em>The Guardian: Environment</em>, July 23, 2019. <a href="https://www.theguardian.com/environment/2019/jul/23/nissan-refuses-government-request-on-qashqai-emissions">https://www.theguardian.com/environment/2019/jul/23/nissan-refuses-government-request-on-qashqai-emissions</a>.
+Reid, Carlton. 2019. <span>“Nissan Refuses Government Request on <span>Qashqai</span> Emissions.”</span> <em>The Guardian: Environment</em>, July 23. <a href="https://www.theguardian.com/environment/2019/jul/23/nissan-refuses-government-request-on-qashqai-emissions">https://www.theguardian.com/environment/2019/jul/23/nissan-refuses-government-request-on-qashqai-emissions</a>.
 </div>
 <div id="ref-ropkins2026" class="csl-entry" role="listitem">
 Ropkins, K., A. Walker, I. Philips, C. E. Rushton, T. Clark, and J. E. Tate. 2026. <span>“AQEval: R Code for the Analysis of Discrete Change in Air Quality Time-Series.”</span> <em>The Journal of Open Source Software</em> 11 (118). <a href="https://eprints.whiterose.ac.uk/id/eprint/238112/">https://eprints.whiterose.ac.uk/id/eprint/238112/</a>.
 </div>
 <div id="ref-sactra1994" class="csl-entry" role="listitem">
-SACTRA. 1994. <span>“Trunk Roads and the Generation of Traffic.”</span> <a href="https://nsip-documents.planninginspectorate.gov.uk/published-documents/TR010044-001678-sactra-1994-trunk-roads-traffic-report-unlocked.pdf">https://nsip-documents.planninginspectorate.gov.uk/published-documents/TR010044-001678-sactra-1994-trunk-roads-traffic-report-unlocked.pdf</a>.
+SACTRA. 1994. <em>Trunk Roads and the Generation of Traffic</em>. <a href="https://nsip-documents.planninginspectorate.gov.uk/published-documents/TR010044-001678-sactra-1994-trunk-roads-traffic-report-unlocked.pdf">https://nsip-documents.planninginspectorate.gov.uk/published-documents/TR010044-001678-sactra-1994-trunk-roads-traffic-report-unlocked.pdf</a>.
 </div>
 <div id="ref-PS2BillionPackage" class="csl-entry" role="listitem">
-Schapps. 2020. <span>“£2 Billion Package to Create New Era for Cycling and Walking.”</span> GOV.UK. May 9, 2020. <a href="https://www.gov.uk/government/news/2-billion-package-to-create-new-era-for-cycling-and-walking">https://www.gov.uk/government/news/2-billion-package-to-create-new-era-for-cycling-and-walking</a>.
+Schapps. 2020. <span>“£2 Billion Package to Create New Era for Cycling and Walking.”</span> GOV.UK, May 9. <a href="https://www.gov.uk/government/news/2-billion-package-to-create-new-era-for-cycling-and-walking">https://www.gov.uk/government/news/2-billion-package-to-create-new-era-for-cycling-and-walking</a>.
 </div>
 <div id="ref-segers2025" class="csl-entry" role="listitem">
-Segers, A. J., R. Kranenburg, H. J. Jonas, T. L. Hohenberger, L. Geers, and A. M. M. Manders-Groot. 2025. <span>“LOTOS-EUROS V3.0 Reference Guide.”</span> Utrecht. <a href="https://airqualitymodeling.tno.nl/lotos-euros/open-source-version/">https://airqualitymodeling.tno.nl/lotos-euros/open-source-version/</a>.
+Segers, A. J., R. Kranenburg, H. J. Jonas, T. L. Hohenberger, L. Geers, and A. M. M. Manders-Groot. 2025. <em>LOTOS-EUROS V3.0 Reference Guide</em>. Utrecht. <a href="https://airqualitymodeling.tno.nl/lotos-euros/open-source-version/">https://airqualitymodeling.tno.nl/lotos-euros/open-source-version/</a>.
 </div>
 <div id="ref-sloman2017" class="csl-entry" role="listitem">
-Sloman, L, L Hopkinson, and I Taylor. 2017. <span>“The Impact of Road Projects in England Report for CPRE.”</span> <a href="https://www.cpre.org.uk/wp-content/uploads/2019/11/TfQLZ-ZTheZImpactZofZRoadZProjectsZinZEnglandZ2017.pdf">https://www.cpre.org.uk/wp-content/uploads/2019/11/TfQLZ-ZTheZImpactZofZRoadZProjectsZinZEnglandZ2017.pdf</a>.
+Sloman, L, L Hopkinson, and I Taylor. 2017. <em>The Impact of Road Projects in England Report for CPRE</em>. <a href="https://www.cpre.org.uk/wp-content/uploads/2019/11/TfQLZ-ZTheZImpactZofZRoadZProjectsZinZEnglandZ2017.pdf">https://www.cpre.org.uk/wp-content/uploads/2019/11/TfQLZ-ZTheZImpactZofZRoadZProjectsZinZEnglandZ2017.pdf</a>.
 </div>
 <div id="ref-te2011" class="csl-entry" role="listitem">
-T&amp;E. 2011. <span>“EU Emissions Figures Show Cars Are Getting Heavier Again.”</span> <a href="https://www.transportenvironment.org/articles/eu-emissions-figures-show-cars-are-getting-heavier-again">https://www.transportenvironment.org/articles/eu-emissions-figures-show-cars-are-getting-heavier-again</a>.
+T&amp;E. 2011. <em>EU Emissions Figures Show Cars Are Getting Heavier Again</em>. <a href="https://www.transportenvironment.org/articles/eu-emissions-figures-show-cars-are-getting-heavier-again">https://www.transportenvironment.org/articles/eu-emissions-figures-show-cars-are-getting-heavier-again</a>.
 </div>
 <div id="ref-te2019" class="csl-entry" role="listitem">
-———. 2019. <span>“Mission Possible: How Carmakers Can Reach Their 2021 CO2 Targets and<span>…</span>.”</span> <a href="https://www.transportenvironment.org/articles/mission-possible-how-carmakers-can-reach-their-2021-co2-targets-and-avoid-fines">https://www.transportenvironment.org/articles/mission-possible-how-carmakers-can-reach-their-2021-co2-targets-and-avoid-fines</a>.
+T&amp;E. 2019. <em>Mission Possible: How Carmakers Can Reach Their 2021 CO2 Targets and<span>…</span></em>. <a href="https://www.transportenvironment.org/articles/mission-possible-how-carmakers-can-reach-their-2021-co2-targets-and-avoid-fines">https://www.transportenvironment.org/articles/mission-possible-how-carmakers-can-reach-their-2021-co2-targets-and-avoid-fines</a>.
 </div>
 <div id="ref-thomas2023" class="csl-entry" role="listitem">
-Thomas, Asa, and Rachel Aldred. 2023. <span>“Changes in Motor Traffic Inside London<span>’</span>s LTNs and on Boundary Roads.”</span> <a href="https://drive.google.com/drive/folders/1LTtAzLcRP5qA83UJ8whXvO0f_Tn3U9mH?usp=share_link">https://drive.google.com/drive/folders/1LTtAzLcRP5qA83UJ8whXvO0f_Tn3U9mH?usp=share_link</a>.
+Thomas, Asa, and Rachel Aldred. 2023. <em>Changes in Motor Traffic Inside London<span>’</span>s LTNs and on Boundary Roads</em>. <a href="https://drive.google.com/drive/folders/1LTtAzLcRP5qA83UJ8whXvO0f_Tn3U9mH?usp=share_link">https://drive.google.com/drive/folders/1LTtAzLcRP5qA83UJ8whXvO0f_Tn3U9mH?usp=share_link</a>.
 </div>
 <div id="ref-tongFurtherImprovement2025" class="csl-entry" role="listitem">
-Tong, Chengxu, Yuqing Dai, Matthew Cole, Robert J. R. Elliott, Suzanne E. Bartington, Bowen Liu, and Zongbo Shi. 2025. <span>“Further Improvement in London’s Air Quality Demands More Than the Ultra Low Emission Zone Policy.”</span> <em>Npj Clean Air</em> 1 (1): 29. <a href="https://doi.org/10.1038/s44407-025-00030-9">https://doi.org/10.1038/s44407-025-00030-9</a>.
+Tong, Chengxu, Yuqing Dai, Matthew Cole, et al. 2025. <span>“Further Improvement in London’s Air Quality Demands More Than the Ultra Low Emission Zone Policy.”</span> <em>Npj Clean Air</em> 1 (1): 29. <a href="https://doi.org/10.1038/s44407-025-00030-9">https://doi.org/10.1038/s44407-025-00030-9</a>.
 </div>
 <div id="ref-walkerMotornomativityHowSocial2022" class="csl-entry" role="listitem">
-Walker, Ian, Alan Tapp, and Adrian Davis. 2022. <span>“Motornomativity: <span>How Social Norms Hide</span> a <span>Major Public Health Hazard</span>.”</span> December 14, 2022. <a href="https://doi.org/10.31234/osf.io/egnmj">https://doi.org/10.31234/osf.io/egnmj</a>.
+Walker, Ian, Alan Tapp, and Adrian Davis. 2022. <span>“Motornomativity: <span>How Social Norms Hide</span> a <span>Major Public Health Hazard</span>.”</span> Egnmj_v1. Pre-published December 14. <a href="https://doi.org/10.31234/osf.io/egnmj">https://doi.org/10.31234/osf.io/egnmj</a>.
 </div>
 <div id="ref-whelan2024" class="csl-entry" role="listitem">
 Whelan, Isabelle, Carlo Luiu, and Francis D. Pope. 2024. <span>“Assessing the Polarising Impacts of Low-Traffic Neighbourhoods: A Community Perspective from Birmingham, UK.”</span> <em>International Journal of Environmental Research and Public Health</em> 21 (12): 1638. <a href="https://doi.org/10.3390/ijerph21121638">https://doi.org/10.3390/ijerph21121638</a>.
 </div>
 <div id="ref-mollytooherruddUrbanEmergencyAddressing2024" class="csl-entry" role="listitem">
-Woolf, Darren, George Adams, Stefano Cammelli, Ben Marner, and Blaise Kelly. 2024. <span>“The Urban Emergency: Addressing Environmental Quality.”</span> CIBSE Journal. May 30, 2024. <a href="https://www.cibsejournal.com/technical/the-urban-emergency-addressing-environmental-quality/">https://www.cibsejournal.com/technical/the-urban-emergency-addressing-environmental-quality/</a>.
+Woolf, Darren, George Adams, Stefano Cammelli, Ben Marner, and Blaise Kelly. 2024. <span>“The Urban Emergency: Addressing Environmental Quality.”</span> CIBSE Journal, May 30. <a href="https://www.cibsejournal.com/technical/the-urban-emergency-addressing-environmental-quality/">https://www.cibsejournal.com/technical/the-urban-emergency-addressing-environmental-quality/</a>.
 </div>
 <div id="ref-yang2022" class="csl-entry" role="listitem">
 Yang, Xiuleng, Emma McCoy, Katherine Hough, and Audrey de Nazelle. 2022. <span>“Evaluation of Low Traffic Neighbourhood (LTN) Impacts on NO2 and Traffic.”</span> <em>Transportation Research Part D: Transport and Environment</em> 113 (December): 103536. <a href="https://doi.org/10.1016/j.trd.2022.103536">https://doi.org/10.1016/j.trd.2022.103536</a>.
@@ -538,7 +539,8 @@ Yang, Xiuleng, Emma McCoy, Katherine Hough, and Audrey de Nazelle. 2022. <span>�
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
       // Inspect non-navigation links and adorn them if external
-     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      window.quartoDecorateExternalLinks = function (root) {
+     var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
       for (var i=0; i<links.length; i++) {
         const link = links[i];
         if (!isInternal(link.href)) {
@@ -547,8 +549,69 @@ Yang, Xiuleng, Emma McCoy, Katherine Hough, and Audrey de Nazelle. 2022. <span>�
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+          if (!link.classList.contains('no-external-icon')) {
+          }
         }
       }
+      };
+      window.quartoDecorateExternalLinks(window.document);
+    // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+    // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+    const hideOnEscAndFocusOut = {
+      name: 'hideOnEscAndFocusOut',
+      defaultValue: true,
+      fn(instance) {
+        const dismiss = () => {
+          // A show scheduled by the trigger delay would otherwise reopen it
+          instance.clearDelayTimeouts();
+          instance.hide();
+        };
+        const onKeyDown = (event) => {
+          if (event.key !== 'Escape') {
+            return;
+          }
+          // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+          // except an open reveal.js slide menu, which Esc should close too.
+          // The menu handles keys only when its keyboard option is on.
+          const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+            window.Reveal.getConfig().menu?.keyboard !== false;
+          if (!menuHandlesEsc) {
+            event.stopPropagation();
+          }
+          if (instance.popper.contains(window.document.activeElement)) {
+            // Disabled while refocusing so the focus trigger does not reopen it
+            instance.disable();
+            instance.reference.focus();
+            instance.enable();
+          }
+          dismiss();
+        };
+        const onFocusOut = (event) => {
+          const target = event.relatedTarget;
+          if (target && !instance.reference.contains(target) &&
+              !instance.popper.contains(target)) {
+            dismiss();
+          }
+        };
+        // On the trigger too: a click trigger (code-annotations: select) has no
+        // blur handling. Attached for the instance's lifetime so leaving the
+        // trigger also cancels a show still pending on the trigger delay.
+        instance.reference.addEventListener('focusout', onFocusOut);
+        return {
+          onShow() {
+            window.document.addEventListener('keydown', onKeyDown, true);
+            instance.popper.addEventListener('focusout', onFocusOut);
+          },
+          onHide() {
+            window.document.removeEventListener('keydown', onKeyDown, true);
+            instance.popper.removeEventListener('focusout', onFocusOut);
+          },
+          onDestroy() {
+            instance.reference.removeEventListener('focusout', onFocusOut);
+          },
+        };
+      },
+    };
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
       const config = {
         allowHTML: true,
@@ -562,6 +625,7 @@ Yang, Xiuleng, Emma McCoy, Katherine Hough, and Audrey de Nazelle. 2022. <span>�
         interactiveBorder: 10,
         theme: 'quarto',
         placement: 'bottom-start',
+        plugins: [hideOnEscAndFocusOut],
       };
       if (contentFn) {
         config.content = contentFn;
@@ -724,44 +788,54 @@ Yang, Xiuleng, Emma McCoy, Katherine Hough, and Audrey de Nazelle. 2022. <span>�
           const lineIds = lines.map((line) => {
             return targetCell + "-" + line;
           })
-          let top = null;
-          let height = null;
-          let parent = null;
+          // Each band is positioned against its own containing block, which is
+          // not the offsetParent of the lines, so place it from client rects.
+          const placeBand = (band, firstEl, lastEl, codeBlock) => {
+            const container = band.offsetParent;
+            if (container === null) {
+              return;
+            }
+            const containerRect = container.getBoundingClientRect();
+            // Reveal.js scales slides with a transform, so convert client
+            // pixels back to the CSS pixels of the container.
+            const scale = containerRect.height / container.offsetHeight || 1;
+            const firstRect = firstEl.getBoundingClientRect();
+            const lastRect = lastEl.getBoundingClientRect();
+            const top = (firstRect.top - containerRect.top) / scale - container.clientTop + container.scrollTop;
+            const height = (lastRect.bottom - firstRect.top) / scale;
+            band.style.top = top - 2 + "px";
+            band.style.height = height + 4 + "px";
+            if (codeBlock) {
+              // Without the copy button wrapper, the containing block is wider
+              // than the code block, so span the code block explicitly.
+              const blockRect = codeBlock.getBoundingClientRect();
+              band.style.left = (blockRect.left - containerRect.left) / scale - container.clientLeft + container.scrollLeft + "px";
+              band.style.width = blockRect.width / scale + "px";
+            }
+          };
           if (lineIds.length > 0) {
-              //compute the position of the single el (top and bottom and make a div)
-              const el = window.document.getElementById(lineIds[0]);
-              top = el.offsetTop;
-              height = el.offsetHeight;
-              parent = el.parentElement.parentElement;
-            if (lineIds.length > 1) {
-              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-              height = bottom - top;
+            const el = window.document.getElementById(lineIds[0]);
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const parent = el.parentElement.parentElement;
+            // cook up a div (if necessary) and position it
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
             }
-            if (top !== null && height !== null && parent !== null) {
-              // cook up a div (if necessary) and position it 
-              let div = window.document.getElementById("code-annotation-line-highlight");
-              if (div === null) {
-                div = window.document.createElement("div");
-                div.setAttribute("id", "code-annotation-line-highlight");
-                div.style.position = 'absolute';
-                parent.appendChild(div);
-              }
-              div.style.top = top - 2 + "px";
-              div.style.height = height + 4 + "px";
-              div.style.left = 0;
-              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-              if (gutterDiv === null) {
-                gutterDiv = window.document.createElement("div");
-                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-                gutterDiv.style.position = 'absolute';
-                const codeCell = window.document.getElementById(targetCell);
-                const gutter = codeCell.querySelector('.code-annotation-gutter');
-                gutter.appendChild(gutterDiv);
-              }
-              gutterDiv.style.top = top - 2 + "px";
-              gutterDiv.style.height = height + 4 + "px";
+            placeBand(div, el, lastEl, parent.closest("div.sourceCode") || parent);
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
             }
+            placeBand(gutterDiv, el, lastEl);
             selectedAnnoteEl = annoteEl;
           }
         };
@@ -859,6 +933,9 @@ Yang, Xiuleng, Emma McCoy, Katherine Hough, and Audrey de Nazelle. 2022. <span>�
       }
     }
   });
+  </script>
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"Scrollable code","output":"Scrollable output"};
   </script>
 </div> <!-- /content -->
 

@@ -1,0 +1,2016 @@
+Received: from PA1PR03MB11385.eurprd03.prod.outlook.com
+ (2603:10a6:102:566::12) by VI0PR03MB11185.eurprd03.prod.outlook.com with
+ HTTPS; Mon, 7 Sep 2026 18:01:36 +0000
+ARC-Seal: i=2; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=pass;
+ b=RPrkV4Mdsn3H37n/xlvaI3wJt8IJfC9aBGIl5PjnUFLENkohcTD4I5FwkNny75uHWrgoqMMuC+cHvcix48Y5tHEFM1atd/0e3e3p/efEKqfM2fNoGbpTMRhxJIEDjMFwf8/8gahAsbWCxkD3YL6l0GU9Br4MZ6hf1qQEBCZfXdvNEXMORUXTAG/faO4MII4VUa8m+RUxLN/m7uw2J2TVIVRY1wrD3kLd2gPYKEIuN3giAEFbqMjtjyVTXg/K7azCDxmfCIPerHotU8Y7boXnppbVoAcwoN6P+kk2h2PIkk574Xub4w4agrx9/pO/9/Lg2wfE+u4BoH28vn7HavmAew==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=eJypMetm0i87b38ev6ccxq/rCUqZ/UBErDhSrhliCCM=;
+ b=DaSWYKp0s0x3ItOLIJIm5iBPbVklDlsgeIsoa0nXwpWjBiD+jjTjJ+zg27kKf+p34HXP/bGScYuxF9i0HAAxwnSnI1fRSuRT89d6wfO7D1UifY5bxAG0mbw25VjJ/FdiHbROC1oEMwGf8b81EbEGYSSRdQjcvb0ViDjKYAOdRuBl9WW/5Vu0ras9tOb4F2YBTJUZEg0UqEYandOCXD2NtKsYC0ry0R8zGOk/jBNuWps2wnd0hbZF/wpPBu0+RIZtTeP0ALU5vX8GeCxj7b22RyePpQ0/Q+g2eUIn3PUsZV4nLmQ8wMIGhFIh63Awdl0jqXP4HKoWtpRrdM8xQH/xSw==
+ARC-Authentication-Results: i=2; mx.microsoft.com 1; spf=softfail (sender ip
+ is 74.125.230.76) smtp.rcpttodomain=leeds.ac.uk smtp.mailfrom=kello.co.uk;
+ dmarc=none action=none header.from=kello.co.uk; dkim=pass (signature was
+ verified) header.d=kello-co-uk.20251104.gappssmtp.com; arc=pass (0 oda=0
+ ltdi=1)
+Received: from AM0P309CA0008.EURP309.PROD.OUTLOOK.COM (2603:10a6:20b:28f::8)
+ by PA1PR03MB11385.eurprd03.prod.outlook.com (2603:10a6:102:566::12) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.21.382.15; Mon, 7 Sep
+ 2026 17:58:49 +0000
+Received: from AM3PEPF00009BA0.eurprd04.prod.outlook.com
+ (2603:10a6:20b:28f:cafe::2d) by AM0P309CA0008.outlook.office365.com
+ (2603:10a6:20b:28f::8) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.21.428.3 via Frontend Transport; Mon, 7
+ Sep 2026 17:58:48 +0000
+Authentication-Results: spf=softfail (sender IP is 74.125.230.76)
+ smtp.mailfrom=kello.co.uk; dkim=pass (signature was verified)
+ header.d=kello-co-uk.20251104.gappssmtp.com;dmarc=none action=none
+ header.from=kello.co.uk;compauth=pass reason=106
+Received-SPF: SoftFail (protection.outlook.com: domain of transitioning
+ kello.co.uk discourages use of 74.125.230.76 as permitted sender)
+Received: from inpost.tmes.trendmicro.eu (18.185.115.107) by
+ AM3PEPF00009BA0.mail.protection.outlook.com (10.167.16.25) with Microsoft
+ SMTP Server (version=TLS1_3, cipher=TLS_AES_256_GCM_SHA384) id 15.21.406.5
+ via Frontend Transport; Mon, 7 Sep 2026 17:58:48 +0000
+Received: from 74.125.230.76_.trendmicro.com (unknown [172.21.189.195])
+	by inpost.tmes.trendmicro.eu (Postfix) with SMTP id 63C4BC00034E
+	for <R.Lovelace@leeds.ac.uk>; Mon, 07 Sep 2026 17:58:48 +0000 (UTC)
+X-TM-MAIL-RECEIVED-TIME: 1788803892.512000
+X-TM-MAIL-UUID: 79fc2f8b-c9fc-4cd2-9408-72d61ab1b5a0
+Received: from mail-lr2-f12.google.com (unknown [74.125.230.76])
+	by inpre01.tmes.trendmicro.eu (Trend Micro Email Security) with ESMTPS id 7D1D8C000416
+	for <R.Lovelace@leeds.ac.uk>; Mon, 07 Sep 2026 17:58:12 +0000 (UTC)
+Received: by mail-lr2-f12.google.com with SMTP id 38308e7fff4ca-3a2fec39dc7so1506521fa.1
+        for <R.Lovelace@leeds.ac.uk>; Mon, 07 Sep 2026 10:58:12 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1788803892; cv=none;
+        d=google.com; s=arc-20260327;
+        b=o0kyouL7gJS7+sKCLIs71QUeIhzinw2ei0oANxGpQb60K6f+RcsgtxiPFnG0y0LL4g
+         Dr8YizD9kRJpm69LWOsYDm0YrxUYc8OZaj0pK95zKkXal+XFBOAeaYFTlmnv5O//pVnL
+         b91W5ukcHy/rQ2eHtFuteFCRA7q0Rjfatp9gThVEXm2555jIJuE0dKQ7pqtxyeELBFX/
+         d6pXxUSOchk/+kboROMIf35YwA3U6IWBq6d8BrS2biKkYoTuc6zBfknsYPO36DUlYGh/
+         NKbbdHiGzH2S4fdxgeNV6l6pi9NAqVuJeDX9Xxdq/Tcgd7UQncvLl/yvPvmXQ0NV9V8L
+         R7iQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20260327;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=eJypMetm0i87b38ev6ccxq/rCUqZ/UBErDhSrhliCCM=;
+        fh=WMmMblCk/rHrgYYh+5l3zC5pmpsCeBsCUHoFnlruObw=;
+        b=jTg5D8yZ3OIHIXH1cz7MJrT/tdjRMKLfVIj4OnT9bPcRsz/zkmLD29wZS2YeIN3ukb
+         BcNT42wEiQUbuv3t9SgzNH4T6GxrV8ec8X435UgItN0qcCS9/+oPA5pyA5tNHjJX1XFG
+         0kR3SDXPsgvF3x4fB8jFXpipDxcUUUTyEja5mVGT0vg3TchNFIXV0tHm4mU+6Z0KqSOG
+         dCpVeFPlxIxtdrY3QXOUbvEJh49YiJQ2zxOZ0ohA/MFo7rgS8JtxiETIwzFyCZmN87ri
+         x345pNIMs9I6VbQcdzqdDLjokp5AaH27z6dRq3uOMiZTZwxOgzSlURhCHh0YaFgM5v6R
+         cNtg==;
+        darn=leeds.ac.uk
+ARC-Authentication-Results: i=1; mx.google.com; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=kello-co-uk.20251104.gappssmtp.com; s=20251104; t=1788803892; x=1789408692; darn=leeds.ac.uk;
+        h=content-type:to:subject:message-id:date:from:in-reply-to:references
+         :mime-version:from:to:cc:subject:date:message-id:reply-to
+         :content-type;
+        bh=eJypMetm0i87b38ev6ccxq/rCUqZ/UBErDhSrhliCCM=;
+        b=fVrG3hSb1RUuDbZuDRDHKpCkh8dxPspaYbozELQU6XrM3nPp1fF3gl/mr1QYMqMdmi
+         Ig4G7xOsrlSX/H1ngTMQu1GNNadX9raG+HbzuJSMHXmcF9u0LaJ0KZb0TkxUNwN1mxoe
+         dCHDkKw4dcjnbAuiKYhjnYWYvVKDgmDACcTRit/mR45M8u10CxfDtSepvVaIs4/bXjCz
+         0H6Pu4S6dRESXpwg9hSFOOJ0DV4wSnLCE65r5fpv7GCTmVVC7wHDqORgcrEG6AZ9w08F
+         kJAXJnAhEhL3wWLLtlA+Jidy5Y9TpIStjhoOV7j4yX3Pv8HhaXFy+0+cVaJw2PAmei0Q
+         9+nA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20251104; t=1788803892; x=1789408692;
+        h=content-type:to:subject:message-id:date:from:in-reply-to:references
+         :mime-version:x-gm-gg:x-gm-message-state:from:to:cc:subject:date
+         :message-id:reply-to:content-type;
+        bh=eJypMetm0i87b38ev6ccxq/rCUqZ/UBErDhSrhliCCM=;
+        b=VRUaP/J8KQtKX02YrnQl1vvao4RqxzsuiFxMWL39b6UGaBQfGh8y1Mtuzp1xSSCpQg
+         f0ZkwKaWSWNeeNPsr8hzaTbK7q4XblnhU42E3kg6jieQGi4JIOY++AUE0GSfOFMgP2iA
+         iH8XUjFCZScn/3z1TWzzdOWEr5fpV5FHA6hWe7b7P3ZUiZdP5W9e7Go1XrjR2LJhk8Uj
+         kRTxfQ3zpNV4tCeLUXYN27BaA1ciHJ8E6Xwk3vLih5YOxDGqggIB0CGJ2j7kyxmI/0h3
+         morwb6SEcVzVRHnpSEsK+1AsHre8A9sTSz+Y1j6D8zi3hZsmUs8ue21kg3WP354mvvNW
+         kI0Q==
+X-Gm-Message-State: AFuF++kUnsZ7tMiV/TLMj4QEkQO+Tmp0gD0aMkpTvli45+a2wxtGUXyy
+	UGahDqDh7K36++hgrk+eSCRb8W/4ESxqb+h2lx5KLPw4FMzuQ5eCGmAqTOUrNIgN1ktVXSQbrIs
+	1EwCmwCnTQyYh9LuawO2pdCrl7ymLlqhv8KqeY4/s7kVb8fChkbW2Cg==
+X-Gm-Gg: AYBFou0mH+/H6o4q99+V4nGA/OvFcbNxGznpQ0vhjbUVFldPXD/SGvgi0FZd3Sn6rbs
+	dvOGRGHgGWp5LSWFWofhBXCNZZd7j8sjJdkbJrkQSkz/ZLt81P2HnkJaKfDuMin2GJOuKUWb2D+
+	hbNDk8rbvWW0mCFFftctDOtdt5lMg3zvvq5PCOz9CEneeZRNba/2EA7b4IPTmwe+t+TbXU1rzdI
+	oyyJuZygiCdZBW5CDu/Ki6JvVsMtvR523fzyEseI63wr+M2IXCtZcASeTV7zXful3TLQZ83mDof
+	AWEmdrSvJ4/Lw0t7lSXUTcs9/El2mGkjIh00qs52mIOWaYfCpxPCHBMmf0kFDL+nyoVqz6x7cHo
+	9ihbm0qaLs1ZP1MhnrNnDUF6yn4eOd2YOQBbc0d9joCOvU08ZRXOBx5/YeiW8R/o=
+X-Received: by 2002:a05:651c:513:b0:3a4:88c9:c51c with SMTP id
+ 38308e7fff4ca-3a488c9c5abmr1741101fa.1.1788803891406; Mon, 07 Sep 2026
+ 10:58:11 -0700 (PDT)
+References: <CA+Ya6UeP9wkd_9qJOtvPyyui6okbYjgGU9mrHGHQF1a=J_ZXxQ@mail.gmail.com>
+ <VI0PR03MB111853ECB20D1C4FD3606F190DAB52@VI0PR03MB11185.eurprd03.prod.outlook.com>
+ <CA+Ya6Ue2E7nom3PyMo=RjngAj0Xr-+aUgDW848vRaYN2PviUMA@mail.gmail.com>
+ <VI0PR03MB111853AFB2757561ADD60EE8BDAB52@VI0PR03MB11185.eurprd03.prod.outlook.com>
+ <VI0PR03MB11185009D0259ADFA1EFB8BA8DAB52@VI0PR03MB11185.eurprd03.prod.outlook.com>
+ <CA+Ya6UdX0oH9BO_vJQODF2_GWB8Q18cc-737Zr85kX=0s11v9g@mail.gmail.com>
+ <VI0PR03MB11185F66F42692670C4F2C830DAB22@VI0PR03MB11185.eurprd03.prod.outlook.com>
+ <VI0PR03MB111851931CB62EFD15924DA23DAB22@VI0PR03MB11185.eurprd03.prod.outlook.com>
+In-Reply-To: <VI0PR03MB111851931CB62EFD15924DA23DAB22@VI0PR03MB11185.eurprd03.prod.outlook.com>
+From: Blaise Kelly <blaise@kello.co.uk>
+Date: Mon, 7 Sep 2026 19:57:59 +0200
+X-Gm-Features: AcwNN1UsFY9lNU9KUsazIvE7o9Bua7d6oR0yTgop_bNqM218-Jy9z5SbBpjS3KU
+Message-ID: <CA+Ya6UdGx1ycFxpA5cr-DmX+t1_3mWccacv_YpNBLEPst_25Xg@mail.gmail.com>
+Subject: Re: Couple of questions
+To: Robin Lovelace <R.Lovelace@leeds.ac.uk>
+Content-Type: multipart/alternative; boundary="0000000000008538fd065ae85c3c"
+X-TM-Authentication-Results: spf=softfail (sender IP address: 
+	74.125.230.76) smtp.mailfrom=kello.co.uk; dkim=none (no processed 
+	signatures) header.d=none; dmarc=fail action=no records 
+	header.from=kello.co.uk; arc=none
+X-TM-AS-ERS: 74.125.230.76-127.2.0.1
+X-TMASE-Version: StarCloud-1.3-9.2.1014-30184.000
+X-TMASE-Result: 10--22.510100-10.000000
+X-TMASE-MatchedRID: Ho8J/lGVQjPom21DJQMYHirzRJMbJbCoXr4JGh7j3QjlBV5AxlyRQl5G
+	q/YGhf6Fc1TT0H8p3T/dBAHZXoZ0hgw4DIWv1jSVpolXqDXvwwqVb+Yicur2ZCmLRh6zm1Ss2ag
+	kMppXv0nCb3BgjHRWxdcS435NPBddju2XlcEx9HQta64Tt5lszPR1Y2O8kwym3aKgj8y4nKh41r
+	PBq2JgHwJ77JxnqlczbzbOZ5gKGTI+MySqIuP2jNVRbHgTqRNXyHtSGFR1pTAlb89upZgVzI/FT
+	qMJnJnRsTHw2yhIP+Gx2fvHceHZm8I8CTO5BMUm1kSOvrGs/+FJFPBcgYmFInxobLHy/PlA7tIt
+	2zUVaDu43G1mnwXq3BX5++w6xpbPELXqdsLWV9wbq8AXvsawlvsFqaKfjkncxHtx9qt/1r8CPTR
+	CBb4dajW44m9uQIFtF/3esRqO+fqFhGp9GNPDraCfX1AcCU7MI+xySSHQibkL9AlP8HgbAP34Hc
+	zMjFvxh+9UsddnvV/XBfOQkdDpmG9z5djsq3OwmHJMNyf2CIGc3UwnJfx9EnG6SzBP51YfvtvtA
+	uK0htr4HbHoK7zRH73HW7/A5FxDwW8y43FQD5w2/s3caCk9Q2TjWF7DpHvfpkeyMbk0SEY7zEEU
+	odG9QrI7hZO9kKz8SjkoCWYMFugv0fWSV3unZ+39ta8gafaYKE8e6oKj/HmpiAQ+6MC4OA0JZrw
+	vEaTXiqCkrCTR/49LvXaW/FK1h7ZhF8GtnBH0tfx+y0VeHSo/3aLJ9TdN/W2xTAmk5rBT+tQQvL
+	EVwEJno7Llrktp8Ph65XOU0Gqc3bQyyiEYGKC5R4kK4H1ovfvaUcDItxzC6KEJO7SR6XhH/z1uD
+	ve6DygzqrIegHgf4ftEeSASkbLQF1KxVHxMgvrDHrB5YKTLEgkdJFAwSitA0TBAV57h5S9h6tej
+	U7UDh8UXY9EkX8C2nB0hRl7i7CVNJxt7aXvgmwjor1Nh6wtzA3zHNNGUyfoLEnltozQnhhzSfSg
+	GGpZEdwCHrPLunihLegW5YzrAS8V8ZDiVvSgchXTZ3Wukbw==
+X-TMASE-SNAP-Result: 1.821001.0001-0-1-22:0,28:1,33:0,34:0,38:1,42:1-0
+X-TMASE-XGENCLOUD: 8d2c9765-07c4-48e5-8657-7719e3d46314-0-0-200-0
+X-TM-AS-SMTP: 1.0 bWFpbC1scjItZjEyLmdvb2dsZS5jb20= YmxhaXNlQGtlbGxvLmNvLnVr
+X-TM-AS-URLRatingInfo: 71-93-=?us-ascii?B?aHR0cHM6Ly9wdWJsaWNtYXAub3JnL2VuLw==
+X-TM-Addin-Auth: Tqad8c/o5SHswzmioSV1BUfInI5IA4EUU8nbMJj9UcXV8YbR1+TYrQhPqGZ
+	G/rILFhB2zgy7nHkn8peAMnmRZQNfI33j143hzrH68rLdi7H8RqdQlZa+Dx1cnkJi9xyWvN+RV9
+	uFuSWrm1mKIAZdsBtgoVVIO8pyn8y0JKHMnrB5Pcr69OKS6Kq2i1dT8LOqaYeglUr9reuNbMEeX
+	FATuLIbYszanpXFV74iuKyWRfoZr3/iI8rWGcb3HpxJxGqZkpVPsNTcAvuash/dHVw/qhrCyRGF
+	kJB7V6ZF1BvCAVV6pG0Hu2zdzuZWjUnWbekl6euSVhaU3ZSX6XgJ8/ksIg==.OkbGbJzgTeKEWh
+	fht+ZzR1yh2inI9ovgeKZakW/5YjzJFCPU6zHR7Q5z5AA9FdOSeGZEK2GGAApa3fVfuWaj8lFrX
+	tnM1tVZFN8DXjI8bZ7eXksB6yYVlZzfwpHaf7tvQY3FI8Tk349P3BWXyAXAZNAy2FwX+aHklvGr
+	sZOClUgWCmGwWhnKJZNoAVHmpokZA1OJeOYtTdvw0qlhyCmhJTj3vvD7EaffT2/6oKW1OPOV1BV
+	RnvHR4Udb4M6N6PGiP16bpn8Scbh/7xzF3UBMqnkCtZuc3a/G6wApyy2UK1e6s6ZDWoATaywuWb
+	Ep5LYHbDCJGwheVl15ZRidR1D8aA==
+X-TM-Addin-ProductCode: EMS
+X-TM-RISKAI-PTN-VERSION: 1.24.0+20260904.afab9fd
+X-TM-RISKAI-MATCHEDFID: WyJGSUwwMjciLCAiRklMMDMzIiwgIkZJTDAzNiIsICJGSUwwMzci
+	LCAiRklMMDQwIiwgIkZJTDA0MiIsICJGSUwwNTYiLCAiRklMMDcyIiwgIkZJTDA3OCIsICJGSUw
+	wODFOIiwgIkZJTDA4MiIsICJGSUwwODUiLCAiRklMMDg3IiwgIkZJTDA5NCIsICJGSUwxMTYiLC
+	AiRklMMTIxIiwgIkZJTDEzNyIsICJGSUwxNTAiLCAiRklMMTk2IiwgIkZJTDE5NyIsICJGSUwxO
+	TgiLCAiRklMMTk5IiwgIkZJTDIwMCIsICJGSUwyMzEiLCAiRklMMjMyIiwgIkZJTDI1MSIsICJG
+	SUwyOTMiXQ==
+X-TM-Deliver-Signature: B57ABEC5F203D46464E0518DCCC3A655
+Return-Path: blaise@kello.co.uk
+X-MS-Exchange-Organization-ExpirationStartTime: 07 Sep 2026 17:58:48.6268
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 7f8be0aa-293d-4b48-63c7-08df0d09ab18
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: bdeaeda8-c81d-45ce-863e-5232a535b7cb:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-Exchange-SkipListedInternetSender: ip=[74.125.230.76];domain=mail-lr2-f12.google.com
+X-MS-Exchange-ExternalOriginalInternetSender: ip=[74.125.230.76];domain=mail-lr2-f12.google.com
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: AM3PEPF00009BA0:EE_|PA1PR03MB11385:EE_|VI0PR03MB11185:EE_
+X-MS-Exchange-Organization-AuthSource: AM3PEPF00009BA0.eurprd04.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 7f8be0aa-293d-4b48-63c7-08df0d09ab18
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0;ARA:13230040|704162111799003|82310400026|27102699006|43022699015|13003099007|6133799003|19002099009|4133799003|3023799007|10067099003|4143699003|11063799006|5063699009|5023799004|8096899003|16102099003|22082099003|18002099003|55112099003|57112099003;
+X-Forefront-Antispam-Report: CIP:18.185.115.107;CTRY:US;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:mail-lr2-f12.google.com;PTR:mail-lr2-f12.google.com;CAT:NONE;SFS:(13230040)(704162111799003)(82310400026)(27102699006)(43022699015)(13003099007)(6133799003)(19002099009)(4133799003)(3023799007)(10067099003)(4143699003)(11063799006)(5063699009)(5023799004)(8096899003)(16102099003)(22082099003)(18002099003)(55112099003)(57112099003);DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 07 Sep 2026 17:58:48.5677
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 7f8be0aa-293d-4b48-63c7-08df0d09ab18
+X-MS-Exchange-CrossTenant-Id: bdeaeda8-c81d-45ce-863e-5232a535b7cb
+X-MS-Exchange-CrossTenant-AuthSource: AM3PEPF00009BA0.eurprd04.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: PA1PR03MB11385
+X-MS-Exchange-Transport-EndToEndLatency: 00:02:47.4712307
+X-MS-Exchange-Processed-By-BccFoldering: 15.21.0382.004
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910005)(944506478)(944626604)(920097)(930201)(20251009189)(140003)(1420198);
+X-Microsoft-Antispam-Message-Info:
+	=?Windows-1252?Q?/pcCRWB8P4Ut037i3tc9bHnBumEvV24d0tcfM1zrgeyS5Wmq9b69PtM1?=
+ =?Windows-1252?Q?AxKT6u3BI6FAdB2VKX6P8AR+0fh1jgcFbjztvYokvHBNZzKDsi1enrzz?=
+ =?Windows-1252?Q?2W8jhdwtJb1j0YweThuv5hQV7I0NuF4HMuL/Rn/Z5ilyCMoQHZOUqYsB?=
+ =?Windows-1252?Q?g5YFVwRck1EqpIcaxd14L5iyOP73cCMt02bhQOH4pVzbsfh74OuwwCJ7?=
+ =?Windows-1252?Q?OYefErZd2u1Dfb2hBWmvO5LG2+Jk2RE4NXr+6SWWEp/MizUNX4WDbYNA?=
+ =?Windows-1252?Q?52ncT/ZCwW6QWYCFjxEhNwsHGh6Jg6sDHC5HMHbtXH+d4Z3/kvMIljCN?=
+ =?Windows-1252?Q?HqTjjzY+FU+1C3JDJTlXgEQbj3gTaV6EAIBGbCmtjUpf6zuBdLlPMReS?=
+ =?Windows-1252?Q?NfKALxjXbwXfGET+GhLydEmXr7J8yB7Q71dLDqwzdboWZ/PiPE5mv+4N?=
+ =?Windows-1252?Q?C8srAHVzHBxh0NXj+pplghn0j7paxrsKhkhlnNXY3Rp0zZS/Fa7+2llV?=
+ =?Windows-1252?Q?Vi/3n35sXV6glHxGZ7mCWKvekMKfAdg/FKlP7spEcOxmezxFAhjToppb?=
+ =?Windows-1252?Q?VemX9TcsB30zwLxQg2i8XmKymA8GzGLIg6/G6ZUJp3qyK+e+ZelcHV92?=
+ =?Windows-1252?Q?w6/FYqN1DJK0e5MFvP1Z313/V6pW6paFGARwyYl8noONdeK3HIf6QHPL?=
+ =?Windows-1252?Q?yMKQRc0t6DfSqAj1aLMB1aIBNc6xmv2FrfjyyhzrJQYf6105D47TVHVz?=
+ =?Windows-1252?Q?AzBLI/cTojDbwEJTsfOcxX5dgUS7PsxMv5sQpazLKb7ZROI22/tqO1ME?=
+ =?Windows-1252?Q?C3C+qjSto7DYEuCK5yk745XjH+8+TKkfSIwzIXLt9ZL1wHb0b5u/T4mt?=
+ =?Windows-1252?Q?oSFWD2jQSly3Otx+tslA17PRERccPNp2vHYQCjeaFXWr59foRLMfUQyP?=
+ =?Windows-1252?Q?CKlMDwht5giJhx6IiKdgQwqm8OIeugDbUX813GQl/sjNKc9LPlads2Rj?=
+ =?Windows-1252?Q?2dIov9Gt/O0B74bguQ/bzRWufGtiHo8mnxMKTiizftOh6OaNV4J0DuhD?=
+ =?Windows-1252?Q?tvIkIhCadXI9Ovh1zqwGVivzaJJoaQ7N5/uZGRIKdBBJCZ3K9Dp8Dqjv?=
+ =?Windows-1252?Q?d/QEIaIGt+NgGYcOokvZL9inXLip7Rv9w8fB6ZHK9xoqa5a8dRu1BiuM?=
+ =?Windows-1252?Q?mbft9veeBCBIK2URGrB8zfIHHUIUM4Ad6GgfZ0qj5zkOJzkH/XhyYnSs?=
+ =?Windows-1252?Q?lM3+CXPZEf6QV0yw+ZargUVdVLsleljx+x3aJE5Ugb4ahNOaoEeYY0MP?=
+ =?Windows-1252?Q?i7anrGFKiat/d36lDDhxEH2LmQtC+EWsgzDTP9wUAq+QNzzCD/DPn+b7?=
+ =?Windows-1252?Q?5bFyJC/hmp/yAgGh9n9mycLoHCJVCyi0v1o9bv+gXBpbxsAB9JZJqeY7?=
+ =?Windows-1252?Q?B+49seVt2/WZMaKNFrNDwk+Obd+mLxGp6Ab1GugM/0Tz8dkB2sjQASkG?=
+ =?Windows-1252?Q?lrnq4tmUx0wnqG617AIo2hShKTzhXTYzHc4ixSQSujoIokGFNuww1jVj?=
+ =?Windows-1252?Q?vtYYLB7Oka+XB5O64ByK+LfP/UnSYr3hcT4h7auDpmYUf+ipg/+gzfOg?=
+ =?Windows-1252?Q?++XYAWco1OSHJkXD4Pbso/qGpZ8dks0xktMS/Ar7v3w+ZJ3Eq2pb2Myh?=
+ =?Windows-1252?Q?kjnNDLtVBwWZqkgwrWqLpPZrr/as2mkhm6TFehjR5rWOa8ENdXkne/jz?=
+ =?Windows-1252?Q?pRMvJuZ6m6NMRcbePXlWP0nSdQHesvF/AIQcbSQalDBOZlfPrTKhWvgL?=
+ =?Windows-1252?Q?jy4fQ9YREPcgmotuRCB2PlGMpBPp6koa2VO5ZUf/rGjTTl5kHXZRt95E?=
+ =?Windows-1252?Q?cJZSEUBHzaV9OGRZtXu6h09mz8N8rsB5mnrM0b0DugVlTLH1HTH39cZI?=
+ =?Windows-1252?Q?+uc5ZBqBwLEyIXDvrBSnREQe9hlFYCYvOhdX9PrJR2ayQZ2EY8XUd0Ct?=
+ =?Windows-1252?Q?L1qKjAgsy5KTz+OckIiywDHx+inPGwx4eibhXbF6rLhb+p3Eh3AJpEXA?=
+ =?Windows-1252?Q?9krbE3rELkwgdKiFCE/B5Cx1Pe6FYJYU+fi3o2wL7yde6zSFCEfGKliA?=
+ =?Windows-1252?Q?47prxczzdMgQGX17JnlvgarJdBiCw4CBUMyHfzTWtGeIDy3aoe7vhhYL?=
+ =?Windows-1252?Q?TOwHlTJXM9SWtQkzVzsvzb7HTmT63eaaVQBFp+XYPSCNqxJI2YaSEvTu?=
+ =?Windows-1252?Q?JYQmQEgnuapGV9YZXIa4CbRe75vpyOF1lRlal1rcdjbcb5b+nbMpWzM0?=
+ =?Windows-1252?Q?ZHW2h5BAKjbQqrP3F3o0pA+gEgME70oDvvsBC2ioNI+4YxWfp5Kn5ScQ?=
+ =?Windows-1252?Q?PtGF81S862U8gwBQK/BxQkwofqdUCQnNpVWAonlJrejehEp6Z1VvOhJ3?=
+MIME-Version: 1.0
+
+--0000000000008538fd065ae85c3c
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+CAUTION: External Message. Use caution opening links and attachments.
+
+Hi Robin,
+
+Thanks so much for chatting this afternoon, really appreciate it.
+
+At the moment afternoon of the 28th and anytime on the 29th and 30th is goo=
+d for me.
+
+Will get on the proposal ASAP!
+
+Cheers
+
+Blaise
+
+
+On Mon, 7 Sept 2026, 15:45 Robin Lovelace, <R.Lovelace@leeds.ac.uk<mailto:R=
+.Lovelace@leeds.ac.uk>> wrote:
+Hi Blaise,
+
+Great talking with you about PhD, lots of good ideas and potential outputs =
+discussed.
+
+Quick follow-up here having just checked my calendar, how's the week beginn=
+ing 28th September as a date for the interview?
+
+Can pencil something in, giving time for iteration on the proposal.
+
+Cheers,
+
+Robin
+
+
+Professor Robin Lovelace
+
+Professor of Transport Data Science, University of Leeds<https://environmen=
+t.leeds.ac.uk/transport/staff/953/dr-robin-lovelace>
+
+Work calendar<https://outlook.office365.com/owa/calendar/63f6c4e85d124df6a2=
+0656ade8e71faa@leeds.ac.uk/32e1cb4137f4414b8d7644453ec4b1041431682614303689=
+3453/calendar.html> / Publications<https://scholar.google.com/citations?hl=
+=3Den&user=3DxDJHVCAAAAAJ&pagesize=3D80&view_op=3Dlist_works&sortby=3Dpubda=
+te> / Website<https://www.robinlovelace.net/> / GitHub<https://github.com/R=
+obinlovelace>
+
+
+________________________________
+From: Robin Lovelace <R.Lovelace@leeds.ac.uk<mailto:R.Lovelace@leeds.ac.uk>=
+>
+Sent: 07 September 2026 09:27
+To: Blaise Kelly <blaise@kello.co.uk<mailto:blaise@kello.co.uk>>
+Subject: Re: Couple of questions
+
+Good morning Blaise,
+
+Many good ideas here, thanks for sharing.
+
+I'm free at 1pm today, have sent a Teams invite.
+
+The health benefits of reallocating urban space could be a really good topi=
+c among many good options, I like that it plays to your air quality and roa=
+d casualty data expertise.
+
+I think a good next step could be to set-up a repo to put condensed content=
+ moving towards this, it's great you have so many ideas, having the freedom=
+ to explore them will be great if this comes good.
+
+Cheers, talk soon!
+
+Robin
+
+
+Professor Robin Lovelace
+
+Professor of Transport Data Science, University of Leeds<https://environmen=
+t.leeds.ac.uk/transport/staff/953/dr-robin-lovelace>
+
+Work calendar<https://outlook.office365.com/owa/calendar/63f6c4e85d124df6a2=
+0656ade8e71faa@leeds.ac.uk/32e1cb4137f4414b8d7644453ec4b1041431682614303689=
+3453/calendar.html> / Publications<https://scholar.google.com/citations?hl=
+=3Den&user=3DxDJHVCAAAAAJ&pagesize=3D80&view_op=3Dlist_works&sortby=3Dpubda=
+te> / Website<https://www.robinlovelace.net/> / GitHub<https://github.com/R=
+obinlovelace>
+
+
+________________________________
+From: Blaise Kelly <blaise@kello.co.uk<mailto:blaise@kello.co.uk>>
+Sent: 07 September 2026 09:10
+To: Robin Lovelace <R.Lovelace@leeds.ac.uk<mailto:R.Lovelace@leeds.ac.uk>>
+Subject: Re: Couple of questions
+
+
+CAUTION: External Message. Use caution opening links and attachments.
+
+Hi Robin,
+
+Fascinating paper on commuting in Netherlands (can't access the full versio=
+n unfortunately), basically modelling the opposite of what is normally done=
+ in countries trying to demonstrate benefits from cycling, to show what wou=
+ld happen without it? Some forward thinking assumptions on valuation of tim=
+e, i.e. assuming hourly rate of employee, which makes a lot of sense. Is qu=
+ite common for people to be paid for their commute over here, around 20c a =
+km for cycling and driving. I had a phase of riding to the Hague office and=
+ bagged =E2=82=AC12 a trip (but then had to pay =E2=82=AC7.50 to put bike o=
+n the train on the way home!) but if it was my hourly salary the numbers wo=
+uld have looked a lot different (but then driving would be 'cheaper' for th=
+e employer for long distances?).
+
+The 2007 travel data work is really interesting, although the large assumpt=
+ions needed due to data gaps always scuppers my motivation somewhat, but yo=
+u mention there is a lot more data which could be exciting. Is this data ap=
+plied to
+
+I would also be keen to apply this work to the logistics industry which is =
+not just critical for shops but increasingly for private customers. Yet roa=
+d haulage is still considered to be the cheapest option despite enormous sy=
+stems costs, for example around 1/5th of motorway traffic is HGVs but 1/3 o=
+f all fatal motorway collisions involve a HGV. They use taxpayer funded roa=
+ds for free whereas rail haulage have to pay significant rental fees for th=
+e rails. The energy cost of pushing individual trucks through the air is en=
+ormous compared with single file on a train and truck drivers have one of t=
+he lowest life expectancies of any profession and are away from their commu=
+nities for long periods.
+
+Putting long distance freight on rail and having more people riding cargo b=
+ikes for "last mile" deliveries could mean those drivers have jobs in their=
+ hometowns doing something active. The bike messenger community is really s=
+trong (although also because it is niche, so might not scale) and there is =
+nothing like this in the "white van man" world.
+
+One of my career regrets is working on the rail freight interchange in Hinc=
+kely between 2017and 2018. The biggest impasse was the effect of increased =
+traffic levels in the area, most of which was commute traffic to the site f=
+or all the workers. The financial benefits of the project for the developer=
+ were enormous, but the solutions on the table from the transport consultan=
+t were all about increasing road capacity to deal with this, which was unac=
+ceptable to the local community and for the aq limit values. Imagine if the=
+y had instead decided to build a segregated cycle path along every road and=
+ give every employee an ebike as part of their contract? I was so caught up=
+ in how things were done and quite inexperienced that I didn't dare suggest=
+, but the project still hasn't been approved.
+
+However, the topic I am really keen on is the air quality (and systems) ben=
+efits of reallocating urban space. I recently spotted this paper https://ww=
+w.sciencedirect.com/science/article/pii/S2214140526000654 which Rosa Felix =
+was involved in. Is interesting it is stated that this is something that is=
+ not really focused on in the air quality world, which is my experience als=
+o.
+
+After attending the R course run by David Carslaw and Stuart Grange in 2018=
+ I applied their meteorological normalisation random forest model (Stuarts =
+PhD) to the then most polluted street in the UK, Upper Thames Street in Lon=
+don, and noticed a >20% drop in roadside NO2 concentrations at around the t=
+ime construction of the cycle superhighway began (i.e. road space reduced) =
+https://www.linkedin.com/pulse/arcticle-blaise-kelly. This is larger and mu=
+ch faster than the reductions from the Clean Air Zones in many parts of the=
+ country that were introduced (apparently the fastest route to compliance, =
+but actually the only scenario modelled) but have taken more than 5 years t=
+o make any significant impact (at the recent select committee a 3% NO2 redu=
+ction in the West Midlands was hailed as =E2=80=9Cstatistically significant=
+=E2=80=9D). I recently visually inspected all ~350 roadside aq sites (over =
+a few weeks whenever I was in front of the TV) on Google street view to loo=
+k for significant road space changes, particularly COVID popup cycle paths =
+were installed. I think there is something there but unfortunately so few s=
+ites had lanes (<10) and even fewer on the side of the road where the monit=
+oring site was, it is maybe hard to make a robust analysis and is still a w=
+ork in progress.
+
+Similarly the effect of 20mph on air pollution is difficult to quantify bec=
+ause they are poorly enforced (the only average speed camera 20mph section =
+I know of is Tower Bridge) and studies with test drivers have biases. But s=
+omeone adhering rigorously to 20 drives far less aggressively. 20mph is als=
+o the most energy efficient speed for EVs, even on a motorway.
+
+Have a lot of experience using the ECMWF ERA5 meteo data which has 7-30km2 =
+resolution modelled data for more than 200 meteo parameters hourly stretchi=
+ng from last month to 1950. Have mainly been using this for air quality mod=
+els (boundary layer/mixing height etc), but I also demonstrated how it coul=
+d be used to calculate WBGT which we combined with air pollution and pollen=
+ to come up with a stress model that can be applied across Europe. But ther=
+e is also potential to be used for e.g. collision data (basic weather data/=
+road collision is recorded).
+
+I mentioned I was using the free allowance of the Google Distance Matrix AP=
+I requesting time travelled for the next week, which I think represents the=
+ current week. I put this analysis together for Wiltshire Council https://b=
+laisekelly.github.io/B3108_speeds/journey_time.html. I am not sure what wei=
+ght it had but they have been successful in reducing the limit, despite bei=
+ng originally told there were not enough fatalities.
+
+There have been some questions over whether it is allowed to use Google dat=
+a in this way (from Dustin and others). Yet a core part of my former collea=
+gue Tilman Hohenberger=E2=80=99 PhD was scraping google map data for the co=
+lour coded congestion data (i.e. by scripting the opening of google maps in=
+ a browser, screenshotting and extracting the colours   (https://ui.adsabs.=
+harvard.edu/abs/2023AGUFMGC13C..07L/abstract) which uses no API and is almo=
+st certainly against its terms and conditions. Tilman used this tool to dev=
+elop an emissions model that better considers congestion across Europe for =
+TNO which they have also published (without actually mentioning Google!) ht=
+tps://essd.copernicus.org/articles/18/3959/2026/
+
+I don't really think Google ar bothered because they don=E2=80=99t offer th=
+is data at all (apart from via the Distance Matrix) and it is my understand=
+ing their T&Cs are more focused on people copying Google maps rather than p=
+eople using Google maps data and actually promoting their product.
+Not a PhD topic but the ability to get congestion data for anywhere is usef=
+ul and I would like to work more on developing these tools, maybe using sat=
+ellite data etc.
+
+Apologies for the length of this. I wrote more and tried to trim it down.
+
+Speak later!
+
+Blaise
+
+
+
+
+
+On Fri, 4 Sept 2026 at 13:56, Robin Lovelace <R.Lovelace@leeds.ac.uk<mailto=
+:R.Lovelace@leeds.ac.uk>> wrote:
+One more update: here are 2 papers on my mind, the former just sent to me b=
+y Thijs:
+
+
+  *
+Cycling Cities paper: https://www.sciencedirect.com/science/article/abs/pii=
+/S009411902600077X
+  *
+Paper on estimating cycling uptake in response to new infrastructure which =
+has out-of-date findings still used by DfT but which need updating (this on=
+e is kind of This's area and I've had a good go at it with Hussein, we can =
+really do a lot with new count datasets): http://www.sciencedirect.com/scie=
+nce/article/pii/S0965856406001212
+
+Other topics are fine, and truth be told you can pursue many side missions =
+including consultancy work while doing a PhD, but that general area of cycl=
+ing (or more broadly active travel or physical activity) uptake in relation=
+ to various variables is something on my mind that you could ace I think.
+
+Robin
+
+
+Professor Robin Lovelace
+
+Professor of Transport Data Science, University of Leeds<https://environmen=
+t.leeds.ac.uk/transport/staff/953/dr-robin-lovelace>
+
+Work calendar<https://outlook.office365.com/owa/calendar/63f6c4e85d124df6a2=
+0656ade8e71faa@leeds.ac.uk/32e1cb4137f4414b8d7644453ec4b1041431682614303689=
+3453/calendar.html> / Publications<https://scholar.google.com/citations?hl=
+=3Den&user=3DxDJHVCAAAAAJ&pagesize=3D80&view_op=3Dlist_works&sortby=3Dpubda=
+te> / Website<https://www.robinlovelace.net/> / GitHub<https://github.com/R=
+obinlovelace>
+
+
+________________________________
+From: Robin Lovelace <R.Lovelace@leeds.ac.uk<mailto:R.Lovelace@leeds.ac.uk>=
+>
+Sent: 04 September 2026 12:18
+To: Blaise Kelly <blaise@kello.co.uk<mailto:blaise@kello.co.uk>>
+Subject: Re: Couple of questions
+
+Yes for sure let's have a chat. I would say that doing a PhD is the job tha=
+t gives the most flexibility of all jobs I've done, the freedom is amazing.
+
+How's next week looking for you? I'll send you some follow-up info in the n=
+ext email. It's worth thinking about the supervisory team and topic, people=
+ who come to mind include:
+
+
+  1.
+Thijs Dekker, I have discussed being a supervisory team for exactly this ca=
+ll, he's a transport economist, knows the processes really well, is into ac=
+tive travel and happens to be Dutch and would bring useful new perspectives=
+ on things I think.
+  2.
+Malcolm Morgan, I think you know him, I would say that in some ways he's to=
+o similar in skillsets to my skillsets to bring new perspectives on things =
+but we have been a great supervisory team (with Eva Heinen as third supervi=
+sory) for Hussein Mahfouz who recently passed his viva with no corrections =
+and who now works for Arup.
+  3.
+Roger Beecham, he is a data visualisation whizz and really into STATS19 dat=
+a
+  4.
+Caroline Tait, not sure if she can supervise PhD students at her career sta=
+ge but she's contributed to STATS19 upstream, is a fully qualified medical =
+doctor so brings fresh perspectives and is generally awesome.
+  5.
+Chiara Calastri, interested in road safety and 20 mph limits in Wales
+  6.
+James Tate, air pollution expert
+
+I realise that's quite a lot of options! My first thought is Thijs for vari=
+ous reasons, not least that he's very open minded and knows the systems tha=
+t you need to navigate as a PhD student very well, and it broadens the 'aca=
+demic gene pool' a bit as he's in a different research group, but any could=
+ work, and having 3x supervisors can work for sure.
+
+Next week Monday afternoon and any time Tuesday seem to be good but general=
+ly fairly flexible and my calendar in link below is quite up-to-date.
+
+Robin
+
+
+Professor Robin Lovelace
+
+Professor of Transport Data Science, University of Leeds<https://environmen=
+t.leeds.ac.uk/transport/staff/953/dr-robin-lovelace>
+
+Work calendar<https://outlook.office365.com/owa/calendar/63f6c4e85d124df6a2=
+0656ade8e71faa@leeds.ac.uk/32e1cb4137f4414b8d7644453ec4b1041431682614303689=
+3453/calendar.html> / Publications<https://scholar.google.com/citations?hl=
+=3Den&user=3DxDJHVCAAAAAJ&pagesize=3D80&view_op=3Dlist_works&sortby=3Dpubda=
+te> / Website<https://www.robinlovelace.net/> / GitHub<https://github.com/R=
+obinlovelace>
+
+
+________________________________
+From: Blaise Kelly <blaise@kello.co.uk<mailto:blaise@kello.co.uk>>
+Sent: 04 September 2026 11:51
+To: Robin Lovelace <R.Lovelace@leeds.ac.uk<mailto:R.Lovelace@leeds.ac.uk>>
+Subject: Re: Couple of questions
+
+
+CAUTION: External Message. Use caution opening links and attachments.
+
+Hi Robin,
+
+No worries about the delay, I realise you are super busy.
+
+On the PhD YES I am really interested in doing one. If I am honest I am fin=
+ding it a bit difficult to do what I want to do over here and have been thi=
+nking about moving back.
+
+What would I need to do to apply? Shall we have a chat?
+
+Cheers
+
+Blaise
+
+On Fri, 4 Sept 2026 at 12:16, Robin Lovelace <R.Lovelace@leeds.ac.uk<mailto=
+:R.Lovelace@leeds.ac.uk>> wrote:
+Hi Blaise,
+
+With apologies for slow response, just found this email randomly and realis=
+e I never got back to you.
+
+Regarding a 'play score', I think it's hard to quantify but not impossible,=
+ green space, car free areas, presence of playgrounds, skate parks etc, and=
+ peoples' gardens are probably good proxies for how much vital outdoor play=
+ kids can get safely. I learned yesterday that official guidelines state th=
+at kids should get at least 60 minutes of physical activity each day but on=
+ly around half do depending on where they live.
+
+In any case, a bit out-of-the-blue, but are you interested in doing a PhD?
+
+There is a live opportunity with deadline around November that has a stream=
+ on data-driven research and is based on co-creation of research topics wit=
+h potential students.
+
+I know you have a lot else going on, you're based in NL etc but a PhD is a =
+good place for exploring the kinds of questions your asking and getting pai=
+d (not a huge amount but it's tax free and I lived like a king while on PhD=
+ salary) so thought I'd check, although a long shot.
+
+Also if you know of anyone else interested, please let me know, trying to b=
+uild a team a bit against the odds, partly my fault as I enjoy getting actu=
+ally doing (rather than just coordinating) the research!
+
+Robin
+
+
+Professor Robin Lovelace
+
+Professor of Transport Data Science, University of Leeds<https://environmen=
+t.leeds.ac.uk/transport/staff/953/dr-robin-lovelace>
+
+Work calendar<https://outlook.office365.com/owa/calendar/63f6c4e85d124df6a2=
+0656ade8e71faa@leeds.ac.uk/32e1cb4137f4414b8d7644453ec4b1041431682614303689=
+3453/calendar.html> / Publications<https://scholar.google.com/citations?hl=
+=3Den&user=3DxDJHVCAAAAAJ&pagesize=3D80&view_op=3Dlist_works&sortby=3Dpubda=
+te> / Website<https://www.robinlovelace.net/> / GitHub<https://github.com/R=
+obinlovelace>
+
+
+________________________________
+From: Blaise Kelly <blaise@kello.co.uk<mailto:blaise@kello.co.uk>>
+Sent: 06 August 2026 12:25
+To: Robin Lovelace <R.Lovelace@leeds.ac.uk<mailto:R.Lovelace@leeds.ac.uk>>
+Subject: Couple of questions
+
+
+CAUTION: External Message. Use caution opening links and attachments.
+
+Hey Robin,
+
+Wondering if I could bounce two topics off you before I head off in a certa=
+in direction on a project I am potentially starting building a "play score"=
+ for urban areas based on e.g. distance to play areas, road collisions etc.
+
+1. Can you think of anything off the top of your head that already exists a=
+long these lines?
+
+2. Also as part of the same work it is planned to go into the community and=
+ ask people to improve the maps. I have had some experience making changes =
+to OSM, but a project https://publicmap.org/en/ has also been pointed out t=
+o me. Have you used it? I built a simple demo of how I see this working, wi=
+th each person getting a dedicated ID and the outputs saved as gpkgs that c=
+an be added to OSM or maybe publicmap and has a more reproducible workflow =
+(i.e. if users make direct changes to OSM how can we ringfence the changes =
+that were made as part of this project etc.) https://blaiser.shinyapps.io/m=
+ap_app/ but maybe there are better ways?
+
+Big thanks for spotting the early release of the STATS19 data and your work=
+ on all the changes. I had in mind to do a bit more prep on some of the sta=
+ts so they were ready to go to press in September so this caught me off gua=
+rd a bit. But I pieced this together<https://onedrive.live.com/:w:/g/person=
+al/4881326d8ee34950/IQAa4bfqFWj_RZBRtW0e5khUARtjnbnkxu68L_GibKdUrDs?rtime=
+=3Dha32qKzz3kg&redeem=3DaHR0cHM6Ly8xZHJ2Lm1zL3cvYy80ODgxMzI2ZDhlZTM0OTUwL0l=
+RQWE0YmZxRldqX1JaQlJ0VzBlNWtoVUFSdGpuYm5reHU2OExfR2liS2RVckRzP2U9aHR3NDVJ> =
+on pavement collisions. I can appreciate you would probably rather stay neu=
+tral on issues like this, but any ideas of contacts who might be interested=
+ in publishing it in a way that will get a bit more traction than me postin=
+g on Linkedin? If not I will just put it out there myself, might changed th=
+e bbplot styled charts as well.
+
+Also wanted to say so sorry to hear about your dad passing away the other m=
+onth. I didn't know him at all but at a conference a few years ago, in resp=
+onse to me expressing some frustration/grumbling you told me that you often=
+ felt like that and your dad had said people only know what you are doing i=
+f you get it out there. He was clearly a great mentor to you and that piece=
+ of advice gave me a bit of a kick up the backside and has stuck with me. A=
+mazing the work he has put in on the local area and hope the project to arc=
+hive it all it is going well - he certainly raised no better man for the jo=
+b!
+
+How was Utrecht the other month? Hope you are getting some research time ov=
+er the summer!
+
+Cheers
+
+Blaise
+
+--0000000000008538fd065ae85c3c
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"></=
+head>
+<body>
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center" wi=
+dth=3D"500">
+<tbody>
+<tr>
+<td style=3D"background:#bba555;padding:5.25pt 5.5pt 5.25pt 1.5pt"></td>
+<td width=3D"`&quot;100%`&quot;" style=3D"width:100.0%;background:#ffe599;p=
+adding:5.25pt 3.75pt 5.25pt 11.25pt; word-wrap:break-word" cellpadding=3D"`=
+&quot;7px" 5px=3D"" 7px=3D"" 15px`?=3D"" color=3D"`&quot;#212121`&quot;">
+<div>
+<p><span style=3D"font-size:10pt;font-family:Arial,sans-serif;color:#212121=
+" align=3D"center"><b>CAUTION:</b> External Message. Use caution opening li=
+nks and attachments.
+</span></p>
+</div>
+</td>
+<td style=3D"background:#bba555;padding:5.25pt 5.5pt 5.25pt 1.5pt"></td>
+<div></div>
+</tr>
+</tbody>
+</table>
+<div>
+<div dir=3D"auto">
+<div>Hi Robin,
+<div dir=3D"auto"><br>
+</div>
+<div dir=3D"auto">Thanks so much for chatting this afternoon, really apprec=
+iate it.</div>
+<div dir=3D"auto"><br>
+</div>
+<div dir=3D"auto">At the moment afternoon of the 28th and anytime on the 29=
+th and 30th is&nbsp;good for me.</div>
+<div dir=3D"auto"><br>
+</div>
+<div dir=3D"auto">Will get on the proposal ASAP!</div>
+<div dir=3D"auto"><br>
+</div>
+<div dir=3D"auto">Cheers</div>
+<div dir=3D"auto"><br>
+</div>
+<div dir=3D"auto">Blaise</div>
+<br>
+<br>
+<div class=3D"gmail_quote gmail_quote_container">
+<div dir=3D"ltr" class=3D"gmail_attr">On Mon, 7 Sept 2026, 15:45 Robin Love=
+lace, &lt;<a href=3D"mailto:R.Lovelace@leeds.ac.uk">R.Lovelace@leeds.ac.uk<=
+/a>&gt; wrote:<br>
+</div>
+<blockquote class=3D"gmail_quote" style=3D"margin:0 0 0 .8ex;border-left:1p=
+x #ccc solid;padding-left:1ex">
+<div dir=3D"ltr">
+<div style=3D"font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Cali=
+bri,Helvetica,sans-serif;font-size:12pt;color:rgb(0,0,0)">
+Hi Blaise,</div>
+<div style=3D"font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Cali=
+bri,Helvetica,sans-serif;font-size:12pt;color:rgb(0,0,0)">
+<br>
+</div>
+<div style=3D"font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Cali=
+bri,Helvetica,sans-serif;font-size:12pt;color:rgb(0,0,0)">
+Great talking with you about PhD, lots of good ideas and potential outputs =
+discussed.</div>
+<div style=3D"font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Cali=
+bri,Helvetica,sans-serif;font-size:12pt;color:rgb(0,0,0)">
+<br>
+</div>
+<div style=3D"font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Cali=
+bri,Helvetica,sans-serif;font-size:12pt;color:rgb(0,0,0)">
+Quick follow-up here having just checked my calendar, how's the week beginn=
+ing 28<sup>th</sup>&nbsp;September as a date for the interview?</div>
+<div style=3D"font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Cali=
+bri,Helvetica,sans-serif;font-size:12pt;color:rgb(0,0,0)">
+<br>
+</div>
+<div style=3D"font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Cali=
+bri,Helvetica,sans-serif;font-size:12pt;color:rgb(0,0,0)">
+Can pencil something in, giving time for iteration on the proposal.</div>
+<div style=3D"font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Cali=
+bri,Helvetica,sans-serif;font-size:12pt;color:rgb(0,0,0)">
+<br>
+</div>
+<div style=3D"font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Cali=
+bri,Helvetica,sans-serif;font-size:12pt;color:rgb(0,0,0)">
+Cheers,</div>
+<div style=3D"font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Cali=
+bri,Helvetica,sans-serif;font-size:12pt;color:rgb(0,0,0)">
+<br>
+</div>
+<div style=3D"font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Cali=
+bri,Helvetica,sans-serif;font-size:12pt;color:rgb(0,0,0)">
+Robin</div>
+<div id=3D"m_-3884911632348767540Signature">
+<div style=3D"font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Cali=
+bri,Helvetica,sans-serif;font-size:12pt;color:rgb(0,0,0)">
+<br>
+</div>
+<p style=3D"text-align:left;background-color:rgb(255,255,255);margin-top:0p=
+x;margin-bottom:0px;font-family:Calibri,Arial,Helvetica,sans-serif">
+<span style=3D"font-family:Verdana,sans-serif;font-size:10pt;color:gray"><b=
+>Professor Robin Lovelace</b></span></p>
+<p style=3D"text-align:left;background-color:rgb(255,255,255);margin-top:0p=
+x;margin-bottom:0px;font-family:Calibri,Arial,Helvetica,sans-serif">
+<span style=3D"font-family:Verdana,sans-serif;font-size:10pt;color:gray"><a=
+ href=3D"https://eur03.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%=
+2Fenvironment.leeds.ac.uk%2Ftransport%2Fstaff%2F953%2Fdr-robin-lovelace&amp=
+;data=3D05%7C02%7CR.Lovelace%40leeds.ac.uk%7C7f8be0aa293d4b4863c708df0d09ab=
+18%7Cbdeaeda8c81d45ce863e5232a535b7cb%7C0%7C0%7C639244008962288094%7CUnknow=
+n%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiI=
+sIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C60000%7C%7C%7C&amp;sdata=3DDZltNBGGmmz%=
+2B5sQJjJY2s5EHnEcBiqsun%2FR9JgD8cI8%3D&amp;reserved=3D0" originalsrc=3D"htt=
+ps://environment.leeds.ac.uk/transport/staff/953/dr-robin-lovelace" id=3D"m=
+_-3884911632348767540OWA04e4c354-7445-093d-3b83-c5ad22590c7e" rel=3D"noopen=
+er noreferrer noreferrer" style=3D"margin:0px" target=3D"_blank">Professor
+ of Transport Data Science, University of Leeds</a></span></p>
+<p style=3D"text-align:left;background-color:rgb(255,255,255);margin-top:0p=
+x;margin-bottom:0px">
+<span style=3D"font-family:Verdana,sans-serif;font-size:10pt;color:gray"><a=
+ href=3D"https://eur03.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%=
+2Foutlook.office365.com%2Fowa%2Fcalendar%2F63f6c4e85d124df6a20656ade8e71faa=
+%40leeds.ac.uk%2F32e1cb4137f4414b8d7644453ec4b10414316826143036893453%2Fcal=
+endar.html&amp;data=3D05%7C02%7CR.Lovelace%40leeds.ac.uk%7C7f8be0aa293d4b48=
+63c708df0d09ab18%7Cbdeaeda8c81d45ce863e5232a535b7cb%7C0%7C0%7C6392440089623=
+19890%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsI=
+lAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C60000%7C%7C%7C&amp;sdata=
+=3DOR45rkBu%2Be5PWvAK0V0ZzGCkR6GumunAIEztpyP5H3w%3D&amp;reserved=3D0" origi=
+nalsrc=3D"https://outlook.office365.com/owa/calendar/63f6c4e85d124df6a20656=
+ade8e71faa@leeds.ac.uk/32e1cb4137f4414b8d7644453ec4b10414316826143036893453=
+/calendar.html" id=3D"m_-3884911632348767540OWA4fc4f96e-7d77-d853-08e6-61ad=
+0d74cfb6" rel=3D"noopener noreferrer noreferrer" style=3D"margin:0px" targe=
+t=3D"_blank">Work
+ calendar</a>&nbsp;/ </span><span style=3D"font-family:Calibri,Arial,Helvet=
+ica,sans-serif"><a href=3D"https://eur03.safelinks.protection.outlook.com/?=
+url=3Dhttps%3A%2F%2Fscholar.google.com%2Fcitations%3Fhl%3Den%26user%3DxDJHV=
+CAAAAAJ%26pagesize%3D80%26view_op%3Dlist_works%26sortby%3Dpubdate&amp;data=
+=3D05%7C02%7CR.Lovelace%40leeds.ac.uk%7C7f8be0aa293d4b4863c708df0d09ab18%7C=
+bdeaeda8c81d45ce863e5232a535b7cb%7C0%7C0%7C639244008962335480%7CUnknown%7CT=
+WFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFO=
+IjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C60000%7C%7C%7C&amp;sdata=3DFqVsMAChx2iq%2BnT=
+uqSbHjDmT9mJkElZ9YmaP5z%2BVMss%3D&amp;reserved=3D0" originalsrc=3D"https://=
+scholar.google.com/citations?hl=3Den&amp;user=3DxDJHVCAAAAAJ&amp;pagesize=
+=3D80&amp;view_op=3Dlist_works&amp;sortby=3Dpubdate" id=3D"m_-3884911632348=
+767540OWA6dbc517f-1c6b-384f-cce4-564752f228d4" title=3D"https://scholar.goo=
+gle.com/citations?hl=3Den&amp;user=3DxDJHVCAAAAAJ&amp;pagesize=3D80&amp;vie=
+w_op=3Dlist_works&amp;sortby=3Dpubdate" style=3D"margin:0px" target=3D"_bla=
+nk" rel=3D"noreferrer">Publications</a></span><span style=3D"font-family:Ve=
+rdana,sans-serif;font-size:13.3333px;color:rgb(128,128,128);background-colo=
+r:rgb(255,255,255)">&nbsp;/
+</span><span style=3D"font-family:Calibri,Arial,Helvetica,sans-serif;font-s=
+ize:12pt;color:rgb(0,0,0)"><a href=3D"https://eur03.safelinks.protection.ou=
+tlook.com/?url=3Dhttps%3A%2F%2Fwww.robinlovelace.net%2F&amp;data=3D05%7C02%=
+7CR.Lovelace%40leeds.ac.uk%7C7f8be0aa293d4b4863c708df0d09ab18%7Cbdeaeda8c81=
+d45ce863e5232a535b7cb%7C0%7C0%7C639244008962350015%7CUnknown%7CTWFpbGZsb3d8=
+eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCI=
+sIldUIjoyfQ%3D%3D%7C60000%7C%7C%7C&amp;sdata=3DvPnUB%2FssMIFM51QYC1GRzENRtw=
+3B%2FpiXW8JsAKs2nAk%3D&amp;reserved=3D0" originalsrc=3D"https://www.robinlo=
+velace.net/" id=3D"m_-3884911632348767540OWA64724ba8-6df0-bba5-d855-1b4c9ca=
+23a49" style=3D"margin-top:0px;margin-bottom:0px" target=3D"_blank" rel=3D"=
+noreferrer">Website</a></span><span style=3D"font-family:Verdana,sans-serif=
+;font-size:13.3333px;color:rgb(128,128,128);background-color:rgb(255,255,25=
+5)">&nbsp;/
+</span><span style=3D"font-family:Calibri,Arial,Helvetica,sans-serif;font-s=
+ize:16px;color:rgb(0,0,0);background-color:rgb(255,255,255)"><a href=3D"htt=
+ps://eur03.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fgithub.com=
+%2FRobinlovelace&amp;data=3D05%7C02%7CR.Lovelace%40leeds.ac.uk%7C7f8be0aa29=
+3d4b4863c708df0d09ab18%7Cbdeaeda8c81d45ce863e5232a535b7cb%7C0%7C0%7C6392440=
+08962362457%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDA=
+wMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C60000%7C%7C%7C&amp;=
+sdata=3D1z7RCilr%2FQrpVQdVLCeJVtlTutLffHcTLQvJMhpR%2Fb8%3D&amp;reserved=3D0=
+" originalsrc=3D"https://github.com/Robinlovelace" id=3D"m_-388491163234876=
+7540OWAe181599d-681a-80e5-2949-841a91fdd9d9" title=3D"https://github.com/Ro=
+binlovelace" style=3D"margin-top:0px;margin-bottom:0px" target=3D"_blank" r=
+el=3D"noreferrer">GitHub</a></span></p>
+<p style=3D"text-align:left;background-color:rgb(255,255,255);margin-top:0p=
+x;margin-bottom:0px">
+<span style=3D"font-family:Calibri,Arial,Helvetica,sans-serif;font-size:12p=
+t;color:rgb(0,0,0)"><br>
+</span></p>
+<div style=3D"font-family:Calibri,Arial,Helvetica,sans-serif;font-size:12pt=
+;color:rgb(0,0,0)">
+<br>
+</div>
+</div>
+<div id=3D"m_-3884911632348767540appendonsend"></div>
+<hr style=3D"display:inline-block;width:98%">
+<div id=3D"m_-3884911632348767540divRplyFwdMsg" dir=3D"ltr"><font face=3D"C=
+alibri, sans-serif" style=3D"font-size:11pt" color=3D"#000000"><b>From:</b>=
+ Robin Lovelace &lt;<a href=3D"mailto:R.Lovelace@leeds.ac.uk" target=3D"_bl=
+ank" rel=3D"noreferrer">R.Lovelace@leeds.ac.uk</a>&gt;<br>
+<b>Sent:</b> 07 September 2026 09:27<br>
+<b>To:</b> Blaise Kelly &lt;<a href=3D"mailto:blaise@kello.co.uk" target=3D=
+"_blank" rel=3D"noreferrer">blaise@kello.co.uk</a>&gt;<br>
+<b>Subject:</b> Re: Couple of questions</font>
+<div>&nbsp;</div>
+</div>
+<div dir=3D"ltr">
+<div style=3D"font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Cali=
+bri,Helvetica,sans-serif;font-size:12pt;color:rgb(0,0,0)">
+Good morning Blaise,</div>
+<div style=3D"font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Cali=
+bri,Helvetica,sans-serif;font-size:12pt;color:rgb(0,0,0)">
+<br>
+</div>
+<div style=3D"font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Cali=
+bri,Helvetica,sans-serif;font-size:12pt;color:rgb(0,0,0)">
+Many good ideas here, thanks for sharing.</div>
+<div style=3D"font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Cali=
+bri,Helvetica,sans-serif;font-size:12pt;color:rgb(0,0,0)">
+<br>
+</div>
+<div style=3D"font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Cali=
+bri,Helvetica,sans-serif;font-size:12pt;color:rgb(0,0,0)">
+I'm free at 1pm today, have sent a Teams invite.</div>
+<div style=3D"font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Cali=
+bri,Helvetica,sans-serif;font-size:12pt;color:rgb(0,0,0)">
+<br>
+</div>
+<div style=3D"font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Cali=
+bri,Helvetica,sans-serif;font-size:12pt;color:rgb(0,0,0)">
+The health benefits of reallocating urban space could be a really good topi=
+c among many good options, I like that it plays to your air quality and roa=
+d casualty data expertise.</div>
+<div style=3D"font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Cali=
+bri,Helvetica,sans-serif;font-size:12pt;color:rgb(0,0,0)">
+<br>
+</div>
+<div style=3D"font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Cali=
+bri,Helvetica,sans-serif;font-size:12pt;color:rgb(0,0,0)">
+I think a good next step could be to set-up a repo to put condensed content=
+ moving towards this, it's great you have so many ideas, having the freedom=
+ to explore them will be great if this comes good.</div>
+<div style=3D"font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Cali=
+bri,Helvetica,sans-serif;font-size:12pt;color:rgb(0,0,0)">
+<br>
+</div>
+<div style=3D"font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Cali=
+bri,Helvetica,sans-serif;font-size:12pt;color:rgb(0,0,0)">
+Cheers, talk soon!</div>
+<div style=3D"font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Cali=
+bri,Helvetica,sans-serif;font-size:12pt;color:rgb(0,0,0)">
+<br>
+</div>
+<div style=3D"font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Cali=
+bri,Helvetica,sans-serif;font-size:12pt;color:rgb(0,0,0)">
+Robin</div>
+<div id=3D"m_-3884911632348767540x_Signature">
+<div style=3D"font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Cali=
+bri,Helvetica,sans-serif;font-size:12pt;color:rgb(0,0,0)">
+<br>
+</div>
+<p style=3D"text-align:left;background-color:rgb(255,255,255);margin-top:0p=
+x;margin-bottom:0px;font-family:Calibri,Arial,Helvetica,sans-serif">
+<span style=3D"font-family:Verdana,sans-serif;font-size:10pt;color:gray"><b=
+>Professor Robin Lovelace</b></span></p>
+<p style=3D"text-align:left;background-color:rgb(255,255,255);margin-top:0p=
+x;margin-bottom:0px;font-family:Calibri,Arial,Helvetica,sans-serif">
+<span style=3D"font-family:Verdana,sans-serif;font-size:10pt;color:gray"><a=
+ href=3D"https://eur03.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%=
+2Fenvironment.leeds.ac.uk%2Ftransport%2Fstaff%2F953%2Fdr-robin-lovelace&amp=
+;data=3D05%7C02%7CR.Lovelace%40leeds.ac.uk%7C7f8be0aa293d4b4863c708df0d09ab=
+18%7Cbdeaeda8c81d45ce863e5232a535b7cb%7C0%7C0%7C639244008962374917%7CUnknow=
+n%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiI=
+sIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C60000%7C%7C%7C&amp;sdata=3DFW5CcNWzjDq2=
+qcWRBh7hBMYa0iL0VcDtmBcR8RHPiUE%3D&amp;reserved=3D0" originalsrc=3D"https:/=
+/environment.leeds.ac.uk/transport/staff/953/dr-robin-lovelace" id=3D"m_-38=
+84911632348767540OWA15baad8c-5066-1c16-365c-5da0e57602bd" rel=3D"noopener n=
+oreferrer noreferrer" style=3D"margin:0px" target=3D"_blank">Professor
+ of Transport Data Science, University of Leeds</a></span></p>
+<p style=3D"text-align:left;background-color:rgb(255,255,255);margin-top:0p=
+x;margin-bottom:0px">
+<span style=3D"font-family:Verdana,sans-serif;font-size:10pt;color:gray"><a=
+ href=3D"https://eur03.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%=
+2Foutlook.office365.com%2Fowa%2Fcalendar%2F63f6c4e85d124df6a20656ade8e71faa=
+%40leeds.ac.uk%2F32e1cb4137f4414b8d7644453ec4b10414316826143036893453%2Fcal=
+endar.html&amp;data=3D05%7C02%7CR.Lovelace%40leeds.ac.uk%7C7f8be0aa293d4b48=
+63c708df0d09ab18%7Cbdeaeda8c81d45ce863e5232a535b7cb%7C0%7C0%7C6392440089623=
+92284%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsI=
+lAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C60000%7C%7C%7C&amp;sdata=
+=3DIPrOh7IqM8XPOMsW8XFxmM1NOaHT2OHX97g4uXdMtBg%3D&amp;reserved=3D0" origina=
+lsrc=3D"https://outlook.office365.com/owa/calendar/63f6c4e85d124df6a20656ad=
+e8e71faa@leeds.ac.uk/32e1cb4137f4414b8d7644453ec4b10414316826143036893453/c=
+alendar.html" id=3D"m_-3884911632348767540OWA8bc643f5-ac02-dd62-34e2-97b5f3=
+5c19c4" rel=3D"noopener noreferrer noreferrer" style=3D"margin:0px" target=
+=3D"_blank">Work
+ calendar</a>&nbsp;/ </span><span style=3D"font-family:Calibri,Arial,Helvet=
+ica,sans-serif"><a href=3D"https://eur03.safelinks.protection.outlook.com/?=
+url=3Dhttps%3A%2F%2Fscholar.google.com%2Fcitations%3Fhl%3Den%26user%3DxDJHV=
+CAAAAAJ%26pagesize%3D80%26view_op%3Dlist_works%26sortby%3Dpubdate&amp;data=
+=3D05%7C02%7CR.Lovelace%40leeds.ac.uk%7C7f8be0aa293d4b4863c708df0d09ab18%7C=
+bdeaeda8c81d45ce863e5232a535b7cb%7C0%7C0%7C639244008962406192%7CUnknown%7CT=
+WFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFO=
+IjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C60000%7C%7C%7C&amp;sdata=3D0ZDxdilhFxdnkBs2G=
+Z1Kqtcaa8yGml0fT5Hxe4nSzF4%3D&amp;reserved=3D0" originalsrc=3D"https://scho=
+lar.google.com/citations?hl=3Den&amp;user=3DxDJHVCAAAAAJ&amp;pagesize=3D80&=
+amp;view_op=3Dlist_works&amp;sortby=3Dpubdate" id=3D"m_-3884911632348767540=
+OWA2914a324-1927-e0c0-5a8e-dc92a22fc287" title=3D"https://scholar.google.co=
+m/citations?hl=3Den&amp;user=3DxDJHVCAAAAAJ&amp;pagesize=3D80&amp;view_op=
+=3Dlist_works&amp;sortby=3Dpubdate" style=3D"margin:0px" target=3D"_blank" =
+rel=3D"noreferrer">Publications</a></span><span style=3D"font-family:Verdan=
+a,sans-serif;font-size:13.3333px;color:rgb(128,128,128);background-color:rg=
+b(255,255,255)">&nbsp;/
+</span><span style=3D"font-family:Calibri,Arial,Helvetica,sans-serif;font-s=
+ize:12pt;color:rgb(0,0,0)"><a href=3D"https://eur03.safelinks.protection.ou=
+tlook.com/?url=3Dhttps%3A%2F%2Fwww.robinlovelace.net%2F&amp;data=3D05%7C02%=
+7CR.Lovelace%40leeds.ac.uk%7C7f8be0aa293d4b4863c708df0d09ab18%7Cbdeaeda8c81=
+d45ce863e5232a535b7cb%7C0%7C0%7C639244008962418824%7CUnknown%7CTWFpbGZsb3d8=
+eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCI=
+sIldUIjoyfQ%3D%3D%7C60000%7C%7C%7C&amp;sdata=3DXaQ6ziqb9trtGkI2vBnSQba%2FyV=
+j6s85RSKASZ7JBJlo%3D&amp;reserved=3D0" originalsrc=3D"https://www.robinlove=
+lace.net/" id=3D"m_-3884911632348767540OWAb50855ff-c539-9d84-802a-97f0c1b6a=
+e3b" style=3D"margin-top:0px;margin-bottom:0px" target=3D"_blank" rel=3D"no=
+referrer">Website</a></span><span style=3D"font-family:Verdana,sans-serif;f=
+ont-size:13.3333px;color:rgb(128,128,128);background-color:rgb(255,255,255)=
+">&nbsp;/
+</span><span style=3D"font-family:Calibri,Arial,Helvetica,sans-serif;font-s=
+ize:16px;color:rgb(0,0,0);background-color:rgb(255,255,255)"><a href=3D"htt=
+ps://eur03.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fgithub.com=
+%2FRobinlovelace&amp;data=3D05%7C02%7CR.Lovelace%40leeds.ac.uk%7C7f8be0aa29=
+3d4b4863c708df0d09ab18%7Cbdeaeda8c81d45ce863e5232a535b7cb%7C0%7C0%7C6392440=
+08962430222%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDA=
+wMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C60000%7C%7C%7C&amp;=
+sdata=3DGnvUltgkob9hN%2FVo%2BkeVQoNFBgWFZz%2BhKrNW5kIQxUg%3D&amp;reserved=
+=3D0" originalsrc=3D"https://github.com/Robinlovelace" id=3D"m_-38849116323=
+48767540OWAc0b3acae-9ce0-edb2-0d21-288dcdc8ef69" title=3D"https://github.co=
+m/Robinlovelace" style=3D"margin-top:0px;margin-bottom:0px" target=3D"_blan=
+k" rel=3D"noreferrer">GitHub</a></span></p>
+<p style=3D"text-align:left;background-color:rgb(255,255,255);margin-top:0p=
+x;margin-bottom:0px">
+<span style=3D"font-family:Calibri,Arial,Helvetica,sans-serif;font-size:12p=
+t;color:rgb(0,0,0)"><br>
+</span></p>
+<div style=3D"font-family:Calibri,Arial,Helvetica,sans-serif;font-size:12pt=
+;color:rgb(0,0,0)">
+<br>
+</div>
+</div>
+<div id=3D"m_-3884911632348767540x_appendonsend"></div>
+<hr style=3D"display:inline-block;width:98%">
+<div id=3D"m_-3884911632348767540x_divRplyFwdMsg" dir=3D"ltr"><font face=3D=
+"Calibri, sans-serif" color=3D"#000000" style=3D"font-size:11pt"><b>From:</=
+b> Blaise Kelly &lt;<a href=3D"mailto:blaise@kello.co.uk" target=3D"_blank"=
+ rel=3D"noreferrer">blaise@kello.co.uk</a>&gt;<br>
+<b>Sent:</b> 07 September 2026 09:10<br>
+<b>To:</b> Robin Lovelace &lt;<a href=3D"mailto:R.Lovelace@leeds.ac.uk" tar=
+get=3D"_blank" rel=3D"noreferrer">R.Lovelace@leeds.ac.uk</a>&gt;<br>
+<b>Subject:</b> Re: Couple of questions</font>
+<div>&nbsp;</div>
+</div>
+<div>
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center" wi=
+dth=3D"500">
+<tbody>
+<tr>
+<td style=3D"background:#bba555;padding:5.25pt 5.5pt 5.25pt 1.5pt"></td>
+<td width=3D"&quot;100%&quot;" cellpadding=3D"&quot;7px" color=3D"&quot;#21=
+2121&quot;" style=3D"width:100.0%;background:#ffe599;padding:5.25pt 3.75pt =
+5.25pt 11.25pt;word-wrap:break-word">
+<div>
+<p><span align=3D"center" style=3D"font-size:10pt;font-family:Arial,sans-se=
+rif;color:#212121"><b>CAUTION:</b> External Message. Use caution opening li=
+nks and attachments.
+</span></p>
+</div>
+</td>
+<td style=3D"background:#bba555;padding:5.25pt 5.5pt 5.25pt 1.5pt"></td>
+<td>
+<div></div>
+</td>
+</tr>
+</tbody>
+</table>
+<div>
+<div dir=3D"ltr">
+<div style=3D"font-size:small">Hi Robin,</div>
+<div style=3D"font-size:small"><br>
+</div>
+<div style=3D"font-size:small">Fascinating paper on commuting in Netherland=
+s (can't access the full version unfortunately), basically modelling the op=
+posite of what is normally done in countries trying to demonstrate benefits=
+ from cycling, to show what would
+ happen without it? Some forward thinking assumptions on valuation of time,=
+ i.e. assuming hourly rate of employee, which makes a lot of sense. Is quit=
+e common for people to be paid for their commute over here, around 20c a km=
+ for cycling and driving. I had
+ a phase&nbsp;of riding to the Hague office and bagged =E2=82=AC12 a trip (=
+but then had to pay =E2=82=AC7.50 to put bike on the train on the way home!=
+) but if it was my hourly salary the numbers would have looked a lot differ=
+ent (but then driving would be 'cheaper' for the employer
+ for long distances?).</div>
+<div style=3D"font-size:small"><br>
+</div>
+<div style=3D"font-size:small">The 2007 travel data work is really interest=
+ing, although the large assumptions needed due to data gaps always scuppers=
+ my motivation somewhat, but you mention there is a lot more data which cou=
+ld be exciting. Is this data applied
+ to&nbsp;</div>
+<div style=3D"font-size:small"><br>
+</div>
+<div style=3D"font-size:small">I would also be keen to apply this&nbsp;work=
+ to the logistics industry which is not just critical for shops but increas=
+ingly for private customers. Yet road haulage is still considered to be the=
+ cheapest option despite enormous systems
+ costs, for example around 1/5th of motorway traffic is HGVs but 1/3 of all=
+ fatal motorway collisions involve a HGV. They use taxpayer funded roads fo=
+r free whereas rail haulage have to pay significant rental fees for the rai=
+ls. The energy cost of pushing individual
+ trucks through the air is enormous compared with single file on a train an=
+d truck drivers have one of the lowest life expectancies of any profession =
+and are away from their communities for long periods.</div>
+<div style=3D"font-size:small"><br>
+</div>
+<div style=3D"font-size:small">Putting long distance freight on rail and ha=
+ving more people riding cargo bikes for &quot;last mile&quot; deliveries co=
+uld mean those drivers have jobs in their hometowns doing something active.=
+ The bike messenger community is really strong
+ (although also because it is niche, so might not scale) and there is nothi=
+ng like this in the &quot;white van man&quot; world.</div>
+<div style=3D"font-size:small"><br>
+</div>
+<div style=3D"font-size:small">One of my career regrets is working on the r=
+ail freight interchange in Hinckely&nbsp;between 2017and 2018. The biggest =
+impasse was the effect of increased traffic levels in the area, most of whi=
+ch was commute traffic to the site for
+ all the workers. The financial benefits of the project for the developer w=
+ere enormous, but the solutions on the table from the transport consultant =
+were all about increasing road capacity to deal with this, which was unacce=
+ptable to the local community and
+ for the aq limit values. Imagine if they had instead decided to build a se=
+gregated cycle path along every road and give every employee an ebike as pa=
+rt of their contract? I was so caught up in how things were done and quite =
+inexperienced that I didn't dare
+ suggest, but the project still hasn't been approved.</div>
+<div style=3D"font-size:small"><br>
+</div>
+<div style=3D"font-size:small">However, the&nbsp;topic I am really keen on =
+is the air quality (and systems) benefits of reallocating urban space. I re=
+cently spotted this paper&nbsp;<a href=3D"https://eur03.safelinks.protectio=
+n.outlook.com/?url=3Dhttps%3A%2F%2Fwww.sciencedirect.com%2Fscience%2Farticl=
+e%2Fpii%2FS2214140526000654&amp;data=3D05%7C02%7CR.Lovelace%40leeds.ac.uk%7=
+C7f8be0aa293d4b4863c708df0d09ab18%7Cbdeaeda8c81d45ce863e5232a535b7cb%7C0%7C=
+0%7C639244008962443844%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYi=
+OiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C60000%7C=
+%7C%7C&amp;sdata=3DEMh2%2FCzwNmeO61rQjFKs%2BZa9RhkSk7xfC76gD8DvncE%3D&amp;r=
+eserved=3D0" originalsrc=3D"https://www.sciencedirect.com/science/article/p=
+ii/S2214140526000654" target=3D"_blank" rel=3D"noreferrer">https://www.scie=
+ncedirect.com/science/article/pii/S2214140526000654</a>
+ which Rosa Felix was involved in. Is interesting it is stated that this is=
+ something that is not really focused on in the air quality world, which is=
+ my experience also.</div>
+<div style=3D"font-size:small"><br>
+</div>
+<div style=3D"font-size:small">After attending the R course run by David Ca=
+rslaw and Stuart Grange in 2018 I applied their meteorological normalisatio=
+n random forest model (Stuarts PhD) to the then most polluted street in the=
+ UK, Upper Thames Street in London,
+ and noticed a &gt;20% drop in roadside NO2 concentrations at around the ti=
+me construction of the cycle superhighway began (i.e. road space reduced)
+<a href=3D"https://eur03.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fwww.linkedin.com%2Fpulse%2Farcticle-blaise-kelly&amp;data=3D05%7C02%7CR=
+.Lovelace%40leeds.ac.uk%7C7f8be0aa293d4b4863c708df0d09ab18%7Cbdeaeda8c81d45=
+ce863e5232a535b7cb%7C0%7C0%7C639244008962455609%7CUnknown%7CTWFpbGZsb3d8eyJ=
+FbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIl=
+dUIjoyfQ%3D%3D%7C60000%7C%7C%7C&amp;sdata=3DEaOHeXVUGRHLr2giUr7FnCh%2Bl5mjr=
+Aunr5loT0qaPHA%3D&amp;reserved=3D0" originalsrc=3D"https://www.linkedin.com=
+/pulse/arcticle-blaise-kelly" target=3D"_blank" rel=3D"noreferrer">
+https://www.linkedin.com/pulse/arcticle-blaise-kelly</a>. This is larger an=
+d much faster than the reductions from the Clean Air Zones in many parts of=
+ the country that were introduced (apparently the fastest route to complian=
+ce, but actually the only scenario
+ modelled) but have taken more than 5 years to make any significant impact =
+(at the recent select committee a 3% NO2 reduction in the West Midlands was=
+ hailed as =E2=80=9Cstatistically significant=E2=80=9D). I recently visuall=
+y inspected all ~350 roadside aq sites (over a few
+ weeks whenever I was in front of the TV) on Google street view to look for=
+ significant road space changes, particularly COVID popup cycle paths were =
+installed. I think there is something there but unfortunately so few sites =
+had lanes (&lt;10) and even fewer on
+ the side of the road where the monitoring site was, it is maybe hard to ma=
+ke a robust analysis and is still a work in progress.</div>
+<div style=3D"font-size:small"><br>
+</div>
+<div style=3D"font-size:small">Similarly the effect of 20mph on air polluti=
+on is difficult to quantify because they are poorly enforced (the only aver=
+age speed camera 20mph section I know of is Tower Bridge) and studies with =
+test drivers have biases. But someone
+ adhering rigorously to 20 drives far less aggressively. 20mph is also the =
+most energy efficient speed for EVs, even on a motorway.</div>
+<div style=3D"font-size:small"><br>
+</div>
+<div style=3D"font-size:small">Have a lot of experience using the ECMWF ERA=
+5 meteo data which has 7-30km2 resolution modelled data for more than 200 m=
+eteo parameters
+<b>hourly</b> stretching from last month to 1950. Have mainly been using th=
+is for air quality models (boundary layer/mixing height etc), but I also de=
+monstrated how it could be used to calculate WBGT which we combined with ai=
+r pollution and pollen to come up
+ with a stress model that can be applied across Europe. But there is also p=
+otential to be used for e.g. collision data (basic weather data/road collis=
+ion&nbsp;is recorded).</div>
+<div style=3D"font-size:small"><br>
+</div>
+<div style=3D"font-size:small">I mentioned I was using the free allowance o=
+f the Google Distance Matrix API requesting time travelled for the next wee=
+k, which I think represents the current week. I put this analysis together =
+for Wiltshire Council
+<a href=3D"https://eur03.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fblaisekelly.github.io%2FB3108_speeds%2Fjourney_time.html&amp;data=3D05%=
+7C02%7CR.Lovelace%40leeds.ac.uk%7C7f8be0aa293d4b4863c708df0d09ab18%7Cbdeaed=
+a8c81d45ce863e5232a535b7cb%7C0%7C0%7C639244008962466976%7CUnknown%7CTWFpbGZ=
+sb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTW=
+FpbCIsIldUIjoyfQ%3D%3D%7C60000%7C%7C%7C&amp;sdata=3Dqyt6InCoH0%2FlrepCkda56=
+qcuLN3QVnPwBb1ukH%2FyS%2Fs%3D&amp;reserved=3D0" originalsrc=3D"https://blai=
+sekelly.github.io/B3108_speeds/journey_time.html" target=3D"_blank" rel=3D"=
+noreferrer">
+https://blaisekelly.github.io/B3108_speeds/journey_time.html</a>. I am not =
+sure what weight it had but they have been successful in reducing the limit=
+, despite being originally told there were not enough fatalities.</div>
+<div style=3D"font-size:small">&nbsp; <br>
+There have been some questions over whether it is allowed to use Google dat=
+a in this way (from Dustin and others). Yet a core part of my former collea=
+gue Tilman Hohenberger=E2=80=99 PhD was scraping google map data for the co=
+lour coded congestion data (i.e. by scripting
+ the opening of google maps in a browser, screenshotting and extracting the=
+ colours&nbsp; &nbsp;(<a href=3D"https://eur03.safelinks.protection.outlook=
+.com/?url=3Dhttps%3A%2F%2Fui.adsabs.harvard.edu%2Fabs%2F2023AGUFMGC13C..07L=
+%2Fabstract&amp;data=3D05%7C02%7CR.Lovelace%40leeds.ac.uk%7C7f8be0aa293d4b4=
+863c708df0d09ab18%7Cbdeaeda8c81d45ce863e5232a535b7cb%7C0%7C0%7C639244008962=
+478094%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIs=
+IlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C60000%7C%7C%7C&amp;sdata=
+=3DLvPHwgZaHK6xyruyRqNMvSmKv%2BKaoPkJdHfzP4dNlHA%3D&amp;reserved=3D0" origi=
+nalsrc=3D"https://ui.adsabs.harvard.edu/abs/2023AGUFMGC13C..07L/abstract" t=
+arget=3D"_blank" rel=3D"noreferrer">https://ui.adsabs.harvard.edu/abs/2023A=
+GUFMGC13C..07L/abstract</a>)
+ which uses no API and is almost certainly against its terms and conditions=
+. Tilman used this tool to develop an emissions model that better considers=
+ congestion across Europe for TNO which they have also published (without a=
+ctually mentioning Google!)
+<a href=3D"https://eur03.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fessd.copernicus.org%2Farticles%2F18%2F3959%2F2026%2F&amp;data=3D05%7C02=
+%7CR.Lovelace%40leeds.ac.uk%7C7f8be0aa293d4b4863c708df0d09ab18%7Cbdeaeda8c8=
+1d45ce863e5232a535b7cb%7C0%7C0%7C639244008962489042%7CUnknown%7CTWFpbGZsb3d=
+8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbC=
+IsIldUIjoyfQ%3D%3D%7C60000%7C%7C%7C&amp;sdata=3DAE0q0Msk4%2Flmto7IT3CoeT5bV=
+z%2FHefqk2pbS9iPlzO4%3D&amp;reserved=3D0" originalsrc=3D"https://essd.coper=
+nicus.org/articles/18/3959/2026/" target=3D"_blank" rel=3D"noreferrer">
+https://essd.copernicus.org/articles/18/3959/2026/</a></div>
+<div style=3D"font-size:small"><br>
+</div>
+<div style=3D"font-size:small">I don't really think Google ar bothered beca=
+use they&nbsp;don=E2=80=99t offer this data at all (apart from via the Dist=
+ance Matrix) and it is my understanding their T&amp;Cs are more focused on =
+people copying Google maps rather than people using
+ Google maps data and actually promoting their product.<br>
+Not a PhD topic but the ability to get congestion data for anywhere is usef=
+ul and I would like to work more on developing these tools, maybe using sat=
+ellite data etc.<br>
+</div>
+<div style=3D"font-size:small"><br>
+</div>
+<div style=3D"font-size:small">Apologies for the length of this. I wrote mo=
+re and tried to trim it down.</div>
+<div style=3D"font-size:small"><br>
+</div>
+<div style=3D"font-size:small">Speak later!</div>
+<div style=3D"font-size:small"><br>
+</div>
+<div style=3D"font-size:small">Blaise</div>
+<div style=3D"font-size:small"><br>
+</div>
+<div style=3D"font-size:small"><br>
+</div>
+<div style=3D"font-size:small"><br>
+</div>
+<div style=3D"font-size:small"><br>
+</div>
+</div>
+<br>
+<div>
+<div dir=3D"ltr">On Fri, 4 Sept 2026 at 13:56, Robin Lovelace &lt;<a href=
+=3D"mailto:R.Lovelace@leeds.ac.uk" target=3D"_blank" rel=3D"noreferrer">R.L=
+ovelace@leeds.ac.uk</a>&gt; wrote:<br>
+</div>
+<blockquote style=3D"margin:0px 0px 0px 0.8ex;border-left:1px solid rgb(204=
+,204,204);padding-left:1ex">
+<div>
+<div dir=3D"ltr">
+<div style=3D"font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Cali=
+bri,Helvetica,sans-serif;font-size:12pt;color:rgb(0,0,0)">
+One more update: here are 2 papers on my mind, the former just sent to me b=
+y Thijs:</div>
+<div style=3D"font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Cali=
+bri,Helvetica,sans-serif;font-size:12pt;color:rgb(0,0,0)">
+<br>
+</div>
+<ul style=3D"margin-top:0px;margin-bottom:0px">
+<li style=3D"font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Calib=
+ri,Helvetica,sans-serif;font-size:12pt;color:rgb(0,0,0);margin-top:0px;marg=
+in-bottom:0px;list-style-type:&quot;- &quot;">
+<div role=3D"presentation">Cycling Cities paper: <a href=3D"https://eur03.s=
+afelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fwww.sciencedirect.com%=
+2Fscience%2Farticle%2Fabs%2Fpii%2FS009411902600077X&amp;data=3D05%7C02%7CR.=
+Lovelace%40leeds.ac.uk%7C7f8be0aa293d4b4863c708df0d09ab18%7Cbdeaeda8c81d45c=
+e863e5232a535b7cb%7C0%7C0%7C639244008962500217%7CUnknown%7CTWFpbGZsb3d8eyJF=
+bXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIld=
+UIjoyfQ%3D%3D%7C60000%7C%7C%7C&amp;sdata=3DYVAym%2BE3YxGMC9Rl9Qt9LrqPOZxt4U=
+206HqTZuNAh08%3D&amp;reserved=3D0" originalsrc=3D"https://www.sciencedirect=
+.com/science/article/abs/pii/S009411902600077X" target=3D"_blank" rel=3D"no=
+referrer">
+https://www.sciencedirect.com/science/article/abs/pii/S009411902600077X</a>=
+&nbsp;</div>
+</li><li style=3D"font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,=
+Calibri,Helvetica,sans-serif;font-size:12pt;color:rgb(0,0,0);margin-top:0px=
+;margin-bottom:0px;list-style-type:&quot;- &quot;">
+<div role=3D"presentation">Paper on estimating cycling uptake in response t=
+o new infrastructure which has out-of-date findings still used by DfT but w=
+hich need updating (this one is kind of This's area and I've had a good go =
+at it with Hussein, we can really
+ do a lot with new count datasets): <a href=3D"https://eur03.safelinks.prot=
+ection.outlook.com/?url=3Dhttp%3A%2F%2Fwww.sciencedirect.com%2Fscience%2Far=
+ticle%2Fpii%2FS0965856406001212&amp;data=3D05%7C02%7CR.Lovelace%40leeds.ac.=
+uk%7C7f8be0aa293d4b4863c708df0d09ab18%7Cbdeaeda8c81d45ce863e5232a535b7cb%7C=
+0%7C0%7C639244008962513251%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUs=
+IlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C6000=
+0%7C%7C%7C&amp;sdata=3D1J7Z3QtfCWFzC3isMXBMYBJa%2BGFYdZQMI40kw9U3oXE%3D&amp=
+;reserved=3D0" originalsrc=3D"http://www.sciencedirect.com/science/article/=
+pii/S0965856406001212" target=3D"_blank" rel=3D"noreferrer">
+http://www.sciencedirect.com/science/article/pii/S0965856406001212</a>&nbsp=
+;</div>
+</li></ul>
+<div style=3D"margin-top:0px;margin-bottom:0px;font-family:Aptos,Aptos_Embe=
+ddedFont,Aptos_MSFontService,Calibri,Helvetica,sans-serif;font-size:12pt;co=
+lor:rgb(0,0,0)">
+<br>
+</div>
+<div style=3D"margin-top:0px;margin-bottom:0px;font-family:Aptos,Aptos_Embe=
+ddedFont,Aptos_MSFontService,Calibri,Helvetica,sans-serif;font-size:12pt;co=
+lor:rgb(0,0,0)">
+Other topics are fine, and truth be told you can pursue many side missions =
+including consultancy work while doing a PhD, but that general area of cycl=
+ing (or more broadly active travel or physical activity) uptake in relation=
+ to various variables is something
+ on my mind that you could ace I think.</div>
+<div style=3D"margin-top:0px;margin-bottom:0px;font-family:Aptos,Aptos_Embe=
+ddedFont,Aptos_MSFontService,Calibri,Helvetica,sans-serif;font-size:12pt;co=
+lor:rgb(0,0,0)">
+<br>
+</div>
+<div style=3D"margin-top:0px;margin-bottom:0px;font-family:Aptos,Aptos_Embe=
+ddedFont,Aptos_MSFontService,Calibri,Helvetica,sans-serif;font-size:12pt;co=
+lor:rgb(0,0,0)">
+Robin</div>
+<div id=3D"m_-3884911632348767540x_x_m_2664382475226657055Signature">
+<div style=3D"font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Cali=
+bri,Helvetica,sans-serif;font-size:12pt;color:rgb(0,0,0)">
+<br>
+</div>
+<div style=3D"background-color:rgb(255,255,255)"></div>
+<p style=3D"text-align:left;background-color:rgb(255,255,255);margin-top:0p=
+x;margin-bottom:0px;font-family:Calibri,Arial,Helvetica,sans-serif">
+<span style=3D"font-family:Verdana,sans-serif;font-size:10pt;color:gray"><b=
+>Professor Robin Lovelace</b></span></p>
+<p style=3D"text-align:left;background-color:rgb(255,255,255);margin-top:0p=
+x;margin-bottom:0px;font-family:Calibri,Arial,Helvetica,sans-serif">
+<span style=3D"font-family:Verdana,sans-serif;font-size:10pt;color:gray"><a=
+ href=3D"https://eur03.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%=
+2Fenvironment.leeds.ac.uk%2Ftransport%2Fstaff%2F953%2Fdr-robin-lovelace&amp=
+;data=3D05%7C02%7CR.Lovelace%40leeds.ac.uk%7C7f8be0aa293d4b4863c708df0d09ab=
+18%7Cbdeaeda8c81d45ce863e5232a535b7cb%7C0%7C0%7C639244008962525946%7CUnknow=
+n%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiI=
+sIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C60000%7C%7C%7C&amp;sdata=3DPXycHyPhxcA%=
+2B6ExqHNq9Je5WZBw6Taj1CMEhhSrwhSE%3D&amp;reserved=3D0" originalsrc=3D"https=
+://environment.leeds.ac.uk/transport/staff/953/dr-robin-lovelace" rel=3D"no=
+opener noreferrer noreferrer" style=3D"margin:0px" target=3D"_blank">Profes=
+sor of Transport Data Science,
+ University of Leeds</a></span></p>
+<p style=3D"text-align:left;background-color:rgb(255,255,255);margin-top:0p=
+x;margin-bottom:0px">
+<span style=3D"font-family:Verdana,sans-serif;font-size:10pt;color:gray"><a=
+ href=3D"https://eur03.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%=
+2Foutlook.office365.com%2Fowa%2Fcalendar%2F63f6c4e85d124df6a20656ade8e71faa=
+%40leeds.ac.uk%2F32e1cb4137f4414b8d7644453ec4b10414316826143036893453%2Fcal=
+endar.html&amp;data=3D05%7C02%7CR.Lovelace%40leeds.ac.uk%7C7f8be0aa293d4b48=
+63c708df0d09ab18%7Cbdeaeda8c81d45ce863e5232a535b7cb%7C0%7C0%7C6392440089625=
+40446%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsI=
+lAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C60000%7C%7C%7C&amp;sdata=
+=3DusGZmJLndicbaUbfxh%2F0UklTDsF9uCCENg2eULgmlJE%3D&amp;reserved=3D0" origi=
+nalsrc=3D"https://outlook.office365.com/owa/calendar/63f6c4e85d124df6a20656=
+ade8e71faa@leeds.ac.uk/32e1cb4137f4414b8d7644453ec4b10414316826143036893453=
+/calendar.html" rel=3D"noopener noreferrer noreferrer" style=3D"margin:0px"=
+ target=3D"_blank">Work
+ calendar</a>&nbsp;/ </span><span style=3D"font-family:Calibri,Arial,Helvet=
+ica,sans-serif"><a href=3D"https://eur03.safelinks.protection.outlook.com/?=
+url=3Dhttps%3A%2F%2Fscholar.google.com%2Fcitations%3Fhl%3Den%26user%3DxDJHV=
+CAAAAAJ%26pagesize%3D80%26view_op%3Dlist_works%26sortby%3Dpubdate&amp;data=
+=3D05%7C02%7CR.Lovelace%40leeds.ac.uk%7C7f8be0aa293d4b4863c708df0d09ab18%7C=
+bdeaeda8c81d45ce863e5232a535b7cb%7C0%7C0%7C639244008962552099%7CUnknown%7CT=
+WFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFO=
+IjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C60000%7C%7C%7C&amp;sdata=3D0lSQfzEX6VlA%2Fk8=
+GG1uzBk4tqoC8Xy8kCjyrwIqbZVo%3D&amp;reserved=3D0" originalsrc=3D"https://sc=
+holar.google.com/citations?hl=3Den&amp;user=3DxDJHVCAAAAAJ&amp;pagesize=3D8=
+0&amp;view_op=3Dlist_works&amp;sortby=3Dpubdate" title=3D"https://scholar.g=
+oogle.com/citations?hl=3Den&amp;user=3DxDJHVCAAAAAJ&amp;pagesize=3D80&amp;v=
+iew_op=3Dlist_works&amp;sortby=3Dpubdate" style=3D"margin:0px" target=3D"_b=
+lank" rel=3D"noreferrer">Publications</a></span><span style=3D"font-family:=
+Verdana,sans-serif;font-size:13.3333px;color:rgb(128,128,128);background-co=
+lor:rgb(255,255,255)">&nbsp;/
+</span><span style=3D"font-family:Calibri,Arial,Helvetica,sans-serif;font-s=
+ize:12pt;color:rgb(0,0,0)"><a href=3D"https://eur03.safelinks.protection.ou=
+tlook.com/?url=3Dhttps%3A%2F%2Fwww.robinlovelace.net%2F&amp;data=3D05%7C02%=
+7CR.Lovelace%40leeds.ac.uk%7C7f8be0aa293d4b4863c708df0d09ab18%7Cbdeaeda8c81=
+d45ce863e5232a535b7cb%7C0%7C0%7C639244008962563450%7CUnknown%7CTWFpbGZsb3d8=
+eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCI=
+sIldUIjoyfQ%3D%3D%7C60000%7C%7C%7C&amp;sdata=3DwpaeGiIDjfFOJfh0muuHPqtRC5Xd=
+m4FRku0JVNJ4RT8%3D&amp;reserved=3D0" originalsrc=3D"https://www.robinlovela=
+ce.net/" style=3D"margin-top:0px;margin-bottom:0px" target=3D"_blank" rel=
+=3D"noreferrer">Website</a></span><span style=3D"font-family:Verdana,sans-s=
+erif;font-size:13.3333px;color:rgb(128,128,128);background-color:rgb(255,25=
+5,255)">&nbsp;/
+</span><span style=3D"font-family:Calibri,Arial,Helvetica,sans-serif;font-s=
+ize:16px;color:rgb(0,0,0);background-color:rgb(255,255,255)"><a href=3D"htt=
+ps://eur03.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fgithub.com=
+%2FRobinlovelace&amp;data=3D05%7C02%7CR.Lovelace%40leeds.ac.uk%7C7f8be0aa29=
+3d4b4863c708df0d09ab18%7Cbdeaeda8c81d45ce863e5232a535b7cb%7C0%7C0%7C6392440=
+08962574220%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDA=
+wMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C60000%7C%7C%7C&amp;=
+sdata=3DSSyufabokdKfw7nQMSACODkZX2wqxWt4P1MWaQGlX1k%3D&amp;reserved=3D0" or=
+iginalsrc=3D"https://github.com/Robinlovelace" title=3D"https://github.com/=
+Robinlovelace" style=3D"margin-top:0px;margin-bottom:0px" target=3D"_blank"=
+ rel=3D"noreferrer">GitHub</a></span></p>
+<p style=3D"text-align:left;background-color:rgb(255,255,255);margin-top:0p=
+x;margin-bottom:0px">
+<span style=3D"font-family:Calibri,Arial,Helvetica,sans-serif;font-size:12p=
+t;color:rgb(0,0,0)"><br>
+</span></p>
+<div style=3D"font-family:Calibri,Arial,Helvetica,sans-serif;font-size:12pt=
+;color:rgb(0,0,0)">
+<br>
+</div>
+</div>
+<div id=3D"m_-3884911632348767540x_x_m_2664382475226657055appendonsend"></d=
+iv>
+<hr style=3D"display:inline-block;width:98%">
+<div id=3D"m_-3884911632348767540x_x_m_2664382475226657055divRplyFwdMsg" di=
+r=3D"ltr">
+<font face=3D"Calibri, sans-serif" color=3D"#000000" style=3D"font-size:11p=
+t"><b>From:</b> Robin Lovelace &lt;<a href=3D"mailto:R.Lovelace@leeds.ac.uk=
+" target=3D"_blank" rel=3D"noreferrer">R.Lovelace@leeds.ac.uk</a>&gt;<br>
+<b>Sent:</b> 04 September 2026 12:18<br>
+<b>To:</b> Blaise Kelly &lt;<a href=3D"mailto:blaise@kello.co.uk" target=3D=
+"_blank" rel=3D"noreferrer">blaise@kello.co.uk</a>&gt;<br>
+<b>Subject:</b> Re: Couple of questions</font>
+<div>&nbsp;</div>
+</div>
+<div dir=3D"ltr">
+<div style=3D"font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Cali=
+bri,Helvetica,sans-serif;font-size:12pt;color:rgb(0,0,0)">
+Yes for sure let's have a chat. I would say that doing a PhD is the job tha=
+t gives the most flexibility of all jobs I've done, the freedom is amazing.=
+</div>
+<div style=3D"font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Cali=
+bri,Helvetica,sans-serif;font-size:12pt;color:rgb(0,0,0)">
+<br>
+</div>
+<div style=3D"font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Cali=
+bri,Helvetica,sans-serif;font-size:12pt;color:rgb(0,0,0)">
+How's next week looking for you? I'll send you some follow-up info in the n=
+ext email. It's worth thinking about the supervisory team and topic, people=
+ who come to mind include:</div>
+<div style=3D"font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Cali=
+bri,Helvetica,sans-serif;font-size:12pt;color:rgb(0,0,0)">
+<br>
+</div>
+<ol start=3D"1" style=3D"margin-top:0px;margin-bottom:0px;list-style-type:d=
+ecimal">
+<li style=3D"font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Calib=
+ri,Helvetica,sans-serif;font-size:12pt;color:rgb(0,0,0);margin-top:0px;marg=
+in-bottom:0px">
+<div role=3D"presentation">Thijs Dekker, I have discussed being a superviso=
+ry team for exactly this call, he's a transport economist, knows the proces=
+ses really well, is into active travel and happens to be Dutch and would br=
+ing useful new perspectives on things
+ I think.</div>
+</li><li style=3D"font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,=
+Calibri,Helvetica,sans-serif;font-size:12pt;color:rgb(0,0,0);margin-top:0px=
+;margin-bottom:0px">
+<div role=3D"presentation">Malcolm Morgan, I think you know him, I would sa=
+y that in some ways he's too similar in skillsets to my skillsets to bring =
+new perspectives on things but we have been a great supervisory team (with =
+Eva Heinen as third supervisory) for
+ Hussein Mahfouz who recently passed his viva with no corrections and who n=
+ow works for Arup.</div>
+</li><li style=3D"font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,=
+Calibri,Helvetica,sans-serif;font-size:12pt;color:rgb(0,0,0);margin-top:0px=
+;margin-bottom:0px">
+<div role=3D"presentation">Roger Beecham, he is a data visualisation whizz =
+and really into STATS19 data</div>
+</li><li style=3D"font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,=
+Calibri,Helvetica,sans-serif;font-size:12pt;color:rgb(0,0,0);margin-top:0px=
+;margin-bottom:0px">
+<div role=3D"presentation">Caroline Tait, not sure if she can supervise PhD=
+ students at her career stage but she's contributed to STATS19 upstream, is=
+ a fully qualified medical doctor so brings fresh perspectives and is gener=
+ally awesome.</div>
+</li><li style=3D"font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,=
+Calibri,Helvetica,sans-serif;font-size:12pt;color:rgb(0,0,0);margin-top:0px=
+;margin-bottom:0px">
+<div role=3D"presentation">Chiara Calastri, interested in road safety and 2=
+0 mph limits in Wales</div>
+</li><li style=3D"font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,=
+Calibri,Helvetica,sans-serif;font-size:12pt;color:rgb(0,0,0);margin-top:0px=
+;margin-bottom:0px">
+<div role=3D"presentation">James Tate, air pollution expert</div>
+</li></ol>
+<div style=3D"margin-top:0px;margin-bottom:0px;font-family:Aptos,Aptos_Embe=
+ddedFont,Aptos_MSFontService,Calibri,Helvetica,sans-serif;font-size:12pt;co=
+lor:rgb(0,0,0)">
+<br>
+</div>
+<div style=3D"margin-top:0px;margin-bottom:0px;font-family:Aptos,Aptos_Embe=
+ddedFont,Aptos_MSFontService,Calibri,Helvetica,sans-serif;font-size:12pt;co=
+lor:rgb(0,0,0)">
+I realise that's quite a lot of options! My first thought is Thijs for vari=
+ous reasons, not least that he's very open minded and knows the systems tha=
+t you need to navigate as a PhD student very well, and it broadens the 'aca=
+demic gene pool' a bit as he's in
+ a different research group, but any could work, and having 3x supervisors =
+can work for sure.</div>
+<div style=3D"margin-top:0px;margin-bottom:0px;font-family:Aptos,Aptos_Embe=
+ddedFont,Aptos_MSFontService,Calibri,Helvetica,sans-serif;font-size:12pt;co=
+lor:rgb(0,0,0)">
+<br>
+</div>
+<div style=3D"margin-top:0px;margin-bottom:0px;font-family:Aptos,Aptos_Embe=
+ddedFont,Aptos_MSFontService,Calibri,Helvetica,sans-serif;font-size:12pt;co=
+lor:rgb(0,0,0)">
+Next week Monday afternoon and any time Tuesday seem to be good but general=
+ly fairly flexible and my calendar in link below is quite up-to-date.</div>
+<div style=3D"margin-top:0px;margin-bottom:0px;font-family:Aptos,Aptos_Embe=
+ddedFont,Aptos_MSFontService,Calibri,Helvetica,sans-serif;font-size:12pt;co=
+lor:rgb(0,0,0)">
+<br>
+</div>
+<div style=3D"margin-top:0px;margin-bottom:0px;font-family:Aptos,Aptos_Embe=
+ddedFont,Aptos_MSFontService,Calibri,Helvetica,sans-serif;font-size:12pt;co=
+lor:rgb(0,0,0)">
+Robin</div>
+<div id=3D"m_-3884911632348767540x_x_m_2664382475226657055x_Signature">
+<div style=3D"font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Cali=
+bri,Helvetica,sans-serif;font-size:12pt;color:rgb(0,0,0)">
+<br>
+</div>
+<p style=3D"text-align:left;background-color:rgb(255,255,255);margin-top:0p=
+x;margin-bottom:0px;font-family:Calibri,Arial,Helvetica,sans-serif">
+<span style=3D"font-family:Verdana,sans-serif;font-size:10pt;color:gray"><b=
+>Professor Robin Lovelace</b></span></p>
+<p style=3D"text-align:left;background-color:rgb(255,255,255);margin-top:0p=
+x;margin-bottom:0px;font-family:Calibri,Arial,Helvetica,sans-serif">
+<span style=3D"font-family:Verdana,sans-serif;font-size:10pt;color:gray"><a=
+ href=3D"https://eur03.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%=
+2Fenvironment.leeds.ac.uk%2Ftransport%2Fstaff%2F953%2Fdr-robin-lovelace&amp=
+;data=3D05%7C02%7CR.Lovelace%40leeds.ac.uk%7C7f8be0aa293d4b4863c708df0d09ab=
+18%7Cbdeaeda8c81d45ce863e5232a535b7cb%7C0%7C0%7C639244008962585126%7CUnknow=
+n%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiI=
+sIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C60000%7C%7C%7C&amp;sdata=3DdG4L2RSN1UNm=
+KjnHx9H8WTNmBRIprh75dHZeVHQ6xbQ%3D&amp;reserved=3D0" originalsrc=3D"https:/=
+/environment.leeds.ac.uk/transport/staff/953/dr-robin-lovelace" rel=3D"noop=
+ener noreferrer noreferrer" style=3D"margin:0px" target=3D"_blank">Professo=
+r of Transport Data Science,
+ University of Leeds</a></span></p>
+<p style=3D"text-align:left;background-color:rgb(255,255,255);margin-top:0p=
+x;margin-bottom:0px">
+<span style=3D"font-family:Verdana,sans-serif;font-size:10pt;color:gray"><a=
+ href=3D"https://eur03.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%=
+2Foutlook.office365.com%2Fowa%2Fcalendar%2F63f6c4e85d124df6a20656ade8e71faa=
+%40leeds.ac.uk%2F32e1cb4137f4414b8d7644453ec4b10414316826143036893453%2Fcal=
+endar.html&amp;data=3D05%7C02%7CR.Lovelace%40leeds.ac.uk%7C7f8be0aa293d4b48=
+63c708df0d09ab18%7Cbdeaeda8c81d45ce863e5232a535b7cb%7C0%7C0%7C6392440089625=
+95988%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsI=
+lAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C60000%7C%7C%7C&amp;sdata=
+=3DxxLNCEPMkIUgid8yyzzzJb7ikDg6mbePP3e3%2FMBjkLY%3D&amp;reserved=3D0" origi=
+nalsrc=3D"https://outlook.office365.com/owa/calendar/63f6c4e85d124df6a20656=
+ade8e71faa@leeds.ac.uk/32e1cb4137f4414b8d7644453ec4b10414316826143036893453=
+/calendar.html" rel=3D"noopener noreferrer noreferrer" style=3D"margin:0px"=
+ target=3D"_blank">Work
+ calendar</a>&nbsp;/ </span><span style=3D"font-family:Calibri,Arial,Helvet=
+ica,sans-serif"><a href=3D"https://eur03.safelinks.protection.outlook.com/?=
+url=3Dhttps%3A%2F%2Fscholar.google.com%2Fcitations%3Fhl%3Den%26user%3DxDJHV=
+CAAAAAJ%26pagesize%3D80%26view_op%3Dlist_works%26sortby%3Dpubdate&amp;data=
+=3D05%7C02%7CR.Lovelace%40leeds.ac.uk%7C7f8be0aa293d4b4863c708df0d09ab18%7C=
+bdeaeda8c81d45ce863e5232a535b7cb%7C0%7C0%7C639244008962609013%7CUnknown%7CT=
+WFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFO=
+IjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C60000%7C%7C%7C&amp;sdata=3D%2F8jTf4YdeXIMkTk=
+sfSmhwihAxsOoq9c8238g0LXJJsw%3D&amp;reserved=3D0" originalsrc=3D"https://sc=
+holar.google.com/citations?hl=3Den&amp;user=3DxDJHVCAAAAAJ&amp;pagesize=3D8=
+0&amp;view_op=3Dlist_works&amp;sortby=3Dpubdate" title=3D"https://scholar.g=
+oogle.com/citations?hl=3Den&amp;user=3DxDJHVCAAAAAJ&amp;pagesize=3D80&amp;v=
+iew_op=3Dlist_works&amp;sortby=3Dpubdate" style=3D"margin:0px" target=3D"_b=
+lank" rel=3D"noreferrer">Publications</a></span><span style=3D"font-family:=
+Verdana,sans-serif;font-size:13.3333px;color:rgb(128,128,128);background-co=
+lor:rgb(255,255,255)">&nbsp;/
+</span><span style=3D"font-family:Calibri,Arial,Helvetica,sans-serif;font-s=
+ize:12pt;color:rgb(0,0,0)"><a href=3D"https://eur03.safelinks.protection.ou=
+tlook.com/?url=3Dhttps%3A%2F%2Fwww.robinlovelace.net%2F&amp;data=3D05%7C02%=
+7CR.Lovelace%40leeds.ac.uk%7C7f8be0aa293d4b4863c708df0d09ab18%7Cbdeaeda8c81=
+d45ce863e5232a535b7cb%7C0%7C0%7C639244008962620502%7CUnknown%7CTWFpbGZsb3d8=
+eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCI=
+sIldUIjoyfQ%3D%3D%7C60000%7C%7C%7C&amp;sdata=3DDpDE7qYpZZJv0fOInZnrnXTJtYT1=
+vsdeo5ZQx%2BvL90M%3D&amp;reserved=3D0" originalsrc=3D"https://www.robinlove=
+lace.net/" style=3D"margin-top:0px;margin-bottom:0px" target=3D"_blank" rel=
+=3D"noreferrer">Website</a></span><span style=3D"font-family:Verdana,sans-s=
+erif;font-size:13.3333px;color:rgb(128,128,128);background-color:rgb(255,25=
+5,255)">&nbsp;/
+</span><span style=3D"font-family:Calibri,Arial,Helvetica,sans-serif;font-s=
+ize:16px;color:rgb(0,0,0);background-color:rgb(255,255,255)"><a href=3D"htt=
+ps://eur03.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fgithub.com=
+%2FRobinlovelace&amp;data=3D05%7C02%7CR.Lovelace%40leeds.ac.uk%7C7f8be0aa29=
+3d4b4863c708df0d09ab18%7Cbdeaeda8c81d45ce863e5232a535b7cb%7C0%7C0%7C6392440=
+08962631570%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDA=
+wMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C60000%7C%7C%7C&amp;=
+sdata=3D%2FPwY7w0nYQc2jnQpnSphztkBJlJ3q4Mh183EOYMLelI%3D&amp;reserved=3D0" =
+originalsrc=3D"https://github.com/Robinlovelace" title=3D"https://github.co=
+m/Robinlovelace" style=3D"margin-top:0px;margin-bottom:0px" target=3D"_blan=
+k" rel=3D"noreferrer">GitHub</a></span></p>
+<p style=3D"text-align:left;background-color:rgb(255,255,255);margin-top:0p=
+x;margin-bottom:0px">
+<span style=3D"font-family:Calibri,Arial,Helvetica,sans-serif;font-size:12p=
+t;color:rgb(0,0,0)"><br>
+</span></p>
+<div style=3D"font-family:Calibri,Arial,Helvetica,sans-serif;font-size:12pt=
+;color:rgb(0,0,0)">
+<br>
+</div>
+</div>
+<div id=3D"m_-3884911632348767540x_x_m_2664382475226657055x_appendonsend"><=
+/div>
+<hr style=3D"display:inline-block;width:98%">
+<div id=3D"m_-3884911632348767540x_x_m_2664382475226657055x_divRplyFwdMsg" =
+dir=3D"ltr">
+<font face=3D"Calibri, sans-serif" color=3D"#000000" style=3D"font-size:11p=
+t"><b>From:</b> Blaise Kelly &lt;<a href=3D"mailto:blaise@kello.co.uk" targ=
+et=3D"_blank" rel=3D"noreferrer">blaise@kello.co.uk</a>&gt;<br>
+<b>Sent:</b> 04 September 2026 11:51<br>
+<b>To:</b> Robin Lovelace &lt;<a href=3D"mailto:R.Lovelace@leeds.ac.uk" tar=
+get=3D"_blank" rel=3D"noreferrer">R.Lovelace@leeds.ac.uk</a>&gt;<br>
+<b>Subject:</b> Re: Couple of questions</font>
+<div>&nbsp;</div>
+</div>
+<div>
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center" wi=
+dth=3D"500">
+<tbody>
+<tr>
+<td style=3D"background:rgb(187,165,85);padding:5.25pt 5.5pt 5.25pt 1.5pt">=
+</td>
+<td width=3D"&quot;100%&quot;" cellpadding=3D"&quot;7px" color=3D"&quot;#21=
+2121&quot;" style=3D"width:100%;background:rgb(255,229,153);padding:5.25pt =
+3.75pt 5.25pt 11.25pt">
+<div>
+<p><span align=3D"center" style=3D"font-size:10pt;font-family:Arial,sans-se=
+rif;color:rgb(33,33,33)"><b>CAUTION:</b> External Message. Use caution open=
+ing links and attachments.
+</span></p>
+</div>
+</td>
+<td style=3D"background:rgb(187,165,85);padding:5.25pt 5.5pt 5.25pt 1.5pt">=
+</td>
+<td>
+<div></div>
+</td>
+</tr>
+</tbody>
+</table>
+<div>
+<div dir=3D"ltr">
+<div dir=3D"ltr">
+<div style=3D"font-size:small">Hi Robin,</div>
+<div style=3D"font-size:small"><br>
+</div>
+<div style=3D"font-size:small">No worries about the delay, I realise you ar=
+e super busy.</div>
+<div style=3D"font-size:small"><br>
+</div>
+<div style=3D"font-size:small">On the PhD YES I am really interested in doi=
+ng one. If I am honest I am finding it a bit difficult to do what I want to=
+ do over here and have been thinking about moving back.&nbsp;</div>
+<div style=3D"font-size:small"><br>
+</div>
+<div style=3D"font-size:small">What would I need to do to apply? Shall we h=
+ave a chat?</div>
+<div style=3D"font-size:small"><br>
+</div>
+<div style=3D"font-size:small">Cheers</div>
+<div style=3D"font-size:small"><br>
+</div>
+<div style=3D"font-size:small">Blaise</div>
+</div>
+<br>
+<div>
+<div dir=3D"ltr">On Fri, 4 Sept 2026 at 12:16, Robin Lovelace &lt;<a href=
+=3D"mailto:R.Lovelace@leeds.ac.uk" target=3D"_blank" rel=3D"noreferrer">R.L=
+ovelace@leeds.ac.uk</a>&gt; wrote:<br>
+</div>
+<blockquote style=3D"margin:0px 0px 0px 0.8ex;border-left:1px solid rgb(204=
+,204,204);padding-left:1ex">
+<div>
+<div dir=3D"ltr">
+<div style=3D"font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Cali=
+bri,Helvetica,sans-serif;font-size:12pt;color:rgb(0,0,0)">
+Hi Blaise,</div>
+<div style=3D"font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Cali=
+bri,Helvetica,sans-serif;font-size:12pt;color:rgb(0,0,0)">
+<br>
+</div>
+<div style=3D"font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Cali=
+bri,Helvetica,sans-serif;font-size:12pt;color:rgb(0,0,0)">
+With apologies for slow response, just found this email randomly and realis=
+e I never got back to you.</div>
+<div style=3D"font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Cali=
+bri,Helvetica,sans-serif;font-size:12pt;color:rgb(0,0,0)">
+<br>
+</div>
+<div style=3D"font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Cali=
+bri,Helvetica,sans-serif;font-size:12pt;color:rgb(0,0,0)">
+Regarding a 'play score', I think it's hard to quantify but not impossible,=
+ green space, car free areas, presence of playgrounds, skate parks etc, and=
+ peoples' gardens are probably good proxies for how much vital outdoor play=
+ kids can get safely. I learned
+ yesterday that official guidelines state that kids should get at least 60 =
+minutes of physical activity each day but only around half do depending on =
+where they live.</div>
+<div style=3D"font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Cali=
+bri,Helvetica,sans-serif;font-size:12pt;color:rgb(0,0,0)">
+<br>
+</div>
+<div style=3D"font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Cali=
+bri,Helvetica,sans-serif;font-size:12pt;color:rgb(0,0,0)">
+In any case, a bit out-of-the-blue, but are you interested in doing a PhD?&=
+nbsp;</div>
+<div style=3D"font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Cali=
+bri,Helvetica,sans-serif;font-size:12pt;color:rgb(0,0,0)">
+<br>
+</div>
+<div style=3D"font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Cali=
+bri,Helvetica,sans-serif;font-size:12pt;color:rgb(0,0,0)">
+There is a live opportunity with deadline around November that has a stream=
+ on data-driven research and is based on co-creation of research topics wit=
+h potential students.</div>
+<div style=3D"font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Cali=
+bri,Helvetica,sans-serif;font-size:12pt;color:rgb(0,0,0)">
+<br>
+</div>
+<div style=3D"font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Cali=
+bri,Helvetica,sans-serif;font-size:12pt;color:rgb(0,0,0)">
+I know you have a lot else going on, you're based in NL etc but a PhD is a =
+good place for exploring the kinds of questions your asking and getting pai=
+d (not a huge amount but it's tax free and I lived like a king while on PhD=
+ salary) so thought I'd check, although
+ a long shot.</div>
+<div style=3D"font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Cali=
+bri,Helvetica,sans-serif;font-size:12pt;color:rgb(0,0,0)">
+<br>
+</div>
+<div style=3D"font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Cali=
+bri,Helvetica,sans-serif;font-size:12pt;color:rgb(0,0,0)">
+Also if you know of anyone else interested, please let me know, trying to b=
+uild a team a bit against the odds, partly my fault as I enjoy getting actu=
+ally doing (rather than just coordinating) the research!</div>
+<div style=3D"font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Cali=
+bri,Helvetica,sans-serif;font-size:12pt;color:rgb(0,0,0)">
+<br>
+</div>
+<div style=3D"font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Cali=
+bri,Helvetica,sans-serif;font-size:12pt;color:rgb(0,0,0)">
+Robin</div>
+<div id=3D"m_-3884911632348767540x_x_m_2664382475226657055x_x_m_-9138526865=
+885021220Signature">
+<div style=3D"font-family:Aptos,Aptos_EmbeddedFont,Aptos_MSFontService,Cali=
+bri,Helvetica,sans-serif;font-size:12pt;color:rgb(0,0,0)">
+<br>
+</div>
+<p style=3D"text-align:left;background-color:rgb(255,255,255);margin-top:0p=
+x;margin-bottom:0px;font-family:Calibri,Arial,Helvetica,sans-serif">
+<span style=3D"font-family:Verdana,sans-serif;font-size:10pt;color:gray"><b=
+>Professor Robin Lovelace</b></span></p>
+<p style=3D"text-align:left;background-color:rgb(255,255,255);margin-top:0p=
+x;margin-bottom:0px;font-family:Calibri,Arial,Helvetica,sans-serif">
+<span style=3D"font-family:Verdana,sans-serif;font-size:10pt;color:gray"><a=
+ href=3D"https://eur03.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%=
+2Fenvironment.leeds.ac.uk%2Ftransport%2Fstaff%2F953%2Fdr-robin-lovelace&amp=
+;data=3D05%7C02%7CR.Lovelace%40leeds.ac.uk%7C7f8be0aa293d4b4863c708df0d09ab=
+18%7Cbdeaeda8c81d45ce863e5232a535b7cb%7C0%7C0%7C639244008962642438%7CUnknow=
+n%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiI=
+sIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C60000%7C%7C%7C&amp;sdata=3Dpj%2FsdlUxad=
+kEmBvlbwpSkjzfEFNgyGBH9LbYJU0wW9o%3D&amp;reserved=3D0" originalsrc=3D"https=
+://environment.leeds.ac.uk/transport/staff/953/dr-robin-lovelace" rel=3D"no=
+opener noreferrer noreferrer" style=3D"margin:0px" target=3D"_blank">Profes=
+sor of Transport Data Science,
+ University of Leeds</a></span></p>
+<p style=3D"text-align:left;background-color:rgb(255,255,255);margin-top:0p=
+x;margin-bottom:0px">
+<span style=3D"font-family:Verdana,sans-serif;font-size:10pt;color:gray"><a=
+ href=3D"https://eur03.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%=
+2Foutlook.office365.com%2Fowa%2Fcalendar%2F63f6c4e85d124df6a20656ade8e71faa=
+%40leeds.ac.uk%2F32e1cb4137f4414b8d7644453ec4b10414316826143036893453%2Fcal=
+endar.html&amp;data=3D05%7C02%7CR.Lovelace%40leeds.ac.uk%7C7f8be0aa293d4b48=
+63c708df0d09ab18%7Cbdeaeda8c81d45ce863e5232a535b7cb%7C0%7C0%7C6392440089626=
+54559%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsI=
+lAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C60000%7C%7C%7C&amp;sdata=
+=3DKcs95JJ9BZwWK4aCtxqtmtLn85FT8uxHEzjfz025iYQ%3D&amp;reserved=3D0" origina=
+lsrc=3D"https://outlook.office365.com/owa/calendar/63f6c4e85d124df6a20656ad=
+e8e71faa@leeds.ac.uk/32e1cb4137f4414b8d7644453ec4b10414316826143036893453/c=
+alendar.html" rel=3D"noopener noreferrer noreferrer" style=3D"margin:0px" t=
+arget=3D"_blank">Work
+ calendar</a>&nbsp;/ </span><span style=3D"font-family:Calibri,Arial,Helvet=
+ica,sans-serif"><a href=3D"https://eur03.safelinks.protection.outlook.com/?=
+url=3Dhttps%3A%2F%2Fscholar.google.com%2Fcitations%3Fhl%3Den%26user%3DxDJHV=
+CAAAAAJ%26pagesize%3D80%26view_op%3Dlist_works%26sortby%3Dpubdate&amp;data=
+=3D05%7C02%7CR.Lovelace%40leeds.ac.uk%7C7f8be0aa293d4b4863c708df0d09ab18%7C=
+bdeaeda8c81d45ce863e5232a535b7cb%7C0%7C0%7C639244008962667223%7CUnknown%7CT=
+WFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFO=
+IjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C60000%7C%7C%7C&amp;sdata=3Du5yDvbS1Fuac3llzS=
+f%2BoRKhRr11Y0oTWF3TQMyMrTqk%3D&amp;reserved=3D0" originalsrc=3D"https://sc=
+holar.google.com/citations?hl=3Den&amp;user=3DxDJHVCAAAAAJ&amp;pagesize=3D8=
+0&amp;view_op=3Dlist_works&amp;sortby=3Dpubdate" title=3D"https://scholar.g=
+oogle.com/citations?hl=3Den&amp;user=3DxDJHVCAAAAAJ&amp;pagesize=3D80&amp;v=
+iew_op=3Dlist_works&amp;sortby=3Dpubdate" style=3D"margin:0px" target=3D"_b=
+lank" rel=3D"noreferrer">Publications</a></span><span style=3D"font-family:=
+Verdana,sans-serif;font-size:13.3333px;color:rgb(128,128,128);background-co=
+lor:rgb(255,255,255)">&nbsp;/
+</span><span style=3D"font-family:Calibri,Arial,Helvetica,sans-serif;font-s=
+ize:12pt;color:rgb(0,0,0)"><a href=3D"https://eur03.safelinks.protection.ou=
+tlook.com/?url=3Dhttps%3A%2F%2Fwww.robinlovelace.net%2F&amp;data=3D05%7C02%=
+7CR.Lovelace%40leeds.ac.uk%7C7f8be0aa293d4b4863c708df0d09ab18%7Cbdeaeda8c81=
+d45ce863e5232a535b7cb%7C0%7C0%7C639244008962678189%7CUnknown%7CTWFpbGZsb3d8=
+eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCI=
+sIldUIjoyfQ%3D%3D%7C60000%7C%7C%7C&amp;sdata=3Did%2FhnfAKhh0bxKidmO7e9RQuY%=
+2FfydxPOzSFHmXcMAGs%3D&amp;reserved=3D0" originalsrc=3D"https://www.robinlo=
+velace.net/" style=3D"margin-top:0px;margin-bottom:0px" target=3D"_blank" r=
+el=3D"noreferrer">Website</a></span><span style=3D"font-family:Verdana,sans=
+-serif;font-size:13.3333px;color:rgb(128,128,128);background-color:rgb(255,=
+255,255)">&nbsp;/
+</span><span style=3D"font-family:Calibri,Arial,Helvetica,sans-serif;font-s=
+ize:16px;color:rgb(0,0,0);background-color:rgb(255,255,255)"><a href=3D"htt=
+ps://eur03.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fgithub.com=
+%2FRobinlovelace&amp;data=3D05%7C02%7CR.Lovelace%40leeds.ac.uk%7C7f8be0aa29=
+3d4b4863c708df0d09ab18%7Cbdeaeda8c81d45ce863e5232a535b7cb%7C0%7C0%7C6392440=
+08962694921%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDA=
+wMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C60000%7C%7C%7C&amp;=
+sdata=3DxlymREchs7Tmf5k%2FkHrfjWC%2FniGzyXLftL23MBrWmLk%3D&amp;reserved=3D0=
+" originalsrc=3D"https://github.com/Robinlovelace" title=3D"https://github.=
+com/Robinlovelace" style=3D"margin-top:0px;margin-bottom:0px" target=3D"_bl=
+ank" rel=3D"noreferrer">GitHub</a></span></p>
+<p style=3D"text-align:left;background-color:rgb(255,255,255);margin-top:0p=
+x;margin-bottom:0px">
+<span style=3D"font-family:Calibri,Arial,Helvetica,sans-serif;font-size:12p=
+t;color:rgb(0,0,0)"><br>
+</span></p>
+<div style=3D"font-family:Calibri,Arial,Helvetica,sans-serif;font-size:12pt=
+;color:rgb(0,0,0)">
+<br>
+</div>
+</div>
+<div id=3D"m_-3884911632348767540x_x_m_2664382475226657055x_x_m_-9138526865=
+885021220appendonsend">
+</div>
+<hr style=3D"display:inline-block;width:98%">
+<div id=3D"m_-3884911632348767540x_x_m_2664382475226657055x_x_m_-9138526865=
+885021220divRplyFwdMsg" dir=3D"ltr">
+<font face=3D"Calibri, sans-serif" color=3D"#000000" style=3D"font-size:11p=
+t"><b>From:</b> Blaise Kelly &lt;<a href=3D"mailto:blaise@kello.co.uk" targ=
+et=3D"_blank" rel=3D"noreferrer">blaise@kello.co.uk</a>&gt;<br>
+<b>Sent:</b> 06 August 2026 12:25<br>
+<b>To:</b> Robin Lovelace &lt;<a href=3D"mailto:R.Lovelace@leeds.ac.uk" tar=
+get=3D"_blank" rel=3D"noreferrer">R.Lovelace@leeds.ac.uk</a>&gt;<br>
+<b>Subject:</b> Couple of questions</font>
+<div>&nbsp;</div>
+</div>
+<div>
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"center" wi=
+dth=3D"500">
+<tbody>
+<tr>
+<td style=3D"background:rgb(187,165,85);padding:5.25pt 5.5pt 5.25pt 1.5pt">=
+</td>
+<td width=3D"&quot;100%&quot;" cellpadding=3D"&quot;7px" color=3D"&quot;#21=
+2121&quot;" style=3D"width:100%;background:rgb(255,229,153);padding:5.25pt =
+3.75pt 5.25pt 11.25pt">
+<div>
+<p><span align=3D"center" style=3D"font-size:10pt;font-family:Arial,sans-se=
+rif;color:rgb(33,33,33)"><b>CAUTION:</b> External Message. Use caution open=
+ing links and attachments.
+</span></p>
+</div>
+</td>
+<td style=3D"background:rgb(187,165,85);padding:5.25pt 5.5pt 5.25pt 1.5pt">=
+</td>
+<td>
+<div></div>
+</td>
+</tr>
+</tbody>
+</table>
+<div>
+<div dir=3D"ltr">
+<div style=3D"font-size:small">Hey Robin,</div>
+<div style=3D"font-size:small"><br>
+</div>
+<div style=3D"font-size:small">Wondering if I could bounce two topics off y=
+ou before I head off in a certain direction on a project&nbsp;<span style=
+=3D"background-color:transparent">I am potentially starting building a &quo=
+t;play score&quot; for urban areas based on e.g. distance
+ to play areas, road collisions etc.</span></div>
+<div style=3D"font-size:small"><br>
+</div>
+<div style=3D"font-size:small">1. Can you think of anything off the top of =
+your head that already exists along these lines?</div>
+<div style=3D"font-size:small"><br>
+</div>
+<div style=3D"font-size:small">2. Also as part of the same work it is plann=
+ed to go into the community and ask people to improve the maps. I have had =
+some experience making changes to OSM, but a project&nbsp;<a href=3D"https:=
+//eur03.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fpublicmap.org=
+%2Fen%2F&amp;data=3D05%7C02%7CR.Lovelace%40leeds.ac.uk%7C7f8be0aa293d4b4863=
+c708df0d09ab18%7Cbdeaeda8c81d45ce863e5232a535b7cb%7C0%7C0%7C639244008962720=
+322%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlA=
+iOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C60000%7C%7C%7C&amp;sdata=3D=
+c6bExNolJSY%2FG9DKLjJfFD9F2JcB0oCHWyC1Y2jse%2F0%3D&amp;reserved=3D0" origin=
+alsrc=3D"https://publicmap.org/en/" target=3D"_blank" rel=3D"noreferrer">ht=
+tps://publicmap.org/en/</a>
+ has also been pointed out to me. Have you used it? I built a simple demo o=
+f how I see this working, with each person getting a dedicated ID and the o=
+utputs saved as gpkgs that can be added to OSM or maybe publicmap and has a=
+ more reproducible workflow (i.e.
+ if users make direct changes to OSM how can we ringfence the changes that =
+were made as part of this project etc.)&nbsp;<a href=3D"https://eur03.safel=
+inks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fblaiser.shinyapps.io%2Fmap=
+_app%2F&amp;data=3D05%7C02%7CR.Lovelace%40leeds.ac.uk%7C7f8be0aa293d4b4863c=
+708df0d09ab18%7Cbdeaeda8c81d45ce863e5232a535b7cb%7C0%7C0%7C6392440089627325=
+67%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAi=
+OiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C60000%7C%7C%7C&amp;sdata=3D9=
+nTalA%2FVCHZm%2Bt6WLbCtzL75GKm6VWjjB56m8UPIYps%3D&amp;reserved=3D0" origina=
+lsrc=3D"https://blaiser.shinyapps.io/map_app/" target=3D"_blank" rel=3D"nor=
+eferrer">https://blaiser.shinyapps.io/map_app/</a> but maybe there are
+ better ways?</div>
+<div style=3D"font-size:small"><br>
+</div>
+<div style=3D"font-size:small"><span style=3D"background-color:transparent"=
+>Big thanks for spotting the early release of the STATS19 data and your wor=
+k on all the changes. I had in mind to do a bit more prep on some of the st=
+ats so they were ready to go to press
+ in September so this caught me off guard a bit. But I </span><a href=3D"ht=
+tps://eur03.safelinks.protection.outlook.com/ap/od-59584e83/?url=3Dhttps%3A=
+%2F%2Fonedrive.live.com%2F%3Aw%3A%2Fg%2Fpersonal%2F4881326d8ee34950%2FIQAa4=
+bfqFWj_RZBRtW0e5khUARtjnbnkxu68L_GibKdUrDs%3Frtime%3Dha32qKzz3kg%26redeem%3=
+DaHR0cHM6Ly8xZHJ2Lm1zL3cvYy80ODgxMzI2ZDhlZTM0OTUwL0lRQWE0YmZxRldqX1JaQlJ0Vz=
+BlNWtoVUFSdGpuYm5reHU2OExfR2liS2RVckRzP2U9aHR3NDVJ&amp;data=3D05%7C02%7CR.L=
+ovelace%40leeds.ac.uk%7C7f8be0aa293d4b4863c708df0d09ab18%7Cbdeaeda8c81d45ce=
+863e5232a535b7cb%7C0%7C0%7C639244008962743740%7CUnknown%7CTWFpbGZsb3d8eyJFb=
+XB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldU=
+IjoyfQ%3D%3D%7C60000%7C%7C%7C&amp;sdata=3DtIn3XLA1bqbIBWZefqY9w6imnGilsNDuE=
+pIUyHIROYI%3D&amp;reserved=3D0" originalsrc=3D"https://onedrive.live.com/:w=
+:/g/personal/4881326d8ee34950/IQAa4bfqFWj_RZBRtW0e5khUARtjnbnkxu68L_GibKdUr=
+Ds?rtime=3Dha32qKzz3kg&amp;redeem=3DaHR0cHM6Ly8xZHJ2Lm1zL3cvYy80ODgxMzI2ZDh=
+lZTM0OTUwL0lRQWE0YmZxRldqX1JaQlJ0VzBlNWtoVUFSdGpuYm5reHU2OExfR2liS2RVckRzP2=
+U9aHR3NDVJ" style=3D"background-color:transparent" target=3D"_blank" rel=3D=
+"noreferrer">pieced
+ this together</a><span style=3D"background-color:transparent"> on pavement=
+ collisions. I can appreciate you would probably rather stay neutral on iss=
+ues like this, but any ideas of contacts who might be interested in publish=
+ing it in a way that will get a bit
+ more traction than me posting on Linkedin? If not I will just put it out t=
+here myself, might changed the bbplot styled charts as well.</span></div>
+<div style=3D"font-size:small"><br>
+</div>
+<div style=3D"font-size:small">Also wanted to say so sorry to hear about&nb=
+sp;your dad passing away the other month. I didn't know him at all but at a=
+ conference a few years ago, in response&nbsp;to me expressing some frustra=
+tion/grumbling you told me that you often felt
+ like that and your dad had said people only know what you are doing if you=
+ get it out there. He was clearly a great mentor to you and that piece of a=
+dvice gave me a bit of a kick up the backside and has stuck with me. Amazin=
+g the work he has put in on the
+ local area and hope the project to archive it all it is going well - he ce=
+rtainly raised no better man for the job!</div>
+<div style=3D"font-size:small"><br>
+</div>
+<div style=3D"font-size:small">How was Utrecht the other month? Hope you ar=
+e getting some research time over the summer!</div>
+<div style=3D"font-size:small"><br>
+</div>
+<div style=3D"font-size:small">Cheers</div>
+<div style=3D"font-size:small"><br>
+</div>
+<div style=3D"font-size:small">Blaise</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</blockquote>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</blockquote>
+</div>
+</div>
+</div>
+</div>
+</div>
+</blockquote>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
+
+--0000000000008538fd065ae85c3c--
