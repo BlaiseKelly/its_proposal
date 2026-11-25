@@ -1,0 +1,33 @@
+---
+title: "University of Leeds research proposal"
+subtitle: "Blaise Kelly"
+format:
+  docx: default
+  html: default
+bibliography: proposal.bib
+---
+
+80% of the population of developed countries live in cities and often are exposed to environmental risks such as noise, air pollution [@mollytooherruddUrbanEmergencyAddressing2024]. Air pollution is one of largest environmental threats to public health in the UK[@rcp2025]. Most emissions of air pollution that occur in urban areas come from internal combustion engine (ICE) emissions. Air pollutant emissions comprise of NO~2~, Particulate Matter (PM) and other pollutants. These pollutants also react in the atmosphere to form further harmful compounds such as Ozone.  At the start of the Millennium work began to tackle one pollutant: NO~2~ [@NewsEULaunches], resulting in the passing of legislation in 2008 which came into effect in June 2010 [@Directive2008502008]. However, for various reasons it wasn't until London's Ultra Low Emission Zone (ULEZ), introduced in central London in April 2019 and expanded to inner London in 2021 and London-wide in 2023 [@glaLondonWideULEZOneYear2025], that these measures began to significantly reduce NO~2~[@tongFurtherImprovement2025]. 
+
+Outside central London, there is little evidence that ULEZ and Clean Air Zones (CAZs) in other cities have been effective in their sole goal: reducing NO~2~ levels[@OralEvidence20]. Furthermore, these policies have done little to address PM as well as collectively more serious environmental issues such as CO~2~ emissions, of which road transport is responsible for nearly 1/3 of UK's total [@GreenhouseGasEmissions] as well as road traffic collisions and other public health issues such as lack of independent travel and play opportunities for children[@EverythingPlayRaising]. In 2025 girls under 20 walked on average 70 miles (27%) less per year than the 264 miles they did in 2004 [@NationalTravelSurvey2026].
+
+The potential of active travel to help tackle NO~2~ has received less attention than exhaust legislation[@jaquUKPlanTackling2017]. When it has been looked at the focus has been on the modal shift[@zotero-item-7409], with the assumption that concentrations will only be reduced when people swap their cars for active travel. The countries with the highest share of active travel have dedicated and high quality infrastructure that enabled this to happen. However, whilst modal shift is important, less attention has been paid to the potential effect of the changes to physical space. Most of the studies on urban space reallocations impact on air pollution has focused on Low Traffic Neighbourhoods (LTNs)[@yangEvaluationLowTraffic2022] and Superblocks in Barcelona[@muellerChangingUrbanDesign2020a].
+
+The national air pollution roadside monitoring network is situated at the most polluted roadside sites, which are mostly major arteries in cities, often with significant road space allocated to motor vehicles.
+
+It is well known NO~2~, in particular, has a fast drop off as the distance between source and receptor increases[@laxenNO2ConcentrationsDistance2008]. Flow restrictions on strategic roads have greater potential to reduce traffic volumes in an urban area than similar measures on smaller roads [@meliaDoesTrafficReally2021] as has been the case in LTN/Superblock studies.  
+
+Prior to the ULEZ, in London in early 2015 road space removal as part of London's Cycle Superhighway build out resulted in a 20% and 23% reduction at two such roadside NO~2~ monitoring sites in the space of a few weeks [@3LinkedIn], possibly due to the reduction in capacity and reallocation of urban space from construction. 
+
+This raises a key question: might it be possible to reduce NO~2~ faster by focusing on source receptor distance? This distance would be increased by reducing road width (figure below). If focused on the busiest and most polluted roads it could also reduce traffic volumes across the city much faster than focusing on smaller roads. If successful it would also address NO~2~ at the worst sites in the country whilst at the same time freeing up urban space that can be reallocated with tactical infrastructure[@CycleLaneCalle] as was done during the COVID pandemic [@PopupBikeLanes2020].
+
+![Figure 1: Based on the Defra NO~2~ fall off with distance calculator, increasing the distance from a road with a kerbside concentration of 60 μg/m^3 by 2 metres is estimated to drop the concentration of NO~2~ at the receptor (building) from 39.4 to 34.6 μg/m^3, a 14% decrease](media/no2_dropoff.png)
+As well as reducing NO~2~ quickly, the reduction in vehicle throughput would reduce other pollutants, such as noise pollution as well as CO~2~ emissions and road traffic casualties. Other uses for urban space include planting vegetation, growing crops, introducing sports facilities/play spaces.
+
+Research tools would be R spatial, which is also heavily used by ITS and myself. Sites could be modelled using AERMOD, specifically with the modelling package 'aermodr'[@kellyAermodrPackage2026], which I have developed and builds and runs self-contained, tileable AERMOD guassian dispersion model runs entirely from open data, for example bypassing AERMET; AERMODs meteo processor with ERA5 reanalysis meteorology inputs. LiDAR data can be used to characterise urban space as well as calculating surface dispersion characteristics combined with land-use based surface roughness and Monin-Obukhov length.
+
+Real world situations where road has been reallocated and air quality monitoring was present will be gathered and it is anticipated that local authorities might be willing to test the hypothesis on roads of concern. Such interventions can be analysed using state of the art statistical approaches and be used to compliment the modelling approach.
+
+The outcome of the research will be data on potential pollutant implications of road space reallocation.
+
+
