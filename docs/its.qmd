@@ -1,0 +1,36 @@
+---
+title: "WRDTP Studentship Application Form"
+subtitle: "Cohort 4 (2027/28 Entry)"
+format:
+  docx: default
+  html: default
+bibliography: references.bib
+---
+
+Air pollution is a serious threat to public health and CO~2~ emissions pose an exetential threat to human life on earth. Most emissions of air pollution occur in urban areas come from internal combustion engine (ICE) emissions from motor vehicles. The majority of transport CO~2~ emissions come from motor vehicles. Air pollutant emissions comprise of NO~2~, Particulate Matter (PM) and other pollutants. These pollutants also react in the atmosphere to form further harmful compounds such as Ozone.  At the start of the Millennium work began to tackle one pollutant: NO~2~ [@NewsEULaunches], resulting in the passing of legislation in 2008 which came into effect in June 2010 [@Directive2008502008]. However, for various reasons it wasn't until London's Ultra Low Emission Zone (ULEZ), introduced in central London in April 2019 and expanded to inner London in 2021 and London-wide in 2023 [@glaLondonWideULEZOneYear2025], that these measures began to significantly reduce NO~2~[@tongFurtherImprovement2025]. 
+
+Outside central London, there is little evidence that ULEZ and Clean Air Zones (CAZs) in other cities have been effective in one of the main goals: reducing NO~2~ levels. Furthermore, these policies have done little to address other equally serious pollutant emissions, such as PM as well as collectively more serious environmental and public health issues as well as acute threats such as as flooding and heat.
+
+Countries that have a high share of active travel and public transport use have shown that this happens when the right infrastructure is in place. The potential of active travel to reduce NO~2~ has received less attention than exhaust legislation. When it has been looked at the focus has been on the modal shift, with the assumption that concentrations will only be reduced when people swap their cars for active travel. But less attention has been paid to the potential effect of the changes to physical space. Most of the work on urban space reallocation has focused on Low Traffic Neighbourhoods (LTNs) and Superblocks in Barcelona which generally have lower concentrations to begin with and consequently see relatively modest changes. The national air pollution roadside monitoring network is situated at the most polluted roadside sites, which are mostly major arteries in cities.
+
+Prior to the ULEZ, in London in early 2015 road space removal as part of London's Cycle Superhighway build out resulted in a 20% and 23% reduction at two of these roadside NO~2~ monitoring sites in the space of a few weeks [@3LinkedIn], possibly due to the reduction in capacity and reallocation of urban space from construction. 
+
+This raises a key question: is it possible to reduce NO~2~ faster whilst also addressing other urban challenges that collectively have a bigger impact on public health, including road traffic casualties, obesity, and poor mental health? 
+
+There are few studies that look at measures other than emissions factors for air pollution mitigation. Those studies that do investigate other factors focus on the modal shift aspect. Studies that look at road space reallocation relate to Low Traffic Neighboourhoods, which already have lower pollutant concentrations that the main roads. Little attention has been paid to the potential for road space reallocation on the roads that have the highest concentrations.
+
+This research would look in the potential of reducing road width to increase the source receptor distance between vehicles anmd 
+
+The method would focus on the sites of the national monitoring network, which is also the highest resolution monitoring available in the country, both in terms of accuracy and temporal.
+
+Research tools would be open for discussion, especially as the geospatial modelling space continues to evolve rapidly. I am keen to base the work on R spatial which is also heavily used by ITS. As a starting point sites could be modelled using AERMOD and specifically with the modelling package 'aermodr'[@kellyAermodrPackage2026], which I have developed and builds and runs self-contained, tileable AERMOD guassian dispersion model runs entirely from open data, for example bypassing AERMET; AERMODs meteo processor with ERA5 reanalysis meteorology inputs. LiDAR data can be used to characterise urban space as well as calculating surface dispersion characteristics combined with land-use based surface roughness and Monin-Obukhov length. Source geometry is derived from OSM road networks and gridded emissions as source data, and large domains are split into independent tiles — each with its own locally-derived roughness and meteorology, run in parallel — so the model can represent spatially varying surface characteristics as an improvement over a single monolithic AERMOD run. Separate tools enable Chemistry Transport Model (CTM) NetCDF-to-raster conversion, NOAA observational data import, based on the Worldmet R package and plotting functions for evaluating model output against measured concentrations heavily based on the openair and tmap R packages.
+
+It is anticipated that it should be possible to find a few locations will agree to test out the hypothesis by closing road space and either installing monitoring or using existing stations. Such interventions can be analysed using state of the art statistical approaches and be used to compliment the modelled approach.
+
+The research would focus on the air pollution reduction potential and less on the issue of transport capacity which is considered in many other studies
+
+The outcome of the research will be data on potential pollutant implications of road space reallocation, potential space 
+
+free up urban space for active travel, the source-receptor distance is increased , road traffic is constrained and NO~2~ can be reduced. <!-- Citation needed for the claim above (RL). --> Furthermore, the reclaimed street space could support activities such as walking, wheeling, cycling, playing and plants/trees/crops which have been shown to have large health benefits.
+
+

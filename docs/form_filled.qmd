@@ -1,0 +1,540 @@
+---
+title: "WRDTP Studentship Application Form"
+subtitle: "Cohort 4 (2027/28 Entry)"
+format:
+  docx: default
+  html: default
+---
+
+> **Form Instructions**:
+>
+> This form focuses on your proposed programme of research, how it fits with WRDTP core priorities, and your potential for doctoral-level research.
+>
+> Only the information provided by the applicant in this application form attracts marks.
+>
+> You can only be nominated by one WRDTP university for a WRDTP Studentship.
+>
+> You can only submit one project proposal to the WRDTP.
+>
+> You may be nominated for more than one type of studentship (Pathway Award, Advanced Quantitative Methods, Advanced Data Analytics).
+>
+> Word limits are strictly enforced with no leeway. Applications exceeding word limits will be rejected outright. In-text citations count towards the word limit of each box.
+
+ 
+
+## Section 1: Your Details
+
+ 
+
+### Applicant and Institutional Details
+
+ 
+
+**Email Address**: 
+
+ 
+
+**First Name**: 
+
+ 
+
+**Last Name**: 
+
+ 
+
+**Nominating WRDTP University**: University of Leeds
+
+ 
+
+**School or Department**: Institute for Transport Studies
+
+ 
+
+**Project Title**: Taking space, not just tailpipes: receptor-level evaluation of street space reallocation for air quality, health and active travel
+
+ 
+
+### Programme of Study
+
+ 
+
+> **Guidance on Programme Selection**:
+>
+> Applicants should choose a programme based on their prior academic experience, in consultation with their proposed supervisor:
+>
+> * Applicants without a social science masters degree: 1 year MA Social Research followed by 3.5 year PhD (4.5 years total).
+> * Applicants with a social science masters degree but without 60 credits of M-level research training: 3.75 year integrated PGCert/PhD.
+> * Applicants with 60 or more credits of social science M-level research training: 3.5 year PhD.
+>
+> Please note that all WRDTP programmes include an integral 3-month Research in Practice placement as standard, taken during the PhD phase.
+
+ 
+
+* [ ] 1 year MA Social Research followed by 3.5 year PhD (4.5 years)
+* [ ] 3.75 year integrated PGCert/PhD
+* [ ] 3.5 year PhD
+
+ 
+
+### Studentship Type
+
+ 
+
+> **Guidance on Studentship Type**:
+>
+> Select all award schemes that apply to your application. You may be nominated for more than one type:
+
+ 
+
+* [x] Pathway Award
+* [x] Advanced Quantitative Methods (AQM)
+* [x] Advanced Data Analytics (ADA)
+* [ ] WRDTP/SHF Pathway Award for Black British students
+
+ 
+
+## Section 2: About Your Project
+
+ 
+
+> **Assessment Note**:
+>
+> Section 2 attracts up to 5 marks maximum, and is double-weighted (accounting for up to 10 marks out of 20 total).
+
+ 
+
+### Project Overview
+
+ 
+
+> **Guidance and Requirements (500 words maximum)**:
+>
+> Provide a short overview of the project. This should include:
+>
+> * A statement of the problem (research statement) and the research questions your project will address.
+> * A summary of existing academic scholarship in the field, and the way in which your project relates to this scholarship.
+> * The contribution that your project will make to academic and empirical knowledge.
+> * If your project is interdisciplinary, explain its contribution to the different fields in which it is situated.
+>
+> Word limit: 500 words maximum (including in-text citations).
+
+ 
+
+Air pollution, physical inactivity and road danger are major urban public-health burdens, and they fall unequally: people living beside busy main roads bear the highest exposure. UK policy has relied chiefly on vehicle emission controls, notably London's Ultra Low Emission Zone (ULEZ) and Clean Air Zones (CAZs). ULEZ reduced roadside NO~2~ in central London (Tong et al., 2025), but evidence of comparable effects elsewhere is limited, and such schemes do little for particulate matter, inactivity or road danger. Their success also depends on real-world fleet emissions, which have repeatedly diverged from regulatory expectations.
+
+A complementary lever is the allocation of street space. Reallocating carriageway to walking, cycling and greening may reduce traffic ("traffic evaporation") and widen the distance between emission sources and people's homes, while releasing space for activity, play and planting. Reports of roadside NO~2~ falling by around 20% after London's 2015 Cycle Superhighway construction suggest potential, but have not been rigorously tested.
+
+My guiding hypothesis is that reallocating road space can reduce exposure at least as effectively as emission controls, while delivering greater health and equity co-benefits.
+
+**Research questions**
+
+1. How accurately can receptor-level exposure be modelled from open data (LiDAR, OpenStreetMap, ERA5) using an open-source dispersion workflow, and how sensitive are results to input uncertainty?
+2. What causal effects have historical UK street reallocation schemes had on roadside air quality and traffic volumes?
+3. How do the health, equity and active-travel co-benefits of reallocating space on polluted main roads compare with those of CAZ-type policies?
+
+**Existing scholarship**
+
+CAZ and ULEZ evaluations focus on tailpipe emissions and fleet composition. The traffic-evaporation literature shows capacity reductions can reduce traffic (Cairns et al., 1998), and recent low-traffic neighbourhood evaluations agree (Yang et al., 2022; Khreis et al., 2026), but evidence on main roads, where most exceedances occur, is sparse. Road-space and urban-redesign health studies (Matajs et al., 2026; Mueller et al., 2020) estimate effects through changed emissions and activity rather than increased source-receptor distance, and assumptions about modal shift are contested, partly through "motonormativity" (Walker et al., 2022).
+
+**Contribution**
+
+Empirically, the project will provide the first causal evidence on main-road reallocation and air quality, and a like-for-like comparison with CAZ-type policies, including who benefits. Methodologically, it will deliver validated, open, reproducible receptor-level exposure modelling. It sits across transport studies, environmental science, public health and economic evaluation, contributing to transport geography and urban planning debates on whether space, not only emissions, should be treated as a policy lever for healthy, equitable cities.
+
+ 
+
+### Research Design
+
+ 
+
+> **Guidance and Requirements (500 words maximum)**:
+>
+> Outline the project research design. Include detail about:
+>
+> * The research methods you will use and how the proposed research design will enable you to address the research problem and questions detailed above.
+> * Depending on your research design, this could include information about fieldwork you will undertake, case studies you will examine, participants you will recruit, datasets you will use or create, sampling strategies, and approach to data analysis.
+>
+> Word limit: 500 words maximum (including in-text citations).
+
+ 
+
+The project is a thesis by publication of three sequential papers, using data that are already openly available.
+
+**Paper 1: method development and validation (RQ1).** I will extend my open-source R package aermodr (Kelly, 2026), which builds and runs tiled AERMOD dispersion models entirely from open data: ERA5 meteorology (replacing AERMET processing), surface roughness and Monin-Obukhov length derived from 1 m national LiDAR surface and terrain models (Environment Agency, 2025), and road sources from OpenStreetMap. Concentrations of NO~2~, PM~10~ and PM~2.5~ at building receptors will be validated against national air quality monitoring archives, with sensitivity analysis of source geometry, roughness, meteorology and background inputs to quantify uncertainty.
+
+**Paper 2: quasi-experimental evaluation (RQ2).** I will compile a database of English street reallocation schemes (2015 Cycle Superhighways, 2020 pop-up cycle lanes and later permanent conversions) from local authority records and OpenStreetMap history, retaining main-road schemes with a nearby roadside monitor or traffic count. Outcomes are roadside concentrations, traffic volumes and speeds. Weather effects will be removed by meteorological normalisation (Grange et al., 2018) before estimating scheme effects with difference-in-differences and synthetic-control designs against untreated roadside sites, testing for traffic evaporation and displacement onto neighbouring roads. Because 2020 schemes coincided with COVID-19 restrictions, I will use staggered adoption, pre-trend and placebo tests, with 2015 schemes as a pandemic-free comparison.
+
+**Paper 3: city-scale simulation (RQ3).** Using the validated model, I will simulate scenarios in cities with and without CAZs (e.g. Birmingham, Leeds): (a) kerb lines moved to reclaim space, emissions unchanged; (b) reallocation with emissions adjusted using Paper 2's traffic-evaporation estimates; (c) CAZ-type fleet changes using Euro-standard emission factors; and (d) combinations. Outputs are population-weighted exposure by deprivation decile, receptors exceeding limits, space reclaimed (km^2^), health impacts using standard concentration-response functions, and walking and cycling potential from route-based demand tools (Propensity to Cycle Tool; Lovelace et al., 2016).
+
+**Placement.** A dedicated three-month Research in Practice placement, planned with Active Travel England or a regional transport authority, will test scenarios with practitioners between Papers 2 and 3.
+
+ 
+
+### Advanced Quantitative Methods
+
+ 
+
+> **Guidance and Requirements (AQM applicants only: 250 words maximum)**:
+>
+> Explain how your programme of research uses advanced quantitative methods to address your research problem.
+>
+> Methods should go beyond introductory quantitative methods often learned in undergraduate modules (for example: identifying causal effects, dealing with complex data structures, or handling spatial and temporal variability).
+>
+> Word limit: 250 words maximum (including in-text citations).
+
+ 
+
+The project goes beyond introductory quantitative methods in three ways.
+
+**Causal inference.** Paper 2 estimates causal effects of street reallocation rather than associations. Roadside concentrations are confounded by weather, background trends and, for 2020 schemes, lockdowns. I will remove meteorological variation using machine-learning normalisation (Grange et al., 2018), then apply staggered difference-in-differences and synthetic-control estimators, with pre-trend diagnostics, placebo tests and spatial spill-over terms to capture traffic displacement, using untreated roadside monitors as controls.
+
+**Spatial and temporal variability.** Papers 1 and 3 model hourly concentrations at building-level receptors across whole cities. Domain tiling allows surface roughness and meteorology to vary spatially, rather than assuming one value across a monolithic model run, and hourly emission profiles and multi-year meteorology capture temporal variability.
+
+**Uncertainty and complex data structures.** Dispersion models are sensitive to input error. I will use global sensitivity analysis and Monte Carlo propagation of input uncertainty (emissions, roughness, background) through to exposure, health and equity outcomes, validate against monitored data, and report model error alongside every scenario result. Receptors nested within streets and cities will be analysed with multilevel models when relating exposure to deprivation.
+
+ 
+
+### Advanced Data Analytics
+
+ 
+
+> **Guidance and Requirements (ADA applicants only: 250 words maximum)**:
+>
+> Explain how your programme of research uses advanced data skills to address your research problem.
+>
+> These projects are likely to use secondary data not commonly used in social science research that require particular techniques (for example: large scale or big data, administrative data, sensor networks, speed profiles, or interactions with urban environments).
+>
+> Word limit: 250 words maximum (including in-text citations).
+
+ 
+
+The project uses large, under-exploited datasets that require specialised data engineering and careful interpretation:
+
+* **National 1 m LiDAR surface and terrain models** (Environment Agency, 2025), covering England at billions of cells, processed to characterise road widths, building heights and surface roughness. Capture dates will be matched to scheme dates, since LiDAR may pre- or post-date interventions.
+* **OpenStreetMap and Ordnance Survey road, building and land-use data**, used to generate sources and a receptor for every building.
+* **Hourly traffic speed profiles** from commercial routing data. These are unstructured, derived from probe vehicles and not representative of all traffic, so they will be validated against traffic counts before conversion to emissions.
+* **ERA5 reanalysis meteorology and Copernicus (CAMS) background concentrations**, and **national air quality monitoring archives** for validation.
+
+Handling these data demands columnar, out-of-memory tools (DuckDB, Apache Arrow), H3 hexagonal grids for adaptive resolution near roads and fast spatial joins, and parallel execution across independent model tiles. Methods will be released as open, reproducible R packages (aermodr and a LiDAR urban-space characterisation package), so local authorities can reuse them without costly proprietary modelling.
+
+ 
+
+### Ethical Considerations and Positionality
+
+ 
+
+> **Guidance and Requirements (250 words maximum)**:
+>
+> Detail the ethical considerations and potential ethical challenges and how you will address them.
+>
+> Include, where relevant, a critical statement on your own positionality regarding your project.
+>
+> Word limit: 250 words maximum (including in-text citations).
+
+ 
+
+The project uses only secondary, non-personal or aggregated data and involves no participants. I will nevertheless seek University of Leeds ethical review. Key issues:
+
+**Data governance.** Commercial speed data will be used within licence terms and shared only as aggregated derivatives. Road casualty records (STATS19) are open and anonymised, and will be reported at area level.
+
+**Stigma and misinterpretation.** Building-level exposure maps could stigmatise neighbourhoods or affect property values. Outputs will be aggregated, uncertainty will be shown with all results, and releases will be discussed with partners first.
+
+**Equity.** Deprivation is measured at area level, so I will avoid ecological inferences about individuals. Reallocation could cause displacement of traffic or "green gentrification", and may affect disabled people, emergency access and local businesses. These will be examined as outcomes rather than assumed away.
+
+**Placement.** Any practitioner data will follow data-sharing agreements.
+
+**Positionality.** My background as an air quality consultant means I am used to judging schemes against regulatory thresholds, and my everyday experience as a cyclist and urban delivery rider may predispose me towards active travel. To guard against bias, I will pre-specify analysis plans, treat CAZ-type policies as fairly as street reallocation, report null or adverse results, and invite challenge from supervisors and practitioners with differing perspectives.
+
+ 
+
+### Contingency Plans
+
+ 
+
+> **Guidance and Requirements (250 words maximum)**:
+>
+> Provide information about the likely contingency plans that you will put in place in the event that your proposed programme of research cannot proceed as planned, and to ensure submission within your funded period.
+>
+> Examples of difficulties include delays in data access, recruitment challenges, or computational constraints.
+>
+> Word limit: 250 words maximum.
+
+ 
+
+The supervisory team has reviewed the plan and considers it highly feasible within the funded period. The three papers are sequential but self-contained, so a delay in one does not prevent submission.
+
+**Data access.** The core datasets (LiDAR, OpenStreetMap, national air quality monitoring archives) are already openly available, and I already operate dispersion workflows, avoiding typical setup delays. If commercial speed data become unavailable or costly, I will use Department for Transport traffic counts and speed limits as fallback inputs.
+
+**Too few evaluable schemes.** If too few schemes have nearby monitors, I will add local authority diffusion-tube data, use traffic counts as the outcome, or rely on the 2015 schemes.
+
+**Weak identification.** Paper 3 does not depend on a single Paper 2 estimate; scenarios will use a range of traffic-evaporation assumptions from the literature.
+
+**Computation.** Tiling, parallel execution and university high-performance computing mitigate constraints; the number of cities can be reduced.
+
+**Placement.** The three-month window is flexible. If the first partner is unavailable, an alternative (Active Travel England, a combined authority or a local authority) will be used, and remote or part-time working is possible.
+
+ 
+
+### Key References
+
+ 
+
+> **Guidance and Requirements**:
+>
+> Provide a list of key references using the APA referencing style.
+>
+> Only in-text citations within the application should be included in the list of references. You should use references to situate your contribution to knowledge and flag key debates. In-text citations count towards the word limit of each box, so keep references focused on key works.
+
+ 
+
+Cairns, S., Hass-Klau, C., & Goodwin, P. (1998). *Traffic impact of highway capacity reductions: Assessment of the evidence*. Landor Publishing. https://issuu.com/landorlinks/docs/cairns-hass-klau-goodwin-1998
+
+Environment Agency. (2025). *National LIDAR Programme* [Data set]. https://www.data.gov.uk/dataset/f0db0249-f17b-4036-9e65-309148c97ce4/national-lidar-programme
+
+Grange, S. K., Carslaw, D. C., Lewis, A. C., Boleti, E., & Hueglin, C. (2018). Random forest meteorological normalisation models for Swiss PM~10~ trend analysis. *Atmospheric Chemistry and Physics, 18*(9), 6223-6239. https://doi.org/10.5194/acp-18-6223-2018
+
+Kelly, B. (2026). *aermodr R package* [Computer software]. https://github.com/activeanalytics-nl/aermodr
+
+Khreis, H., Williams, M., Lad, C., Fevyer, D., Laverty, A. A., Jinks, D., Furlong, J., Woodcock, J., Edwards, P., & Goodman, A. (2026). The modelled impact of low traffic neighbourhoods (LTNs) on air pollution: Findings from 5 schemes in London. *Environmental Research, 306*, 125093. https://doi.org/10.1016/j.envres.2026.125093
+
+Lovelace, R., Goodman, A., Aldred, R., Berkoff, N., Abbas, A., & Woodcock, J. (2016). The Propensity to Cycle Tool: An open source online system for sustainable transport planning. *Journal of Transport and Land Use*. https://www.jtlu.org/index.php/jtlu/article/view/862/859
+
+Matajs, C., Baptista, P., Valenca, G., Felix, R., & Moura, F. (2026). How does road space allocation affect the environment and health? An evaluation framework for dynamic and static urban interventions. *Journal of Transport & Health, 49*, 102316. https://doi.org/10.1016/j.jth.2026.102316
+
+Mueller, N., Rojas-Rueda, D., Khreis, H., Cirach, M., Andres, D., Ballester, J., Bartoll, X., Daher, C., Deluca, A., Echave, C., Mila, C., Marquez, S., Palou, J., Perez, K., Tonne, C., Stevenson, M., Rueda, S., & Nieuwenhuijsen, M. (2020). Changing the urban design of cities for health: The superblock model. *Environment International, 134*, 105132. https://doi.org/10.1016/j.envint.2019.105132
+
+Tong, C., Dai, Y., Cole, M., Elliott, R. J. R., Bartington, S. E., Liu, B., & Shi, Z. (2025). Further improvement in London's air quality demands more than the Ultra Low Emission Zone policy. *npj Clean Air, 1*(1), 29. https://doi.org/10.1038/s44407-025-00030-9
+
+Walker, I., Tapp, A., & Davis, A. (2022). *Motonormativity: How social norms hide a major public health hazard* [Preprint]. PsyArXiv. https://doi.org/10.31234/osf.io/egnmj
+
+Yang, X., McCoy, E., Hough, K., & de Nazelle, A. (2022). Evaluation of low traffic neighbourhood (LTN) impacts on NO2 and traffic. *Transportation Research Part D: Transport and Environment, 113*, 103536. https://doi.org/10.1016/j.trd.2022.103536
+
+ 
+
+## Section 3: Project Fit with WRDTP Core Priorities
+
+ 
+
+> **Assessment Note**:
+>
+> Section 3 attracts up to 5 marks maximum.
+
+ 
+
+### Thematic Interdisciplinary Pathway Selection
+
+ 
+
+> **Guidance on Pathway Selection**:
+>
+> Select the main interdisciplinary pathway with which your research is aligned (select one only):
+>
+> * Civil Society, Development, and Democracy (CDD)
+> * Digital Technologies, Communication and Artificial Intelligence (DCA)
+> * Education, Childhood and Youth (ECY)
+> * Security, Conflict and Justice (SCJ)
+> * Space, Place, Environment and Liveability (SPEL)
+> * Sustainable Growth, Business, Work and Economic Productivity (SBE)
+> * Wellbeing, Health and Communities (WHC)
+
+ 
+
+**Main Pathway Selected**: Space, Place, Environment and Liveability (SPEL)
+
+ 
+
+### Pathway Alignment
+
+ 
+
+> **Guidance and Requirements (250 words maximum)**:
+>
+> Explain how your proposed research aligns with the main interdisciplinary pathway selected above.
+>
+> It is common for a research project to relate to more than one pathway. If this is the case, please also explain how your proposed research is relevant to more than one pathway.
+>
+> Word limit: 250 words maximum (including in-text citations).
+
+ 
+
+The project aligns closely with Space, Place, Environment and Liveability (SPEL). It asks how the physical allocation of urban space shapes environmental quality, and who experiences it. Streets are contested places: space given to vehicles cannot be used for walking, play, planting, drainage or social life. By quantifying reclaimed space (km^2^) alongside pollution exposure, the project treats air quality, heat, green space and active travel as interlinked aspects of liveability rather than separate policy silos. It also contributes to place-based understandings of environmental inequality by showing which communities live along the most polluted main roads and stand to gain most from change.
+
+The project is also strongly relevant to Wellbeing, Health and Communities (WHC). Air pollution, physical inactivity and road danger are leading preventable threats to health, and children's independent mobility has fallen sharply. Paper 3 estimates health and equity impacts of alternative policies, including comparison with CAZs, linking environmental interventions to health outcomes and inequalities between communities.
+
+The research also connects to cost-of-living debates: reallocating space for walking and cycling can lower household transport costs, and visible, low-cost measures may command greater public support than charging-based policies, an issue relevant to the Sustainable Growth, Business, Work and Economic Productivity pathway.
+
+ 
+
+### Societal and Economic Benefits
+
+ 
+
+> **Guidance and Requirements (250 words maximum)**:
+>
+> Explain the potential benefits of your proposed programme of research, and the steps that you will take to realise these benefits.
+>
+> These steps could include working with non-academic partners to produce the research, or sharing research findings with non-academic beneficiaries. If you have links with non-academic partners (such as through professional, work, or volunteer experience), you are welcome to discuss them here.
+>
+> Word limit: 250 words maximum (including in-text citations).
+
+ 
+
+**Benefits.** Local authorities and transport bodies need evidence on which air quality interventions work, quickly and affordably. Many cities have missed NO~2~ targets under emission-based policy. Street reallocation can often be piloted rapidly with temporary materials, so credible evidence could accelerate action while delivering health, safety, green space and active-travel benefits. Findings on who lives beside polluted main roads can help target interventions where inequalities are greatest, and evidence on cost savings from modal shift supports household budgets and public finances.
+
+**Steps to realise them.**
+
+* The Research in Practice placement with Active Travel England or a regional transport authority will ground scenarios in real decision-making and ensure results are usable.
+* Open-source tools (aermodr, a LiDAR urban-space package) will let authorities carry out receptor-level assessments in-house, without costly proprietary consultancy.
+* Open, mapped outputs showing reclaimable space and exposure by area will be published for councils, campaigners and residents.
+* Policy briefs and practitioner workshops, informed by UKRI impact guidance, will present findings in accessible form, including a clear comparison with CAZs.
+* Peer-reviewed papers and conference presentations will reach academic and professional air quality audiences.
+
+ 
+
+## Section 4: Your Motivation and Potential
+
+ 
+
+> **Assessment Note**:
+>
+> Section 4 attracts up to 5 marks maximum.
+
+ 
+
+### Motivation
+
+ 
+
+> **Guidance and Requirements (250 words maximum)**:
+>
+> Explain what motivates you to undertake the proposed programme of research detailed above. You are welcome to highlight a variety of factors that motivate you: intellectual, personal, professional.
+>
+> This section should focus specifically on the programme of research itself. You should explain why you believe this programme of research is necessary and why the research problem that you have identified needs addressing.
+>
+> Word limit: 250 words maximum.
+
+ 
+
+[Add motivation text here]
+
+ 
+
+### Evidence of Potential
+
+ 
+
+> **Guidance and Requirements (250 words maximum)**:
+>
+> Provide evidence of your potential to undertake doctoral-level research.
+>
+> The WRDTP recognises that evidence of potential can take many forms, including academic achievements, as well as a wider range of professional, voluntary, or personal achievements.
+>
+> We particularly welcome examples that demonstrate key transferable skills, such as resilience, adaptability, project management, and the ability to deliver to deadlines.
+>
+> Word limit: 250 words maximum.
+
+ 
+
+[Add evidence of potential here]
+
+ 
+
+## Section 5: Stuart Hall Foundation Award Statement
+
+ 
+
+> **Guidance on Eligibility (Optional section: eligible applicants only)**:
+>
+> These awards are open to Black British students (Black or Black British African, Black or Black British Caribbean, Black or Black British other, or Mixed Black or Black British).
+
+ 
+
+**Do you identify as Black British?**: [Yes / No]
+
+ 
+
+### Foundation Statement
+
+ 
+
+> **Guidance and Requirements (300 words maximum)**:
+>
+> Explain why you have applied for the WRDTP/Stuart Hall Foundation Award.
+>
+> Focus on how your proposed research fits with the SHF mission and values, and the potential wider benefits to society. You may also want to reflect on how your own personal experiences align with the SHF mission and values.
+>
+> Word limit: 300 words maximum.
+
+ 
+
+[Add Stuart Hall Foundation statement here if applicable]
+
+ 
+
+## Section 6: EDI Monitoring
+
+ 
+
+> **Guidance on EDI Monitoring**:
+>
+> Applicants are asked to complete the online WRDTP Equality, Diversity, and Inclusion monitoring form before submitting their application. The information provided is anonymised, treated as confidential, and does not form part of the studentship assessment process.
+
+ 
+
+**Have you completed the online WRDTP EDI Monitoring Form?**: [Yes / No]
+
+ 
+
+## Section 7: Confirmation and AI Statement
+
+ 
+
+### Declarations
+
+ 
+
+* [ ] Please confirm that you, as the applicant, have completed all parts of this application form: [Yes / No]
+* [ ] Please confirm that you have read the ESRC Postgraduate Funding Guidelines and are willing to abide by conditions and regulations therein: [Yes / No]
+* Please indicate if you are currently registered on a postgraduate research degree (e.g. a PhD): [Yes / No]
+* Have you previously undertaken a postgraduate research degree (e.g. a PhD) in the past?: [Yes / No]
+
+ 
+
+### Statement on the Use of Artificial Intelligence
+
+ 
+
+> **Guidance on Artificial Intelligence**:
+>
+> The WRDTP recognises that there are a number of situations where AI can be useful. However, submitted applications must be solely the work of the applicant, and any work produced using AI tools should not be passed off as that of the applicant.
+>
+> We therefore require that any use of AI is disclosed and explained. Failure to do so could result in a studentship offer being withdrawn. Applications containing AI-generated errors will be penalised.
+
+ 
+
+If you have used AI for any of the following purposes, please select the relevant fields:
+
+ 
+
+* [ ] To generate materials for background research and self-study in the drafting of this application.
+* [ ] To generate materials that were included within my final application, in modified form.
+* [ ] I confirm that no content created by generative AI technologies has been presented as my own work.
+
+ 
+
+### Summary of AI Use
+
+ 
+
+> **Guidance and Requirements (200 words maximum)**:
+>
+> If you have used AI for any purpose, please provide a short summary of how you used generative AI in your assignment:
+>
+> * What prompts did you use?
+> * What outputs did you generate?
+> * How did you use, adapt, or develop the outputs?
+>
+> Word limit: 200 words maximum.
+
+ 
+
+[Add summary of generative AI use here if applicable]

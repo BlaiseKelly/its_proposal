@@ -1,0 +1,449 @@
+---
+title: "WRDTP Studentship Application Form"
+subtitle: "Cohort 4 (2027/28 Entry)"
+format:
+  docx: default
+  html: default
+---
+
+> **Form Instructions**:
+>
+> This form focuses on your proposed programme of research, how it fits with WRDTP core priorities, and your potential for doctoral-level research.
+>
+> Only the information provided by the applicant in this application form attracts marks.
+>
+> You can only be nominated by one WRDTP university for a WRDTP Studentship.
+>
+> You can only submit one project proposal to the WRDTP.
+>
+> You may be nominated for more than one type of studentship (Pathway Award, Advanced Quantitative Methods, Advanced Data Analytics).
+>
+> Word limits are strictly enforced with no leeway. Applications exceeding word limits will be rejected outright. In-text citations count towards the word limit of each box.
+
+ 
+
+## Section 1: Your Details
+
+ 
+
+### Applicant and Institutional Details
+
+ 
+
+**Email Address**: 
+
+ 
+
+**First Name**: 
+
+ 
+
+**Last Name**: 
+
+ 
+
+**Nominating WRDTP University**: University of Leeds
+
+ 
+
+**School or Department**: Institute for Transport Studies
+
+ 
+
+**Project Title**: 
+
+ 
+
+### Programme of Study
+
+ 
+
+> **Guidance on Programme Selection**:
+>
+> Applicants should choose a programme based on their prior academic experience, in consultation with their proposed supervisor:
+>
+> * Applicants without a social science masters degree: 1 year MA Social Research followed by 3.5 year PhD (4.5 years total).
+> * Applicants with a social science masters degree but without 60 credits of M-level research training: 3.75 year integrated PGCert/PhD.
+> * Applicants with 60 or more credits of social science M-level research training: 3.5 year PhD.
+>
+> Please note that all WRDTP programmes include an integral 3-month Research in Practice placement as standard, taken during the PhD phase.
+
+ 
+
+* [ ] 1 year MA Social Research followed by 3.5 year PhD (4.5 years)
+* [ ] 3.75 year integrated PGCert/PhD
+* [ ] 3.5 year PhD
+
+ 
+
+### Studentship Type
+
+ 
+
+> **Guidance on Studentship Type**:
+>
+> Select all award schemes that apply to your application. You may be nominated for more than one type:
+
+ 
+
+* [ ] Pathway Award
+* [ ] Advanced Quantitative Methods (AQM)
+* [ ] Advanced Data Analytics (ADA)
+* [ ] WRDTP/SHF Pathway Award for Black British students
+
+ 
+
+## Section 2: About Your Project
+
+ 
+
+> **Assessment Note**:
+>
+> Section 2 attracts up to 5 marks maximum, and is double-weighted (accounting for up to 10 marks out of 20 total).
+
+ 
+
+### Project Overview
+
+ 
+
+> **Guidance and Requirements (500 words maximum)**:
+>
+> Provide a short overview of the project. This should include:
+>
+> * A statement of the problem (research statement) and the research questions your project will address.
+> * A summary of existing academic scholarship in the field, and the way in which your project relates to this scholarship.
+> * The contribution that your project will make to academic and empirical knowledge.
+> * If your project is interdisciplinary, explain its contribution to the different fields in which it is situated.
+>
+> Word limit: 500 words maximum (including in-text citations).
+
+ 
+
+[Add project overview here]
+
+ 
+
+### Research Design
+
+ 
+
+> **Guidance and Requirements (500 words maximum)**:
+>
+> Outline the project research design. Include detail about:
+>
+> * The research methods you will use and how the proposed research design will enable you to address the research problem and questions detailed above.
+> * Depending on your research design, this could include information about fieldwork you will undertake, case studies you will examine, participants you will recruit, datasets you will use or create, sampling strategies, and approach to data analysis.
+>
+> Word limit: 500 words maximum (including in-text citations).
+
+ 
+
+[Add research design here]
+
+ 
+
+### Advanced Quantitative Methods
+
+ 
+
+> **Guidance and Requirements (AQM applicants only: 250 words maximum)**:
+>
+> Explain how your programme of research uses advanced quantitative methods to address your research problem.
+>
+> Methods should go beyond introductory quantitative methods often learned in undergraduate modules (for example: identifying causal effects, dealing with complex data structures, or handling spatial and temporal variability).
+>
+> Word limit: 250 words maximum (including in-text citations).
+
+ 
+
+[Add AQM justification here]
+
+ 
+
+### Advanced Data Analytics
+
+ 
+
+> **Guidance and Requirements (ADA applicants only: 250 words maximum)**:
+>
+> Explain how your programme of research uses advanced data skills to address your research problem.
+>
+> These projects are likely to use secondary data not commonly used in social science research that require particular techniques (for example: large scale or big data, administrative data, sensor networks, speed profiles, or interactions with urban environments).
+>
+> Word limit: 250 words maximum (including in-text citations).
+
+ 
+
+[Add ADA justification here]
+
+ 
+
+### Ethical Considerations and Positionality
+
+ 
+
+> **Guidance and Requirements (250 words maximum)**:
+>
+> Detail the ethical considerations and potential ethical challenges and how you will address them.
+>
+> Include, where relevant, a critical statement on your own positionality regarding your project.
+>
+> Word limit: 250 words maximum (including in-text citations).
+
+ 
+
+[Add ethical considerations and positionality here]
+
+ 
+
+### Contingency Plans
+
+ 
+
+> **Guidance and Requirements (250 words maximum)**:
+>
+> Provide information about the likely contingency plans that you will put in place in the event that your proposed programme of research cannot proceed as planned, and to ensure submission within your funded period.
+>
+> Examples of difficulties include delays in data access, recruitment challenges, or computational constraints.
+>
+> Word limit: 250 words maximum.
+
+ 
+
+[Add contingency plans here]
+
+ 
+
+### Key References
+
+ 
+
+> **Guidance and Requirements**:
+>
+> Provide a list of key references using the APA referencing style.
+>
+> Only in-text citations within the application should be included in the list of references. You should use references to situate your contribution to knowledge and flag key debates. In-text citations count towards the word limit of each box, so keep references focused on key works.
+
+ 
+
+[Add APA reference list here]
+
+ 
+
+## Section 3: Project Fit with WRDTP Core Priorities
+
+ 
+
+> **Assessment Note**:
+>
+> Section 3 attracts up to 5 marks maximum.
+
+ 
+
+### Thematic Interdisciplinary Pathway Selection
+
+ 
+
+> **Guidance on Pathway Selection**:
+>
+> Select the main interdisciplinary pathway with which your research is aligned (select one only):
+>
+> * Civil Society, Development, and Democracy (CDD)
+> * Digital Technologies, Communication and Artificial Intelligence (DCA)
+> * Education, Childhood and Youth (ECY)
+> * Security, Conflict and Justice (SCJ)
+> * Space, Place, Environment and Liveability (SPEL)
+> * Sustainable Growth, Business, Work and Economic Productivity (SBE)
+> * Wellbeing, Health and Communities (WHC)
+
+ 
+
+**Main Pathway Selected**: Space, Place, Environment and Liveability (SPEL)
+
+ 
+
+### Pathway Alignment
+
+ 
+
+> **Guidance and Requirements (250 words maximum)**:
+>
+> Explain how your proposed research aligns with the main interdisciplinary pathway selected above.
+>
+> It is common for a research project to relate to more than one pathway. If this is the case, please also explain how your proposed research is relevant to more than one pathway.
+>
+> Word limit: 250 words maximum (including in-text citations).
+
+ 
+
+[Add pathway alignment text here]
+
+ 
+
+### Societal and Economic Benefits
+
+ 
+
+> **Guidance and Requirements (250 words maximum)**:
+>
+> Explain the potential benefits of your proposed programme of research, and the steps that you will take to realise these benefits.
+>
+> These steps could include working with non-academic partners to produce the research, or sharing research findings with non-academic beneficiaries. If you have links with non-academic partners (such as through professional, work, or volunteer experience), you are welcome to discuss them here.
+>
+> Word limit: 250 words maximum (including in-text citations).
+
+ 
+
+[Add societal and economic benefits here]
+
+ 
+
+## Section 4: Your Motivation and Potential
+
+ 
+
+> **Assessment Note**:
+>
+> Section 4 attracts up to 5 marks maximum.
+
+ 
+
+### Motivation
+
+ 
+
+> **Guidance and Requirements (250 words maximum)**:
+>
+> Explain what motivates you to undertake the proposed programme of research detailed above. You are welcome to highlight a variety of factors that motivate you: intellectual, personal, professional.
+>
+> This section should focus specifically on the programme of research itself. You should explain why you believe this programme of research is necessary and why the research problem that you have identified needs addressing.
+>
+> Word limit: 250 words maximum.
+
+ 
+
+[Add motivation text here]
+
+ 
+
+### Evidence of Potential
+
+ 
+
+> **Guidance and Requirements (250 words maximum)**:
+>
+> Provide evidence of your potential to undertake doctoral-level research.
+>
+> The WRDTP recognises that evidence of potential can take many forms, including academic achievements, as well as a wider range of professional, voluntary, or personal achievements.
+>
+> We particularly welcome examples that demonstrate key transferable skills, such as resilience, adaptability, project management, and the ability to deliver to deadlines.
+>
+> Word limit: 250 words maximum.
+
+ 
+
+[Add evidence of potential here]
+
+ 
+
+## Section 5: Stuart Hall Foundation Award Statement
+
+ 
+
+> **Guidance on Eligibility (Optional section: eligible applicants only)**:
+>
+> These awards are open to Black British students (Black or Black British African, Black or Black British Caribbean, Black or Black British other, or Mixed Black or Black British).
+
+ 
+
+**Do you identify as Black British?**: [Yes / No]
+
+ 
+
+### Foundation Statement
+
+ 
+
+> **Guidance and Requirements (300 words maximum)**:
+>
+> Explain why you have applied for the WRDTP/Stuart Hall Foundation Award.
+>
+> Focus on how your proposed research fits with the SHF mission and values, and the potential wider benefits to society. You may also want to reflect on how your own personal experiences align with the SHF mission and values.
+>
+> Word limit: 300 words maximum.
+
+ 
+
+[Add Stuart Hall Foundation statement here if applicable]
+
+ 
+
+## Section 6: EDI Monitoring
+
+ 
+
+> **Guidance on EDI Monitoring**:
+>
+> Applicants are asked to complete the online WRDTP Equality, Diversity, and Inclusion monitoring form before submitting their application. The information provided is anonymised, treated as confidential, and does not form part of the studentship assessment process.
+
+ 
+
+**Have you completed the online WRDTP EDI Monitoring Form?**: [Yes / No]
+
+ 
+
+## Section 7: Confirmation and AI Statement
+
+ 
+
+### Declarations
+
+ 
+
+* [ ] Please confirm that you, as the applicant, have completed all parts of this application form: [Yes / No]
+* [ ] Please confirm that you have read the ESRC Postgraduate Funding Guidelines and are willing to abide by conditions and regulations therein: [Yes / No]
+* Please indicate if you are currently registered on a postgraduate research degree (e.g. a PhD): [Yes / No]
+* Have you previously undertaken a postgraduate research degree (e.g. a PhD) in the past?: [Yes / No]
+
+ 
+
+### Statement on the Use of Artificial Intelligence
+
+ 
+
+> **Guidance on Artificial Intelligence**:
+>
+> The WRDTP recognises that there are a number of situations where AI can be useful. However, submitted applications must be solely the work of the applicant, and any work produced using AI tools should not be passed off as that of the applicant.
+>
+> We therefore require that any use of AI is disclosed and explained. Failure to do so could result in a studentship offer being withdrawn. Applications containing AI-generated errors will be penalised.
+
+ 
+
+If you have used AI for any of the following purposes, please select the relevant fields:
+
+ 
+
+* [ ] To generate materials for background research and self-study in the drafting of this application.
+* [ ] To generate materials that were included within my final application, in modified form.
+* [ ] I confirm that no content created by generative AI technologies has been presented as my own work.
+
+ 
+
+### Summary of AI Use
+
+ 
+
+> **Guidance and Requirements (200 words maximum)**:
+>
+> If you have used AI for any purpose, please provide a short summary of how you used generative AI in your assignment:
+>
+> * What prompts did you use?
+> * What outputs did you generate?
+> * How did you use, adapt, or develop the outputs?
+>
+> Word limit: 200 words maximum.
+
+ 
+
+[Add summary of generative AI use here if applicable]
